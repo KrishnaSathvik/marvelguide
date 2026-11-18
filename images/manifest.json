@@ -1288,5 +1288,15 @@
   "key": "feature-tony",
   "file": "images/feature-tony.jpg",
   "source": "uploaded"
+ },
+ {
+  "key": "char-joaquin",
+  "file": "images/char-joaquin.webp",
+  "source": "uploaded"
+ },
+ {
+  "key": "dir-attuma",
+  "file": "images/dir-attuma.webp",
+  "source": "uploaded"
  }
 ]
