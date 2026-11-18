@@ -389,3 +389,13 @@
     display: none !important;
   }
 }
+
+@layer components {
+  /* "Set up on screen": shown on screen (canon tease) but not on Marvel's official cast list.
+     Blue, the same colour as the Soft canon tag. */
+  .tc .rmtag.tz,
+  .dc .dstat.tz {
+    background: var(--blue);
+    color: #fff;
+  }
+}

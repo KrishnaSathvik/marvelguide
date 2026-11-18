@@ -7,8 +7,8 @@ import { CH, DPLUS, TEAMS } from "@/content";
 import { useSearchReveal } from "@/lib/search-events";
 
 const tc = Object.fromEntries(TEAMS.map((t) => [t.k, t]));
-/* Confirmed first, rumored last. */
-const CARDS = [...CH.filter((h) => !h.rm), ...CH.filter((h) => h.rm)];
+/* Confirmed first, then set up on screen, rumored last. */
+const CARDS = [...CH.filter((h) => !h.rm && !h.tz), ...CH.filter((h) => h.tz), ...CH.filter((h) => h.rm)];
 const CHIPS = [{ k: "all", n: `All (${CH.length})`, c: "#111" }, ...TEAMS, { k: "rm", n: "Rumored", c: "#888" }];
 
 export function Roster() {
@@ -48,7 +48,7 @@ export function Roster() {
               </div>
               <Art artKey={`char-${h.id}`} alt={h.n} label="Character art" icon="users" color={t.c} sizes="(max-width: 640px) 50vw, 20vw" />
               <div className="tx">
-                {h.rm ? <span className="rmtag">Rumored</span> : null}
+                {h.rm ? <span className="rmtag">Rumored</span> : h.tz ? <span className="rmtag tz">Set up on screen</span> : null}
                 <b className="nm">{h.n}</b>
                 <div className="ac">
                   {h.a}

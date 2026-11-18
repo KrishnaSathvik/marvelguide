@@ -75,7 +75,10 @@ export type RosterCard = {
   l: string;
   lp?: number;
   s?: string;
+  /** Rumored (not confirmed). */
   rm?: number;
+  /** Set up on screen (canon tease) but not on Marvel's official cast list. */
+  tz?: number;
 };
 export const CH = CH_ as RosterCard[];
 

@@ -73,7 +73,7 @@ function build(): SearchItem[] {
     add(
       "Character",
       h.n,
-      `${h.rm ? "Rumored · " : ""}${h.a}${h.s ? " · " + h.s : ""} · ${teamName[h.tm]} · Meet them in ${h.meet}`,
+      `${h.rm ? "Rumored · " : h.tz ? "Set up on screen · " : ""}${h.a}${h.s ? " · " + h.s : ""} · ${teamName[h.tm]} · Meet them in ${h.meet}`,
       "/guide/characters",
       `char-${h.id}`,
       "users",

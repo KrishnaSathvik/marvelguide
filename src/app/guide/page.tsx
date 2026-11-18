@@ -13,7 +13,7 @@ const STEPS = [
   { href: "/guide/story", b: "Catch up on the story", s: "Seven chapters, from Endgame to Doom" },
   { href: "/guide/watch", b: "Pick what to watch", s: "5, 15 or 21 titles" },
   { href: "/guide/universes", b: "Learn the 3 universes", s: "Who's colliding" },
-  { href: "/guide/characters", b: "Meet the characters", s: "Doom, 32 confirmed characters and 3 rumored" },
+  { href: "/guide/characters", b: "Meet the characters", s: "Doom, 32 confirmed, Scarlet Witch set up on screen and 2 rumored" },
 ];
 
 export default function GuidePage() {

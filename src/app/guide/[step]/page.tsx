@@ -26,7 +26,7 @@ const STEP: Record<string, { Body: ComponentType; alt?: boolean; description: st
   characters: {
     Body: CharactersStep,
     alt: true,
-    description: "Doctor Doom and the confirmed Avengers: Doomsday roster, plus the rumored extras.",
+    description: "Doctor Doom and the confirmed Avengers: Doomsday roster, plus who's set up or rumored.",
   },
 };
 

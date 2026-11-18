@@ -11,7 +11,7 @@ export function CharactersStep() {
         kicker="Step 4 · Characters"
         title="The"
         accent="confirmed roster"
-        lede="Marvel's confirmed cast, three strongly rumored extras (marked Rumored, at the end), and where to meet each character first."
+        lede="Marvel's confirmed cast, Scarlet Witch (set up on screen in VisionQuest's finale), two strongly rumored extras (marked Rumored, at the end), and where to meet each character first."
       />
       <div className="doom rv" id="char-doom">
         <Art artKey="char-doom" alt="Doctor Doom" label="Doctor Doom" />

@@ -8,7 +8,7 @@ import { useSearchReveal } from "@/lib/search-events";
 
 const TEAMS = Object.keys(DIRT);
 const statusClass = (s: string) =>
-  /Died/.test(s) ? "dead" : /Rumored/.test(s) ? "rm" : /Doomsday/.test(s) ? "dd" : "";
+  /Died/.test(s) ? "dead" : /Rumored/.test(s) ? "rm" : /Set up/.test(s) ? "tz" : /Doomsday/.test(s) ? "dd" : "";
 
 /** Character directory: search by name/role/actor/first appearance, filter by team. */
 export function Directory() {
