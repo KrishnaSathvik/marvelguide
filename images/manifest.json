@@ -526,8 +526,8 @@
  },
  {
   "key": "enc-tech-arc",
-  "file": "images/enc-tech-arc.jpg",
-  "source": "built-in"
+  "file": "images/enc-tech-arc.avif",
+  "source": "uploaded"
  },
  {
   "key": "enc-tech-vibranium",
@@ -536,8 +536,8 @@
  },
  {
   "key": "enc-tech-shield",
-  "file": "images/enc-tech-shield.jpg",
-  "source": "built-in"
+  "file": "images/enc-tech-shield.avif",
+  "source": "uploaded"
  },
  {
   "key": "enc-tech-mjolnir",
