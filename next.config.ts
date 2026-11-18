@@ -13,6 +13,16 @@ const nextConfig: NextConfig = {
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },
+  // PostHog reverse proxy: analytics go through our own domain so ad blockers don't drop them.
+  async rewrites() {
+    return [
+      { source: "/ingest/static/:path*", destination: "https://us-assets.i.posthog.com/static/:path*" },
+      { source: "/ingest/array/:path*", destination: "https://us-assets.i.posthog.com/array/:path*" },
+      { source: "/ingest/:path*", destination: "https://us.i.posthog.com/:path*" },
+    ];
+  },
+  // Required by the PostHog proxy (its API paths end in a slash).
+  skipTrailingSlashRedirect: true,
   images: {
     // Phase 3: images are served from the public Supabase Storage bucket `art`.
     // Only this project's bucket, so the image optimizer can't be used for anyone else's images.

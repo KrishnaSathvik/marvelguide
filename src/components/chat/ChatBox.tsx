@@ -5,6 +5,7 @@ import type { UIMessage } from "ai";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useLayoutEffect, useRef, useState, type ComponentProps, type ReactNode } from "react";
+import posthog from "posthog-js";
 import ReactMarkdown from "react-markdown";
 import { Icon } from "@/components/Icon";
 import { friendlyError, getChat, needsVerification, saveMessages } from "./chat-store";
@@ -159,6 +160,8 @@ export function ChatBox({
     clearError();
     stick.current = true;
     sendMessage({ text: t.slice(0, MAX_CHARS) });
+    // Usage only: never the question text.
+    if (posthog.__loaded) posthog.capture("watcher_question_asked", { variant, turn: Math.floor(messages.length / 2) + 1 });
     setInput("");
   };
 
