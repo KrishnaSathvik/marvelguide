@@ -20,4 +20,6 @@ if (key) {
       maskTextSelector: ".cb-bubble",
     },
   });
+  // Dev only: lets you inspect it from the browser console (window.posthog).
+  if (process.env.NODE_ENV === "development") (window as unknown as { posthog: typeof posthog }).posthog = posthog;
 }
