@@ -4,7 +4,7 @@ import { useChat } from "@ai-sdk/react";
 import type { UIMessage } from "ai";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useLayoutEffect, useRef, useState, type ComponentProps, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type ComponentProps, type ReactNode } from "react";
 import posthog from "posthog-js";
 import ReactMarkdown from "react-markdown";
 import { Icon } from "@/components/Icon";
@@ -28,14 +28,41 @@ export function GuideAvatar() {
   );
 }
 
-/** Links in answers: site pages stay in the app, everything else opens in a new tab. */
-function MdLink({ href = "", children }: ComponentProps<"a">) {
-  if (href.startsWith("/")) return <Link href={href}>{children}</Link>;
-  return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
-      {children}
-    </a>
-  );
+/** "https://marvelguide.app/news" (or this deployment's own host) → "/news"; anything else unchanged. */
+function sitePath(href: string): string {
+  if (href.startsWith("/")) return href;
+  try {
+    const u = new URL(href);
+    const own = u.hostname === "marvelguide.app" || u.hostname === "www.marvelguide.app" || u.hostname === window.location.hostname;
+    return own ? u.pathname + u.search + u.hash : href;
+  } catch {
+    return href;
+  }
+}
+
+/** The floating panel covers the whole page on phones (see .cb-panel-wrap in globals.css). */
+const panelCoversPage = () => window.matchMedia("(max-width: 640px)").matches;
+
+/**
+ * Links in answers: site pages stay in the app, everything else opens in a new tab.
+ * In the floating panel on a phone, following a site link closes the panel so the page is visible;
+ * the conversation is kept, and the Watcher button reopens it.
+ */
+function makeMdLink(onClose?: () => void) {
+  return function MdLink({ href = "", children }: ComponentProps<"a">) {
+    const path = sitePath(href);
+    if (path.startsWith("/"))
+      return (
+        <Link href={path} onClick={() => onClose && panelCoversPage() && onClose()}>
+          {children}
+        </Link>
+      );
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        {children}
+      </a>
+    );
+  };
 }
 
 const textOf = (m: UIMessage) =>
@@ -129,6 +156,7 @@ export function ChatBox({
   });
   const [input, setInput] = useState("");
   const [human, setHuman] = useState(humanVerified);
+  const mdComponents = useMemo(() => ({ a: makeMdLink(onClose) }), [onClose]);
   const listRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const stick = useRef(true);
@@ -235,7 +263,7 @@ export function ChatBox({
             return (
               <Row key={m.id} role="assistant">
                 <div className="cb-answer">
-                  <ReactMarkdown components={{ a: MdLink }}>{text}</ReactMarkdown>
+                  <ReactMarkdown components={mdComponents}>{text}</ReactMarkdown>
                 </div>
                 {!streaming && (
                   <div className="cb-tools">

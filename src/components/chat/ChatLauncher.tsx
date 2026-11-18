@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useState, useSyncExternalStore } from "react";
 import Image from "next/image";
 import { ChatBox } from "./ChatBox";
 
@@ -19,6 +19,7 @@ export function ChatLauncher() {
   const pathname = usePathname();
   const isClient = useIsClient();
   const [open, setOpen] = useState(false);
+  const close = useCallback(() => setOpen(false), []);
 
   useEffect(() => {
     if (!open) return;
@@ -31,7 +32,7 @@ export function ChatLauncher() {
 
   return open ? (
     <div className="cb-panel-wrap" role="dialog" aria-label="Ask the Watcher">
-      <ChatBox variant="panel" autoFocus onClose={() => setOpen(false)} />
+      <ChatBox variant="panel" autoFocus onClose={close} />
     </div>
   ) : (
     <button type="button" className="chat-fab" onClick={() => setOpen(true)} aria-label="Ask the Watcher">
