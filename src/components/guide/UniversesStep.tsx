@@ -24,7 +24,7 @@ export function UniversesStep() {
             style={{ "--uc": C[u.c] } as CSSProperties}
             media={
               <>
-                <Art artKey={`uni-${u.k}`} alt={`${u.code}: ${u.tag}`} label="Banner" icon="globe" color={C[u.c]} />
+                <Art fit="contain" artKey={`uni-${u.k}`} alt={`${u.code}: ${u.tag}`} label="Banner" icon="globe" color={C[u.c]} />
                 <span className="ucode2">
                   <b>{u.code}</b>
                   <span>{u.tag}</span>

@@ -33,7 +33,7 @@ function EncRows({ rows }: { rows: EncRow[] }) {
           className="erow"
           media={
             <>
-              <Art artKey={`enc-${r.id}`} alt={r.sub ? `${r.title}: ${r.sub}` : r.title} label="Scene still" icon="film" color={C.red} />
+              <Art fit="contain" artKey={`enc-${r.id}`} alt={r.sub ? `${r.title}: ${r.sub}` : r.title} label="Scene still" icon="film" color={C.red} />
               {r.swatch && <span className="swatch" style={{ background: r.swatch }} />}
               <span className="cyr">{r.badge}</span>
             </>

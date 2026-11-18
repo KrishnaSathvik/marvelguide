@@ -116,6 +116,16 @@
     }
   }
 
+  /* ---------- image frames: show the whole picture, blurred copy fills the rest ---------- */
+  .art.contain img {
+    object-fit: contain;
+  }
+  .art.contain img.bd {
+    object-fit: cover;
+    filter: blur(22px) brightness(0.6) saturate(1.2);
+    transform: scale(1.2);
+  }
+
   /* ---------- top bar ---------- */
   .topbar {
     position: sticky;

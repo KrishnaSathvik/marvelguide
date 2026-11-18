@@ -23,6 +23,7 @@ export function StoryStep() {
               <>
                 <Art
                   artKey={`story-${i + 1}`}
+                  fit="contain"
                   alt={`${s.w}: ${s.h}`}
                   label="Scene still"
                   icon={s.i}
