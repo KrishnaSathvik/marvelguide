@@ -366,8 +366,8 @@
  },
  {
   "key": "enc-mcu-one",
-  "file": "images/enc-mcu-one.jpg",
-  "source": "built-in"
+  "file": "images/enc-mcu-one.avif",
+  "source": "uploaded"
  },
  {
   "key": "enc-mcu-feige",
