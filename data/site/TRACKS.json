@@ -1,0 +1,43 @@
+{
+ "weekend": {
+  "ids": [
+   "endgame",
+   "x2",
+   "dw",
+   "tb",
+   "ff"
+  ],
+  "d": "Meet every team once: Endgame for where the Avengers left off, X2 for the legacy mutants, Deadpool & Wolverine for the bridge between universes, Thunderbolts* for the New Avengers, and First Steps for the Fantastic Four and Doom."
+ },
+ "official": {
+  "ids": [
+   "xmen",
+   "x2",
+   "cafa",
+   "avengers",
+   "iw",
+   "endgame",
+   "loki",
+   "shangchi",
+   "nwh",
+   "wf",
+   "bnw",
+   "dw",
+   "mom",
+   "tb",
+   "ff"
+  ],
+  "d": "Disney+'s official “Countdown to Avengers: Doomsday” collection, in the order it was reported. Keep the two X-Men films together, Infinity War with Endgame, and both Loki seasons back to back."
+ },
+ "deep": {
+  "ids": [
+   "vq",
+   "bnd",
+   "bw",
+   "fws",
+   "quant",
+   "marvels"
+  ],
+  "d": "Not on the official list, but these fill in the backstories of confirmed characters. VisionQuest's finale (Nov 10) now includes a direct Doomsday tease. Brand New Day had its theatrical run this summer."
+ }
+}

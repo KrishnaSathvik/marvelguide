@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Anton, Bangers, Inter, Oswald } from "next/font/google";
 import { Suspense } from "react";
 import { HashRedirect } from "@/components/HashRedirect";
+import { Reveal } from "@/components/Reveal";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
@@ -23,7 +24,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${anton.variable} ${oswald.variable} ${inter.variable} ${bangers.variable}`}>
+    <html
+      lang="en"
+      className={`${anton.variable} ${oswald.variable} ${inter.variable} ${bangers.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        {/* Marks JS as available so scroll-reveal (.js .rv) can hide content until it animates in. */}
+        <script>{`document.documentElement.classList.add('js')`}</script>
+      </head>
       <body>
         <Suspense
           fallback={
@@ -37,6 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {children}
         <SiteFooter />
         <HashRedirect />
+        <Reveal />
       </body>
     </html>
   );
