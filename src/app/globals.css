@@ -222,10 +222,9 @@
     }
     .logo {
       transform: none;
+      height: 32px;
     }
-    .logo b {
-      display: none;
-    }
+    .logo b,
     .logo i {
       font-size: 13px;
       padding: 7px 6px 0;

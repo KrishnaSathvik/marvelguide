@@ -1,4 +1,4 @@
-# Road to Doomsday → marvelguide.app
+# Marvel Guide (marvelguide.app)
 
 Fan-made Avengers: Doomsday guide + MCU encyclopedia + built-in Marvel chatbot.
 Unofficial fan project, not affiliated with Marvel or Disney.

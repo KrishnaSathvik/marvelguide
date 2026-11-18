@@ -39,7 +39,7 @@ export function getChat(): Chat<UIMessage> {
       prepareSendMessagesRequest: ({ messages }) => ({
         body: {
           messages: messages.slice(-MAX_SENT),
-          page: { path: location.pathname, title: document.title.replace(/ · Road to Doomsday$/, ""), hash: location.hash || undefined },
+          page: { path: location.pathname, title: document.title.replace(/ · Marvel Guide$/, ""), hash: location.hash || undefined },
         },
       }),
     }),

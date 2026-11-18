@@ -50,9 +50,9 @@ export function SiteHeader() {
     <>
       <header className="topbar">
         <div className="wrap">
-          <Link className="logo" href="/" aria-label="Road to Doomsday home">
-            <b>ROAD TO</b>
-            <i>DOOMSDAY</i>
+          <Link className="logo" href="/" aria-label="Marvel Guide home">
+            <b>MARVEL</b>
+            <i>GUIDE</i>
           </Link>
           <nav className="tabsnav" aria-label="Pages">
             {TABS.map((t) => (

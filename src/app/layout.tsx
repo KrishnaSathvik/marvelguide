@@ -24,8 +24,8 @@ const bangers = Bangers({ weight: "400", subsets: ["latin"], variable: "--font-b
 export const metadata: Metadata = {
   metadataBase: new URL("https://marvelguide.app"),
   title: {
-    default: "Road to Doomsday · Avengers: Doomsday watch guide & MCU explained",
-    template: "%s · Road to Doomsday",
+    default: "Marvel Guide · Avengers: Doomsday watch guide & MCU explained",
+    template: "%s · Marvel Guide",
   },
   description:
     "Fan-made Avengers: Doomsday watch guide and MCU encyclopedia. Unofficial fan project, not affiliated with Marvel or Disney.",
