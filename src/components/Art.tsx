@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { CSSProperties } from "react";
 import { artSrc } from "@/lib/art";
 import { Icon } from "./Icon";
@@ -14,6 +15,7 @@ export function Art({
   icon = "image",
   color,
   className,
+  sizes = "(max-width: 640px) 100vw, 50vw",
 }: {
   artKey: string;
   alt: string;
@@ -21,15 +23,15 @@ export function Art({
   icon?: string;
   color?: string;
   className?: string;
+  /** Rendered width hint for next/image (defaults to half the viewport on desktop). */
+  sizes?: string;
 }) {
   const src = artSrc(artKey);
   const style = color ? ({ "--c": `${color}55`, "--c2": color } as CSSProperties) : undefined;
   return (
     <div className={["art", src ? "has" : "", className ?? ""].join(" ").trim()} data-art={artKey} style={style}>
       {src ? (
-        // Phase 3 switches this to next/image once images come from Supabase Storage.
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={src} alt={alt} loading="lazy" decoding="async" />
+        <Image src={src} alt={alt} fill sizes={sizes} />
       ) : (
         <div className="ph" role="img" aria-label={alt}>
           <Icon name={icon} />

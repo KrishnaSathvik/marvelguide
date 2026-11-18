@@ -10,11 +10,10 @@ const isActiveTab = (pathname: string, href: string) =>
 type SubItem = { href: string; label: string; active: boolean };
 
 /** Sub-nav only inside a section (never on the hub/overview pages). */
-function subnavFor(pathname: string): { label: string; items: SubItem[] } | null {
+function subnavFor(pathname: string): { items: SubItem[] } | null {
   const [, section, first] = pathname.split("/");
   if (section === "guide" && first) {
     return {
-      label: "Doomsday Guide",
       items: GUIDE_STEPS.map((s, i) => ({
         href: `/guide/${s.slug}`,
         label: `${i + 1} ${s.label}`,
@@ -24,7 +23,6 @@ function subnavFor(pathname: string): { label: string; items: SubItem[] } | null
   }
   if (section === "mcu" && first) {
     return {
-      label: "MCU Explained",
       items: MCU_GROUPS.map((g, i) => ({
         href: `/mcu/${g.slug}`,
         label: `${i + 1} ${g.title}`,
@@ -70,7 +68,6 @@ export function SiteHeader() {
       {sub && (
         <nav className="subnav" aria-label="Sections">
           <div className="wrap">
-            <span className="lbl">{sub.label}</span>
             {sub.items.map((it) => (
               <Link key={it.href} href={it.href} aria-current={it.active ? "page" : undefined}>
                 {it.label}

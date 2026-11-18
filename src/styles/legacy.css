@@ -255,7 +255,8 @@ section.alt{background:var(--white)}
 .legend span{display:flex;align-items:center;gap:7px;font-family:var(--label);font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2)}
 .legend i{width:14px;height:14px;border:2px solid var(--ink);display:inline-block}
 .wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:26px;margin-top:28px}
-.wc{background:var(--white);border:var(--bw) solid var(--ink);box-shadow:var(--sh);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;opacity:0;transform:translateY(20px)}
+.wc{background:var(--white);border:var(--bw) solid var(--ink);box-shadow:var(--sh);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.js .wc:not(.show){opacity:0;transform:translateY(20px)}
 .wc.show{opacity:1;transform:none}
 .wc:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--ink)}
 .wc .pw{position:relative;border-bottom:var(--bw) solid var(--ink)}

@@ -45,3 +45,6 @@ next-env.d.ts
 
 # local tooling
 /.playwright-mcp/
+
+# copied from images/ by scripts/sync-images.mjs
+/public/art/

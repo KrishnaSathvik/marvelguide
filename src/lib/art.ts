@@ -1,8 +1,15 @@
+import MANIFEST from "../../images/manifest.json";
+
 /**
  * Image key → URL. Keys are the legacy `data-art` keys (AGENTS.md §6).
- * Phase 3 fills this from the Supabase `art` table; until then every frame shows its placeholder.
+ * Interim: images/ is copied to public/art/ by scripts/sync-images.mjs (runs before dev/build).
+ * Phase 3 replaces this with the Supabase `art` table. Keys without a file show the placeholder.
  */
-export function artSrc(_key: string): string | null {
-  void _key;
-  return null;
+const FILES: Record<string, string> = Object.fromEntries(
+  (MANIFEST as { key: string; file: string }[]).map((e) => [e.key, e.file.replace(/^images\//, "")]),
+);
+
+export function artSrc(key: string): string | null {
+  const f = FILES[key];
+  return f ? `/art/${f}` : null;
 }
