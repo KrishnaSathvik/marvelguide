@@ -481,8 +481,8 @@
  },
  {
   "key": "enc-tva-sacred-timeline",
-  "file": "images/enc-tva-sacred-timeline.jpg",
-  "source": "built-in"
+  "file": "images/enc-tva-sacred-timeline.avif",
+  "source": "uploaded"
  },
  {
   "key": "enc-tva-variants",
@@ -521,7 +521,7 @@
  },
  {
   "key": "enc-time-rules",
-  "file": "images/enc-time-rules.jpg",
+  "file": "images/enc-time-rules.avif",
   "source": "uploaded"
  },
  {
