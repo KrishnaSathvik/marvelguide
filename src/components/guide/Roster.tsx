@@ -6,6 +6,9 @@ import { Icon } from "@/components/Icon";
 import { CH, DPLUS, TEAMS } from "@/content";
 import { useSearchReveal } from "@/lib/search-events";
 
+/** Disney+ title pages and the Marvel brand page both read "Stream on Disney+". */
+const isDisneyPlus = (url: string) => url === DPLUS || url.startsWith("https://www.disneyplus.com/");
+
 const tc = Object.fromEntries(TEAMS.map((t) => [t.k, t]));
 /* Confirmed first, then set up on screen, rumored last. */
 const CARDS = [...CH.filter((h) => !h.rm && !h.tz), ...CH.filter((h) => h.tz), ...CH.filter((h) => h.rm)];
@@ -59,7 +62,7 @@ export function Roster() {
                 </div>
                 <a className="lk" href={h.l} target="_blank" rel="noopener noreferrer">
                   <Icon name="external-link" />
-                  {h.lp ? "Official profile" : h.l === DPLUS ? "Stream on Disney+" : "Official film page"}
+                  {h.lp ? "Official profile" : isDisneyPlus(h.l) ? "Stream on Disney+" : "Official film page"}
                 </a>
               </div>
             </article>

@@ -133,11 +133,11 @@ function build(): SearchItem[] {
   news("Release: Dec 16 internationally, Dec 18 US", "international release date, world tour, LA premiere, previews", "news-release", "calendar");
   news("Feige: the Avengers are back together", "Empire interview, Sam Wilson leads the team, Captain America", "news-feige", "users");
   news("The Hulk is in Doomsday", "Mark Ruffalo, Bruce Banner, Hollywood Reporter", "news-hulk", "zap");
-  news("Endgame: Encore now on Disney+", "Nov 13, new scenes, post-credits scene, Loki, Owen Wilson", "news-encore", "tv");
+  news("Endgame: Encore now on Disney+", "new scenes, post-credits scene, Loki, Owen Wilson", "news-encore", "tv");
   news("Box office: eyeing a $1B+ opening", "presales, tracking, record opening weekend", "news-boxoffice", "zap");
   news(
     "VisionQuest finale post-credits scene (spoiler)",
-    "Episode 8 “Forever” (Nov 10, 2026) — the scene that sets up Avengers: Doomsday. Wanda, Doctor Doom, Scarlet Witch",
+    "Episode 8 “Forever” — the scene that sets up Avengers: Doomsday. Wanda, Doctor Doom, Scarlet Witch",
     "news-wanda",
     "zap",
   );

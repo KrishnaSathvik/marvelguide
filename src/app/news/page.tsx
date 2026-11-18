@@ -85,7 +85,7 @@ export default function NewsPage() {
           <Reveal />
           <span className="kicker rv" style={{ background: "var(--red)" }}>
             <Icon name="zap" />
-            Week of Nov 16, 2026
+            Latest news
           </span>
           <h1 className="h2 rv">
             Breaking: <span className="r">the final countdown</span>
@@ -100,7 +100,7 @@ export default function NewsPage() {
             ))}
           </div>
           <h2 className="h3 rv">
-            <small>Nov 10 · Episode 8 “Forever”</small>The VisionQuest finale
+            <small>Episode 8 “Forever”</small>The VisionQuest finale
           </h2>
           <div className="alert rv">
             <Icon name="eye" />
