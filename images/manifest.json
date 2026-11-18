@@ -326,8 +326,8 @@
  },
  {
   "key": "story-3",
-  "file": "images/story-3.jpg",
-  "source": "built-in"
+  "file": "images/story-3.webp",
+  "source": "uploaded"
  },
  {
   "key": "story-4",
@@ -361,8 +361,8 @@
  },
  {
   "key": "story-7",
-  "file": "images/story-7.jpg",
-  "source": "built-in"
+  "file": "images/story-7.webp",
+  "source": "uploaded"
  },
  {
   "key": "enc-mcu-one",
