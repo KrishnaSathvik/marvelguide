@@ -666,8 +666,8 @@
  },
  {
   "key": "dir-captain-marvel",
-  "file": "images/dir-captain-marvel.jpg",
-  "source": "built-in"
+  "file": "images/dir-captain-marvel.webp",
+  "source": "uploaded"
  },
  {
   "key": "dir-doctor-strange",
@@ -716,8 +716,8 @@
  },
  {
   "key": "dir-monica-rambeau",
-  "file": "images/dir-monica-rambeau.jpg",
-  "source": "built-in"
+  "file": "images/dir-monica-rambeau.avif",
+  "source": "uploaded"
  },
  {
   "key": "dir-valkyrie",
@@ -761,8 +761,8 @@
  },
  {
   "key": "dir-gamora",
-  "file": "images/dir-gamora.jpg",
-  "source": "built-in"
+  "file": "images/dir-gamora.avif",
+  "source": "uploaded"
  },
  {
   "key": "dir-rocket",
@@ -821,13 +821,13 @@
  },
  {
   "key": "dir-wonder-man",
-  "file": "images/dir-wonder-man.jpg",
-  "source": "built-in"
+  "file": "images/dir-wonder-man.avif",
+  "source": "uploaded"
  },
  {
   "key": "dir-hawkeye-kate-bishop",
-  "file": "images/dir-hawkeye-kate-bishop.jpg",
-  "source": "built-in"
+  "file": "images/dir-hawkeye-kate-bishop.avif",
+  "source": "uploaded"
  },
  {
   "key": "dir-ms-marvel",
