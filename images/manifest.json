@@ -611,8 +611,8 @@
  },
  {
   "key": "dir-thor",
-  "file": "images/dir-thor.jpg",
-  "source": "built-in"
+  "file": "images/char-thor.jpg",
+  "source": "uploaded"
  },
  {
   "key": "dir-hulk",
@@ -661,8 +661,8 @@
  },
  {
   "key": "dir-falcon",
-  "file": "images/dir-falcon.jpg",
-  "source": "built-in"
+  "file": "images/char-joaquin.webp",
+  "source": "uploaded"
  },
  {
   "key": "dir-captain-marvel",
@@ -741,8 +741,8 @@
  },
  {
   "key": "dir-m-baku",
-  "file": "images/dir-m-baku.jpg",
-  "source": "built-in"
+  "file": "images/char-mbaku.avif",
+  "source": "uploaded"
  },
  {
   "key": "dir-namor",
@@ -1332,6 +1332,11 @@
  {
   "key": "dir-red-guardian",
   "file": "images/char-redguardian.avif",
+  "source": "uploaded"
+ },
+ {
+  "key": "dir-scarlet-witch",
+  "file": "images/char-wanda.jpg",
   "source": "uploaded"
  }
 ]
