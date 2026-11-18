@@ -1338,5 +1338,15 @@
   "key": "dir-scarlet-witch",
   "file": "images/char-wanda.jpg",
   "source": "uploaded"
+ },
+ {
+  "key": "dir-silver-surfer",
+  "file": "images/dir-silver-surfer.avif",
+  "source": "uploaded"
+ },
+ {
+  "key": "dir-adam-warlock",
+  "file": "images/dir-adam-warlock.avif",
+  "source": "uploaded"
  }
 ]
