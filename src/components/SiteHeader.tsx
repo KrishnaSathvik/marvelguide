@@ -52,7 +52,7 @@ export function SiteHeader() {
       <header className="topbar">
         <div className="wrap">
           <Link className="logo" href="/" aria-label="Marvel Guide home">
-            <Image src="/brand/logo-640.png" alt="Marvel Guide" width={640} height={509} priority sizes="80px" />
+            <Image src="/brand/wordmark.png" alt="Marvel Guide" width={640} height={135} priority sizes="200px" />
           </Link>
           <nav className="tabsnav" aria-label="Pages">
             {TABS.map((t) => (

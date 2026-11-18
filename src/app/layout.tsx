@@ -5,7 +5,6 @@ import { ArtProvider } from "@/components/ArtProvider";
 import { ChatLauncher } from "@/components/chat/ChatLauncher";
 import { HashRedirect } from "@/components/HashRedirect";
 import { Search } from "@/components/Search";
-import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getArtMap } from "@/lib/art";
 import { chatAvailability } from "@/lib/chat/config";
@@ -56,7 +55,6 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
           <SiteHeader />
         </Suspense>
         <ArtProvider map={art}>{children}</ArtProvider>
-        <SiteFooter />
         <HashRedirect />
         <Suspense fallback={null}>
           <Search />

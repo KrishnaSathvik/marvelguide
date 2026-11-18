@@ -40,6 +40,7 @@ export default function LinksPage() {
               </a>
             ))}
           </div>
+          <p className="disclaimer rv">Unofficial fan project. Not affiliated with Marvel or Disney.</p>
         </div>
       </section>
     </main>
