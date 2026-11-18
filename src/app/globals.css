@@ -1,0 +1,387 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens from legacy/index.html (AGENTS.md §4).
+ * Raw values live on :root so plain CSS can use them; @theme exposes them to Tailwind utilities
+ * (bg-paper, text-ink, border-ink, font-head, shadow-hard …).
+ */
+:root {
+  --paper: #f5efe2;
+  --paper2: #ece4d2;
+  --white: #fffdf7;
+  --ink: #111;
+  --ink2: #3a3a3a;
+  --mute: #6b6658;
+  --red: #e2231a;
+  --red-d: #a8130d;
+  --yellow: #ffd23f;
+  --blue: #1d64d8;
+  --green: #16864a;
+  --orange: #ff6a2b;
+  --purple: #6d43e8;
+  --gold: #c98a12;
+  --teal: #0f8b8d;
+  --pink: #d6336c;
+
+  --head: var(--font-anton), Impact, "Arial Narrow Bold", sans-serif;
+  --burst: var(--font-bangers), var(--font-anton), Impact, sans-serif;
+  --label: var(--font-oswald), "Arial Narrow", sans-serif;
+  --body: var(--font-inter), system-ui, sans-serif;
+
+  --bw: 3px;
+  --sh: 6px 6px 0 var(--ink);
+  --topbar-h: 60px;
+  --subnav-h: 42px;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper2: var(--paper2);
+  --color-white: var(--white);
+  --color-ink: var(--ink);
+  --color-ink2: var(--ink2);
+  --color-mute: var(--mute);
+  --color-red: var(--red);
+  --color-red-d: var(--red-d);
+  --color-yellow: var(--yellow);
+  --color-blue: var(--blue);
+  --color-green: var(--green);
+  --color-orange: var(--orange);
+  --color-purple: var(--purple);
+  --color-gold: var(--gold);
+  --color-teal: var(--teal);
+  --color-pink: var(--pink);
+
+  --font-head: var(--head);
+  --font-burst: var(--burst);
+  --font-label: var(--label);
+  --font-body: var(--body);
+  --font-sans: var(--body);
+
+  --shadow-hard: var(--sh);
+  --shadow-hard-sm: 4px 4px 0 var(--ink);
+}
+
+/* Unlayered CSS beats @layer utilities in Tailwind v4, so everything custom stays inside layers. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--topbar-h) + var(--subnav-h) + 18px);
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.55;
+    overflow-x: hidden;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+  /* halftone dot texture */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.35;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.09) 1px, transparent 1.3px);
+    background-size: 6px 6px;
+  }
+  a {
+    color: inherit;
+  }
+  ::selection {
+    background: var(--yellow);
+  }
+  :focus-visible {
+    outline: 3px solid var(--blue);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .wrap {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+  }
+  @media (max-width: 640px) {
+    .wrap {
+      padding: 0 16px;
+    }
+  }
+
+  /* ---------- top bar ---------- */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    background: var(--ink);
+    color: #fff;
+  }
+  .topbar .wrap {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: var(--topbar-h);
+  }
+  .logo {
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+    height: 38px;
+    transform: skewX(-8deg);
+    white-space: nowrap;
+    flex: none;
+  }
+  .logo b,
+  .logo i {
+    font-family: var(--head);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    padding: 6px 10px 0;
+    line-height: 1;
+  }
+  .logo b {
+    background: #fff;
+    color: var(--ink);
+  }
+  .logo i {
+    background: var(--red);
+    color: #fff;
+  }
+  .tabsnav {
+    display: flex;
+    gap: 4px;
+    margin-left: auto;
+  }
+  .tabsnav a {
+    font-family: var(--label);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 9px 14px;
+    color: #ccc;
+    border: 2px solid transparent;
+    white-space: nowrap;
+  }
+  .tabsnav a:hover {
+    color: #fff;
+    border-color: #444;
+  }
+  .tabsnav a[aria-current] {
+    color: var(--ink);
+    background: var(--yellow);
+    border-color: var(--yellow);
+  }
+  .tabsnav .sm {
+    display: none;
+  }
+  /* tablets: short labels so the header never wraps */
+  @media (max-width: 1100px) and (min-width: 641px) {
+    .topbar .wrap {
+      gap: 12px;
+    }
+    .tabsnav {
+      gap: 2px;
+    }
+    .tabsnav .lg {
+      display: none;
+    }
+    .tabsnav .sm {
+      display: inline;
+    }
+    .tabsnav a {
+      padding: 8px 11px;
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 780px) and (min-width: 641px) {
+    .tabsnav a {
+      padding: 8px 7px;
+      font-size: 12.5px;
+    }
+    .logo b,
+    .logo i {
+      font-size: 17px;
+    }
+  }
+  /* phones: logo shrinks to one block, Home tab hidden (logo is home), tabs scroll */
+  @media (max-width: 640px) {
+    .topbar .wrap {
+      gap: 8px;
+    }
+    .logo {
+      transform: none;
+    }
+    .logo b {
+      display: none;
+    }
+    .logo i {
+      font-size: 13px;
+      padding: 7px 6px 0;
+    }
+    .tabsnav {
+      gap: 2px;
+      min-width: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .tabsnav::-webkit-scrollbar {
+      display: none;
+    }
+    .tabsnav .lg,
+    .tabsnav .hm {
+      display: none;
+    }
+    .tabsnav .sm {
+      display: inline;
+    }
+    .tabsnav a {
+      padding: 7px 5px;
+      font-size: 11.5px;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  /* ---------- section sub-nav (only inside Guide / MCU sections) ---------- */
+  .subnav {
+    background: var(--red);
+    border-bottom: var(--bw) solid var(--ink);
+    position: sticky;
+    top: var(--topbar-h);
+    z-index: 55;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .subnav::-webkit-scrollbar {
+    display: none;
+  }
+  .subnav .wrap {
+    display: flex;
+    gap: 2px;
+    height: var(--subnav-h);
+    align-items: center;
+    white-space: nowrap;
+  }
+  .subnav a {
+    font-family: var(--label);
+    font-weight: 600;
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 10px;
+    opacity: 0.85;
+  }
+  .subnav a:hover,
+  .subnav a[aria-current] {
+    opacity: 1;
+    background: var(--ink);
+  }
+  .subnav .lbl {
+    font-family: var(--label);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    padding-right: 8px;
+    margin-right: 4px;
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+  }
+  @media (max-width: 640px) {
+    .subnav .lbl {
+      display: none;
+    }
+  }
+
+  /* ---------- shared bits ---------- */
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--ink);
+    color: #fff;
+    font-family: var(--label);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    transform: skewX(-8deg);
+  }
+  .crumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-family: var(--label);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    color: var(--mute);
+  }
+  .crumb a {
+    color: var(--red);
+    text-decoration: none;
+  }
+  .crumb a:hover {
+    text-decoration: underline;
+  }
+  .box {
+    background: var(--white);
+    border: var(--bw) solid var(--ink);
+    box-shadow: var(--sh);
+    padding: 22px;
+    position: relative;
+  }
+
+  /* ---------- footer ---------- */
+  .sitefoot {
+    margin-top: auto;
+    background: var(--ink);
+    color: #cfcabd;
+    border-top: var(--bw) solid var(--ink);
+    position: relative;
+    z-index: 1;
+  }
+  .sitefoot .wrap {
+    padding-top: 22px;
+    padding-bottom: 26px;
+    display: grid;
+    gap: 6px;
+    font-size: 13px;
+  }
+  .sitefoot b {
+    font-family: var(--label);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .sitefoot a {
+    color: var(--yellow);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

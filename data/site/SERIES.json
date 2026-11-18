@@ -1,0 +1,163 @@
+[
+ {
+  "n": "Loki (S1–2)",
+  "y": "2021–23",
+  "r": "ess",
+  "p": "Introduces the TVA, the Sacred Timeline and He Who Remains. The spine of the whole saga.",
+  "id": "series-loki-s1-2"
+ },
+ {
+  "n": "WandaVision",
+  "y": "2021",
+  "r": "ess",
+  "p": "Wanda's grief turns her into the Scarlet Witch, which sets up Multiverse of Madness.",
+  "id": "series-wandavision"
+ },
+ {
+  "n": "The Falcon and the Winter Soldier",
+  "y": "2021",
+  "r": "rec",
+  "p": "Sam Wilson takes up the shield and becomes the new Captain America.",
+  "id": "series-the-falcon-and-the-winter-soldier"
+ },
+ {
+  "n": "What If…?",
+  "y": "2021–24",
+  "r": "rec",
+  "p": "An animated multiverse anthology and the clearest primer on parallel realities.",
+  "id": "series-what-if"
+ },
+ {
+  "n": "Hawkeye",
+  "y": "2021",
+  "r": "opt",
+  "p": "Clint passes the mantle to Kate Bishop and brings Kingpin into the MCU.",
+  "id": "series-hawkeye"
+ },
+ {
+  "n": "Moon Knight",
+  "y": "2022",
+  "r": "opt",
+  "p": "A standalone story about Egyptian gods and dissociative identity, mostly self-contained.",
+  "id": "series-moon-knight"
+ },
+ {
+  "n": "Ms. Marvel",
+  "y": "2022",
+  "r": "rec",
+  "p": "Introduces Kamala Khan, who goes on to co-lead The Marvels.",
+  "id": "series-ms-marvel"
+ },
+ {
+  "n": "I Am Groot",
+  "y": "2022–23",
+  "r": "opt",
+  "p": "Ten animated shorts across two seasons following Baby Groot on his misadventures, voiced by Vin Diesel. Pure fun.",
+  "id": "series-i-am-groot"
+ },
+ {
+  "n": "She-Hulk: Attorney at Law",
+  "y": "2022",
+  "r": "opt",
+  "p": "A legal comedy that brings Daredevil back into the MCU.",
+  "id": "series-she-hulk-attorney-at-law"
+ },
+ {
+  "n": "Secret Invasion",
+  "y": "2023",
+  "r": "opt",
+  "p": "A Nick Fury spy thriller about shape-shifting Skrulls hiding on Earth.",
+  "id": "series-secret-invasion"
+ },
+ {
+  "n": "Echo",
+  "y": "2024",
+  "r": "opt",
+  "p": "Maya Lopez's story, the first Marvel Spotlight release, which works on its own.",
+  "id": "series-echo"
+ },
+ {
+  "n": "Agatha All Along",
+  "y": "2024",
+  "r": "rec",
+  "p": "A WandaVision spin-off that digs into the MCU's witchcraft and the road to Wiccan.",
+  "id": "series-agatha-all-along"
+ },
+ {
+  "n": "X-Men '97",
+  "y": "2024–26",
+  "r": "rec",
+  "p": "A revival of the '90s animated series that picks up where the original left off. Season 2 premiered July 1, 2026.",
+  "id": "series-x-men-97"
+ },
+ {
+  "n": "Daredevil: Born Again",
+  "y": "2025–26",
+  "r": "rec",
+  "p": "Matt Murdock vs. Kingpin, now fully inside the MCU at street level. Season 2 (2026) brings back Jessica Jones.",
+  "id": "series-daredevil-born-again"
+ },
+ {
+  "n": "Your Friendly Neighborhood Spider-Man",
+  "y": "2025",
+  "r": "opt",
+  "p": "An animated retelling of Peter Parker's early days, set in an alternate timeline where Norman Osborn mentors him instead of Tony Stark.",
+  "id": "series-your-friendly-neighborhood-spider-man"
+ },
+ {
+  "n": "Eyes of Wakanda",
+  "y": "2025",
+  "r": "opt",
+  "p": "A four-episode animated anthology about Wakandan warriors recovering vibranium artifacts across history.",
+  "id": "series-eyes-of-wakanda"
+ },
+ {
+  "n": "Ironheart",
+  "y": "2025",
+  "r": "opt",
+  "p": "Riri Williams builds on Tony Stark's legacy, with magic-vs-tech themes (June 2025).",
+  "id": "series-ironheart"
+ },
+ {
+  "n": "Marvel Zombies",
+  "y": "2025",
+  "r": "opt",
+  "p": "A four-part, TV-MA animated horror spin-off of What If…? (Sept 24, 2025), set in a self-contained alternate reality.",
+  "id": "series-marvel-zombies"
+ },
+ {
+  "n": "Wonder Man",
+  "y": "2026",
+  "r": "new",
+  "p": "Released January 27, 2026. Simon Williams, a struggling actor with powers, chases the lead role in a Wonder Man remake.",
+  "id": "series-wonder-man"
+ },
+ {
+  "n": "VisionQuest",
+  "y": "2026",
+  "r": "ess",
+  "p": "Eight episodes, Oct 14 to Nov 10, 2026. Concludes the WandaVision trilogy: Vision vs. Ultron, plus Tommy and Billy. Its second post-credits scene leads directly into Avengers: Doomsday.",
+  "id": "series-visionquest"
+ },
+ {
+  "n": "Werewolf by Night",
+  "y": "2022",
+  "r": "spc",
+  "p": "A black-and-white horror Special Presentation that introduced Jack Russell and Elsa Bloodstone.",
+  "id": "series-werewolf-by-night"
+ },
+ {
+  "n": "The Guardians of the Galaxy Holiday Special",
+  "y": "2022",
+  "r": "spc",
+  "p": "A festive Special Presentation set between Love and Thunder and Vol. 3.",
+  "id": "series-the-guardians-of-the-galaxy-holiday-special"
+ },
+ {
+  "n": "The Punisher: One Last Kill",
+  "y": "2026",
+  "r": "spc",
+  "p": "An hour-long Special Presentation (May 12, 2026) with Jon Bernthal's Frank Castle, ahead of his role in Spider-Man: Brand New Day.",
+  "id": "series-the-punisher-one-last-kill"
+ }
+]

@@ -1,0 +1,772 @@
+[
+ {
+  "n": "Iron Man",
+  "r": "Tony Stark",
+  "a": "Robert Downey Jr.",
+  "m": "Iron Man (2008)",
+  "p": "film-iron-man",
+  "t": "avengers",
+  "d": "Built his first suit in a cave, helped found the Avengers, and snapped away Thanos and his army in Endgame.",
+  "s": "Died in Endgame"
+ },
+ {
+  "n": "Captain America",
+  "r": "Steve Rogers",
+  "a": "Chris Evans",
+  "m": "Captain America: The First Avenger",
+  "p": "film-captain-america-the-first-avenger",
+  "t": "avengers",
+  "d": "The World War II super-soldier who woke up 70 years later. He passed the shield to Sam and is back for Doomsday.",
+  "s": "Returns in Doomsday"
+ },
+ {
+  "n": "Thor",
+  "r": "Thor Odinson",
+  "a": "Chris Hemsworth",
+  "m": "Thor (2011)",
+  "p": "film-thor",
+  "t": "avengers",
+  "d": "The God of Thunder. He lost his hammer, his home and his family, and ended Love and Thunder raising a girl named Love.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Hulk",
+  "r": "Bruce Banner",
+  "a": "Mark Ruffalo",
+  "m": "The Incredible Hulk (Edward Norton in 2008)",
+  "p": "film-the-incredible-hulk",
+  "t": "avengers",
+  "d": "Scientist with a green alter ego. He merged the two into “Smart Hulk” and used the stones to bring everyone back.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Black Widow",
+  "r": "Natasha Romanoff",
+  "a": "Scarlett Johansson",
+  "m": "Iron Man 2",
+  "p": "film-iron-man-2",
+  "t": "avengers",
+  "d": "A Red Room spy turned founding Avenger. She gave her life on Vormir for the Soul Stone.",
+  "s": "Died in Endgame"
+ },
+ {
+  "n": "Hawkeye",
+  "r": "Clint Barton",
+  "a": "Jeremy Renner",
+  "m": "Thor (2011, cameo)",
+  "p": "film-thor",
+  "t": "avengers",
+  "d": "Master archer and founding Avenger. He trained Kate Bishop to take over the name in Hawkeye.",
+  "s": ""
+ },
+ {
+  "n": "War Machine",
+  "r": "James “Rhodey” Rhodes",
+  "a": "Don Cheadle (Terrence Howard in 2008)",
+  "m": "Iron Man (2008)",
+  "p": "film-iron-man",
+  "t": "avengers",
+  "d": "Tony's best friend, an Air Force colonel in the War Machine armor.",
+  "s": ""
+ },
+ {
+  "n": "Vision",
+  "r": "Vision",
+  "a": "Paul Bettany",
+  "m": "Avengers: Age of Ultron",
+  "p": "film-avengers-age-of-ultron",
+  "t": "avengers",
+  "d": "A synthetic man born from the Mind Stone. Killed by Thanos, rebuilt as White Vision, then the lead of VisionQuest.",
+  "s": ""
+ },
+ {
+  "n": "Scarlet Witch",
+  "r": "Wanda Maximoff",
+  "a": "Elizabeth Olsen",
+  "m": "Captain America: The Winter Soldier (mid-credits)",
+  "p": "film-captain-america-the-winter-soldier",
+  "t": "avengers",
+  "d": "A chaos-magic reality-bender. She seemingly died at Mount Wundagore in Multiverse of Madness.",
+  "s": "Rumored for Doomsday"
+ },
+ {
+  "n": "Ant-Man",
+  "r": "Scott Lang",
+  "a": "Paul Rudd",
+  "m": "Ant-Man (2015)",
+  "p": "film-ant-man",
+  "t": "avengers",
+  "d": "A former thief who shrinks and grows. His escape from the Quantum Realm made the Time Heist possible.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "The Wasp",
+  "r": "Hope van Dyne",
+  "a": "Evangeline Lilly",
+  "m": "Ant-Man (2015)",
+  "p": "film-ant-man",
+  "t": "avengers",
+  "d": "Hank Pym's daughter and Scott's partner, with wings and blasters.",
+  "s": ""
+ },
+ {
+  "n": "Cassie Lang",
+  "r": "Cassie Lang",
+  "a": "Kathryn Newton",
+  "m": "Ant-Man and the Wasp: Quantumania",
+  "p": "film-ant-man-and-the-wasp-quantumania",
+  "t": "avengers",
+  "d": "Scott's daughter, now a hero in her own suit.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Falcon / Captain America",
+  "r": "Sam Wilson",
+  "a": "Anthony Mackie",
+  "m": "Captain America: The Winter Soldier",
+  "p": "film-captain-america-the-winter-soldier",
+  "t": "avengers",
+  "d": "Steve's wingman who became Captain America. He leads the Avengers in Doomsday.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Falcon",
+  "r": "Joaquin Torres",
+  "a": "Danny Ramirez",
+  "m": "The Falcon and the Winter Soldier",
+  "p": "series-the-falcon-and-the-winter-soldier",
+  "t": "avengers",
+  "d": "Sam's friend who took over the Falcon wings.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Captain Marvel",
+  "r": "Carol Danvers",
+  "a": "Brie Larson",
+  "m": "Captain Marvel (2019)",
+  "p": "film-captain-marvel",
+  "t": "avengers",
+  "d": "An Air Force pilot with cosmic power from the Space Stone. One of the strongest heroes alive.",
+  "s": ""
+ },
+ {
+  "n": "Doctor Strange",
+  "r": "Stephen Strange",
+  "a": "Benedict Cumberbatch",
+  "m": "Doctor Strange (2016)",
+  "p": "film-doctor-strange",
+  "t": "avengers",
+  "d": "A surgeon turned sorcerer. He caused an incursion and left with Clea to fix it.",
+  "s": "Rumored for Doomsday"
+ },
+ {
+  "n": "Spider-Man",
+  "r": "Peter Parker",
+  "a": "Tom Holland",
+  "m": "Captain America: Civil War",
+  "p": "film-captain-america-civil-war",
+  "t": "avengers",
+  "d": "After No Way Home, nobody remembers who he is. Brand New Day (2026) picks up his story.",
+  "s": ""
+ },
+ {
+  "n": "Shang-Chi",
+  "r": "Shang-Chi",
+  "a": "Simu Liu",
+  "m": "Shang-Chi and the Legend of the Ten Rings",
+  "p": "film-shang-chi-and-the-legend-of-the-ten-rings",
+  "t": "avengers",
+  "d": "A trained martial artist who now wields his father's Ten Rings.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Nick Fury",
+  "r": "Nick Fury",
+  "a": "Samuel L. Jackson",
+  "m": "Iron Man (post-credits)",
+  "p": "film-iron-man",
+  "t": "allies",
+  "d": "The former S.H.I.E.L.D. director who started the Avengers Initiative.",
+  "s": ""
+ },
+ {
+  "n": "Peggy Carter",
+  "r": "Peggy Carter",
+  "a": "Hayley Atwell",
+  "m": "Captain America: The First Avenger",
+  "p": "film-captain-america-the-first-avenger",
+  "t": "allies",
+  "d": "Co-founder of S.H.I.E.L.D. and Steve's great love.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Winter Soldier",
+  "r": "Bucky Barnes",
+  "a": "Sebastian Stan",
+  "m": "Captain America: The First Avenger",
+  "p": "film-captain-america-the-first-avenger",
+  "t": "new",
+  "d": "Steve's best friend, brainwashed by HYDRA, now a congressman and a New Avenger.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Phil Coulson",
+  "r": "Phil Coulson",
+  "a": "Clark Gregg",
+  "m": "Iron Man (2008)",
+  "p": "film-iron-man",
+  "t": "allies",
+  "d": "The S.H.I.E.L.D. agent whose death in The Avengers brought the team together.",
+  "s": ""
+ },
+ {
+  "n": "Maria Hill",
+  "r": "Maria Hill",
+  "a": "Cobie Smulders",
+  "m": "The Avengers",
+  "p": "film-the-avengers",
+  "t": "allies",
+  "d": "Fury's right hand at S.H.I.E.L.D.",
+  "s": "Died in Secret Invasion"
+ },
+ {
+  "n": "Wong",
+  "r": "Wong",
+  "a": "Benedict Wong",
+  "m": "Doctor Strange (2016)",
+  "p": "film-doctor-strange",
+  "t": "allies",
+  "d": "Strange's friend and now the Sorcerer Supreme.",
+  "s": ""
+ },
+ {
+  "n": "Monica Rambeau",
+  "r": "Monica Rambeau",
+  "a": "Teyonah Parris",
+  "m": "Captain Marvel (as a child)",
+  "p": "film-captain-marvel",
+  "t": "allies",
+  "d": "Got energy powers in WandaVision and was trapped in another universe at the end of The Marvels.",
+  "s": ""
+ },
+ {
+  "n": "Valkyrie",
+  "r": "Brunnhilde",
+  "a": "Tessa Thompson",
+  "m": "Thor: Ragnarok",
+  "p": "film-thor-ragnarok",
+  "t": "allies",
+  "d": "The last Valkyrie, now King of New Asgard.",
+  "s": ""
+ },
+ {
+  "n": "Black Panther (T'Challa)",
+  "r": "T'Challa",
+  "a": "Chadwick Boseman",
+  "m": "Captain America: Civil War",
+  "p": "film-captain-america-civil-war",
+  "t": "wak",
+  "d": "King of Wakanda. He died of an illness between Endgame and Wakanda Forever.",
+  "s": "Died before Wakanda Forever"
+ },
+ {
+  "n": "Black Panther (Shuri)",
+  "r": "Shuri",
+  "a": "Letitia Wright",
+  "m": "Black Panther (2018)",
+  "p": "film-black-panther",
+  "t": "wak",
+  "d": "T'Challa's genius sister, who became the new Black Panther.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Okoye",
+  "r": "Okoye",
+  "a": "Danai Gurira",
+  "m": "Black Panther (2018)",
+  "p": "film-black-panther",
+  "t": "wak",
+  "d": "General of the Dora Milaje, Wakanda's royal guard.",
+  "s": ""
+ },
+ {
+  "n": "M'Baku",
+  "r": "M'Baku",
+  "a": "Winston Duke",
+  "m": "Black Panther (2018)",
+  "p": "film-black-panther",
+  "t": "wak",
+  "d": "Leader of the Jabari tribe and a fierce ally.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Namor",
+  "r": "K'uk'ulkan",
+  "a": "Tenoch Huerta Mejía",
+  "m": "Black Panther: Wakanda Forever",
+  "p": "film-black-panther-wakanda-forever",
+  "t": "wak",
+  "d": "The winged king of the underwater kingdom Talokan.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Namora",
+  "r": "Namora",
+  "a": "Mabel Cadena",
+  "m": "Black Panther: Wakanda Forever",
+  "p": "film-black-panther-wakanda-forever",
+  "t": "wak",
+  "d": "Namor's cousin and second-in-command of Talokan's warriors.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Attuma",
+  "r": "Attuma",
+  "a": "Alex Livinalli",
+  "m": "Black Panther: Wakanda Forever",
+  "p": "film-black-panther-wakanda-forever",
+  "t": "wak",
+  "d": "One of Talokan's strongest fighters and an advisor to Namor.",
+  "s": "Rumored for Doomsday"
+ },
+ {
+  "n": "Ironheart",
+  "r": "Riri Williams",
+  "a": "Dominique Thorne",
+  "m": "Black Panther: Wakanda Forever",
+  "p": "film-black-panther-wakanda-forever",
+  "t": "next",
+  "d": "A teen genius who builds her own armor.",
+  "s": ""
+ },
+ {
+  "n": "Star-Lord",
+  "r": "Peter Quill",
+  "a": "Chris Pratt",
+  "m": "Guardians of the Galaxy",
+  "p": "film-guardians-of-the-galaxy",
+  "t": "cosmic",
+  "d": "A half-human space outlaw. He left the Guardians and went home to Earth after Vol. 3.",
+  "s": ""
+ },
+ {
+  "n": "Gamora",
+  "r": "Gamora",
+  "a": "Zoe Saldaña",
+  "m": "Guardians of the Galaxy",
+  "p": "film-guardians-of-the-galaxy",
+  "t": "cosmic",
+  "d": "Thanos's adopted daughter. Our Gamora died on Vormir, and a 2014 variant now lives with the Ravagers.",
+  "s": ""
+ },
+ {
+  "n": "Rocket",
+  "r": "Rocket",
+  "a": "Bradley Cooper (voice)",
+  "m": "Guardians of the Galaxy",
+  "p": "film-guardians-of-the-galaxy",
+  "t": "cosmic",
+  "d": "An engineered raccoon genius who now leads the Guardians.",
+  "s": ""
+ },
+ {
+  "n": "Groot",
+  "r": "Groot",
+  "a": "Vin Diesel (voice)",
+  "m": "Guardians of the Galaxy",
+  "p": "film-guardians-of-the-galaxy",
+  "t": "cosmic",
+  "d": "A tree-like being whose only words are “I am Groot.”",
+  "s": ""
+ },
+ {
+  "n": "Drax",
+  "r": "Drax",
+  "a": "Dave Bautista",
+  "m": "Guardians of the Galaxy",
+  "p": "film-guardians-of-the-galaxy",
+  "t": "cosmic",
+  "d": "A literal-minded warrior who swore revenge on Thanos.",
+  "s": ""
+ },
+ {
+  "n": "Nebula",
+  "r": "Nebula",
+  "a": "Karen Gillan",
+  "m": "Guardians of the Galaxy",
+  "p": "film-guardians-of-the-galaxy",
+  "t": "cosmic",
+  "d": "Gamora's sister, rebuilt by Thanos piece by piece, now a hero.",
+  "s": ""
+ },
+ {
+  "n": "Mantis",
+  "r": "Mantis",
+  "a": "Pom Klementieff",
+  "m": "Guardians of the Galaxy Vol. 2",
+  "p": "film-guardians-of-the-galaxy-vol-2",
+  "t": "cosmic",
+  "d": "An empath who can feel and change emotions.",
+  "s": ""
+ },
+ {
+  "n": "Adam Warlock",
+  "r": "Adam Warlock",
+  "a": "Will Poulter",
+  "m": "Guardians of the Galaxy Vol. 3",
+  "p": "film-guardians-of-the-galaxy-vol-3",
+  "t": "cosmic",
+  "d": "A golden being made by the Sovereign, who joined the new Guardians.",
+  "s": ""
+ },
+ {
+  "n": "Daredevil",
+  "r": "Matt Murdock",
+  "a": "Charlie Cox",
+  "m": "Spider-Man: No Way Home (cameo)",
+  "p": "series-daredevil-born-again",
+  "t": "street",
+  "d": "A blind lawyer with heightened senses who fights crime in Hell's Kitchen.",
+  "s": ""
+ },
+ {
+  "n": "The Punisher",
+  "r": "Frank Castle",
+  "a": "Jon Bernthal",
+  "m": "Daredevil: Born Again",
+  "p": "series-daredevil-born-again",
+  "t": "street",
+  "d": "A vigilante who kills criminals. He's also in Spider-Man: Brand New Day.",
+  "s": ""
+ },
+ {
+  "n": "Jessica Jones",
+  "r": "Jessica Jones",
+  "a": "Krysten Ritter",
+  "m": "Daredevil: Born Again season 2",
+  "p": "series-daredevil-born-again",
+  "t": "street",
+  "d": "A super-strong private investigator.",
+  "s": ""
+ },
+ {
+  "n": "Moon Knight",
+  "r": "Marc Spector",
+  "a": "Oscar Isaac",
+  "m": "Moon Knight",
+  "p": "series-moon-knight",
+  "t": "street",
+  "d": "The avatar of the Egyptian god Khonshu, sharing his body with other identities.",
+  "s": ""
+ },
+ {
+  "n": "She-Hulk",
+  "r": "Jennifer Walters",
+  "a": "Tatiana Maslany",
+  "m": "She-Hulk: Attorney at Law",
+  "p": "series-she-hulk-attorney-at-law",
+  "t": "street",
+  "d": "Bruce's cousin, a lawyer who turns into a 6-foot-7 green hero.",
+  "s": ""
+ },
+ {
+  "n": "Echo",
+  "r": "Maya Lopez",
+  "a": "Alaqua Cox",
+  "m": "Hawkeye",
+  "p": "series-hawkeye",
+  "t": "street",
+  "d": "A deaf Choctaw fighter who used to work for Kingpin.",
+  "s": ""
+ },
+ {
+  "n": "Wonder Man",
+  "r": "Simon Williams",
+  "a": "Yahya Abdul-Mateen II",
+  "m": "Wonder Man",
+  "p": "series-wonder-man",
+  "t": "street",
+  "d": "A struggling actor with powers, trying to land the role of Wonder Man.",
+  "s": ""
+ },
+ {
+  "n": "Hawkeye (Kate Bishop)",
+  "r": "Kate Bishop",
+  "a": "Hailee Steinfeld",
+  "m": "Hawkeye",
+  "p": "series-hawkeye",
+  "t": "next",
+  "d": "Clint's protégé and a natural archer.",
+  "s": ""
+ },
+ {
+  "n": "Ms. Marvel",
+  "r": "Kamala Khan",
+  "a": "Iman Vellani",
+  "m": "Ms. Marvel",
+  "p": "series-ms-marvel",
+  "t": "next",
+  "d": "A teenage superfan with light-based powers. She's recruiting young heroes at the end of The Marvels.",
+  "s": ""
+ },
+ {
+  "n": "America Chavez",
+  "r": "America Chavez",
+  "a": "Xochitl Gomez",
+  "m": "Doctor Strange in the Multiverse of Madness",
+  "p": "film-doctor-strange-in-the-multiverse-of-madness",
+  "t": "next",
+  "d": "A teen who can punch star-shaped portals between universes.",
+  "s": ""
+ },
+ {
+  "n": "Wiccan",
+  "r": "Billy Maximoff",
+  "a": "Joe Locke",
+  "m": "Agatha All Along",
+  "p": "series-agatha-all-along",
+  "t": "next",
+  "d": "The reborn spirit of Wanda's son Billy, now a young witch.",
+  "s": ""
+ },
+ {
+  "n": "Yelena Belova",
+  "r": "Yelena Belova",
+  "a": "Florence Pugh",
+  "m": "Black Widow (2021)",
+  "p": "film-black-widow",
+  "t": "new",
+  "d": "Natasha's sister and the leader of the New Avengers.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Red Guardian",
+  "r": "Alexei Shostakov",
+  "a": "David Harbour",
+  "m": "Black Widow (2021)",
+  "p": "film-black-widow",
+  "t": "new",
+  "d": "The Soviet answer to Captain America and Yelena's father figure.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "U.S. Agent",
+  "r": "John Walker",
+  "a": "Wyatt Russell",
+  "m": "The Falcon and the Winter Soldier",
+  "p": "series-the-falcon-and-the-winter-soldier",
+  "t": "new",
+  "d": "The government's replacement Captain America, now a New Avenger.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Ghost",
+  "r": "Ava Starr",
+  "a": "Hannah John-Kamen",
+  "m": "Ant-Man and the Wasp",
+  "p": "film-ant-man-and-the-wasp",
+  "t": "new",
+  "d": "Can phase through solid objects.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Sentry",
+  "r": "Bob Reynolds",
+  "a": "Lewis Pullman",
+  "m": "Thunderbolts*",
+  "p": "film-thunderbolts",
+  "t": "new",
+  "d": "An incredibly powerful man with a dark side called the Void.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Loki",
+  "r": "Loki Laufeyson",
+  "a": "Tom Hiddleston",
+  "m": "Thor (2011)",
+  "p": "film-thor",
+  "t": "tva",
+  "d": "Thor's adopted brother. A villain turned hero who now holds the timelines together.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Sylvie",
+  "r": "Sylvie",
+  "a": "Sophia Di Martino",
+  "m": "Loki",
+  "p": "series-loki-s1-2",
+  "t": "tva",
+  "d": "A Loki variant who killed He Who Remains and set the multiverse free.",
+  "s": ""
+ },
+ {
+  "n": "Mobius",
+  "r": "Mobius M. Mobius",
+  "a": "Owen Wilson",
+  "m": "Loki",
+  "p": "series-loki-s1-2",
+  "t": "tva",
+  "d": "The TVA agent who became Loki's best friend. He's confirmed for Doomsday.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Hunter B-15",
+  "r": "Verity Willis",
+  "a": "Wunmi Mosaku",
+  "m": "Loki",
+  "p": "series-loki-s1-2",
+  "t": "tva",
+  "d": "A TVA hunter who learned the truth about the agency.",
+  "s": ""
+ },
+ {
+  "n": "Mister Fantastic",
+  "r": "Reed Richards",
+  "a": "Pedro Pascal",
+  "m": "The Fantastic Four: First Steps",
+  "p": "film-the-fantastic-four-first-steps",
+  "t": "ff",
+  "d": "The genius leader of the team. He can stretch his body like rubber.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Invisible Woman",
+  "r": "Sue Storm",
+  "a": "Vanessa Kirby",
+  "m": "The Fantastic Four: First Steps",
+  "p": "film-the-fantastic-four-first-steps",
+  "t": "ff",
+  "d": "Can turn invisible and create force fields. Mother of Franklin.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Human Torch",
+  "r": "Johnny Storm",
+  "a": "Joseph Quinn",
+  "m": "The Fantastic Four: First Steps",
+  "p": "film-the-fantastic-four-first-steps",
+  "t": "ff",
+  "d": "Sue's brother. He can burst into flame and fly.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "The Thing",
+  "r": "Ben Grimm",
+  "a": "Ebon Moss-Bachrach",
+  "m": "The Fantastic Four: First Steps",
+  "p": "film-the-fantastic-four-first-steps",
+  "t": "ff",
+  "d": "Super-strong with orange rock skin. The team's heart.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Franklin Richards",
+  "r": "Franklin Richards",
+  "a": "—",
+  "m": "The Fantastic Four: First Steps",
+  "p": "film-the-fantastic-four-first-steps",
+  "t": "ff",
+  "d": "Reed and Sue's son, born with power Galactus wanted. Doom has taken an interest in him.",
+  "s": ""
+ },
+ {
+  "n": "Silver Surfer",
+  "r": "Shalla-Bal",
+  "a": "Julia Garner",
+  "m": "The Fantastic Four: First Steps",
+  "p": "film-the-fantastic-four-first-steps",
+  "t": "ff",
+  "d": "Galactus's herald, who turned against him to help Earth-828.",
+  "s": ""
+ },
+ {
+  "n": "Professor X",
+  "r": "Charles Xavier",
+  "a": "Patrick Stewart",
+  "m": "X-Men (2000)",
+  "p": "poster-xmen",
+  "t": "x",
+  "d": "Founder of the X-Men and the world's most powerful telepath.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Magneto",
+  "r": "Erik Lehnsherr",
+  "a": "Ian McKellen",
+  "m": "X-Men (2000)",
+  "p": "poster-xmen",
+  "t": "x",
+  "d": "Master of magnetism and Xavier's old friend and rival.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Cyclops",
+  "r": "Scott Summers",
+  "a": "James Marsden",
+  "m": "X-Men (2000)",
+  "p": "poster-xmen",
+  "t": "x",
+  "d": "Leader in the field, firing energy beams from his eyes.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Mystique",
+  "r": "Raven Darkhölme",
+  "a": "Rebecca Romijn",
+  "m": "X-Men (2000)",
+  "p": "poster-xmen",
+  "t": "x",
+  "d": "A shape-shifter who can look like anyone.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Nightcrawler",
+  "r": "Kurt Wagner",
+  "a": "Alan Cumming",
+  "m": "X2",
+  "p": "poster-x2",
+  "t": "x",
+  "d": "A gentle, blue-skinned mutant who teleports.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Beast",
+  "r": "Hank McCoy",
+  "a": "Kelsey Grammer",
+  "m": "The Marvels (mid-credits)",
+  "p": "film-the-marvels",
+  "t": "x",
+  "d": "A brilliant, blue, furry scientist from the X-Men films.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Gambit",
+  "r": "Remy LeBeau",
+  "a": "Channing Tatum",
+  "m": "Deadpool & Wolverine",
+  "p": "film-deadpool-wolverine",
+  "t": "x",
+  "d": "Charges objects with explosive energy.",
+  "s": "In Doomsday"
+ },
+ {
+  "n": "Wolverine",
+  "r": "Logan",
+  "a": "Hugh Jackman",
+  "m": "X-Men (2000) · Deadpool & Wolverine",
+  "p": "film-deadpool-wolverine",
+  "t": "x",
+  "d": "Healing factor and adamantium claws. Not on Doomsday's official cast list.",
+  "s": ""
+ },
+ {
+  "n": "Deadpool",
+  "r": "Wade Wilson",
+  "a": "Ryan Reynolds",
+  "m": "Deadpool & Wolverine",
+  "p": "film-deadpool-wolverine",
+  "t": "x",
+  "d": "A wisecracking mercenary who knows he's in a movie.",
+  "s": ""
+ }
+]

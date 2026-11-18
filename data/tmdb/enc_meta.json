@@ -1,0 +1,214 @@
+{
+"bd-iron-man": [
+"Iron Man",
+"2008-04-30"
+],
+"bd-avengers": [
+"The Avengers",
+"2012-04-25"
+],
+"bd-ultron": [
+"Avengers: Age of Ultron",
+"2015-04-22"
+],
+"bd-iw": [
+"Avengers: Infinity War",
+"2018-04-25"
+],
+"bd-endgame": [
+"Avengers: Endgame",
+"2019-04-24"
+],
+"bd-nwh": [
+"Spider-Man: No Way Home",
+"2021-12-15"
+],
+"bd-quant": [
+"Ant-Man and the Wasp: Quantumania",
+"2023-02-15"
+],
+"bd-ff": [
+"The Fantastic 4: First Steps",
+"2025-07-23"
+],
+"bd-thor": [
+"Thor",
+"2011-04-27"
+],
+"bd-cafa": [
+"Captain America: The First Avenger",
+"2011-07-22"
+],
+"bd-dark-world": [
+"Thor: The Dark World",
+"2013-10-30"
+],
+"bd-gotg": [
+"Guardians of the Galaxy",
+"2014-07-30"
+],
+"bd-doctor-strange": [
+"Doctor Strange",
+"2016-10-25"
+],
+"bd-ant-man": [
+"Ant-Man",
+"2015-07-14"
+],
+"bd-black-panther": [
+"Black Panther",
+"2018-02-13"
+],
+"bd-shang-chi": [
+"Shang-Chi and the Legend of the Ten Rings",
+"2021-09-01"
+],
+"bd-ffh": [
+"Spider-Man: Far From Home",
+"2019-06-28"
+],
+"bd-civil-war": [
+"Captain America: Civil War",
+"2016-04-27"
+],
+"bd-mom": [
+"Doctor Strange in the Multiverse of Madness",
+"2022-05-04"
+],
+"bd-dw": [
+"Deadpool & Wolverine",
+"2024-07-24"
+],
+"bd-thunderbolts": [
+"Thunderbolts*",
+"2025-04-30"
+],
+"bd-x2": [
+"X2",
+"2003-04-27"
+],
+"bd-winter-soldier": [
+"Captain America: The Winter Soldier",
+"2014-03-20"
+],
+"bd-ragnarok": [
+"Thor: Ragnarok",
+"2017-10-24"
+],
+"bd-wandavision": [
+"WandaVision",
+"2021-01-15"
+],
+"bd-loki": [
+"Loki",
+"2021-06-09"
+],
+"bd-what-if": [
+"What If...?",
+"2021-08-11"
+],
+"bd-captain-marvel": [
+"Captain Marvel",
+"2019-03-06"
+],
+"bd-iron-man-2": [
+"Iron Man 2",
+"2010-04-28"
+],
+"bd-bnw": [
+"Captain America: Brave New World",
+"2025-02-12"
+],
+"bd-eternals": [
+"Eternals",
+"2021-11-03"
+],
+"series-loki-s1-2": [
+"Loki",
+"2021-06-09"
+],
+"series-wandavision": [
+"WandaVision",
+"2021-01-15"
+],
+"series-the-falcon-and-the-winter-soldier": [
+"The Falcon and the Winter Soldier",
+"2021-03-19"
+],
+"series-what-if": [
+"What If...?",
+"2021-08-11"
+],
+"series-hawkeye": [
+"Hawkeye",
+"2021-11-24"
+],
+"series-moon-knight": [
+"Moon Knight",
+"2022-03-30"
+],
+"series-ms-marvel": [
+"Ms. Marvel",
+"2022-06-08"
+],
+"series-she-hulk-attorney-at-law": [
+"She-Hulk: Attorney at Law",
+"2022-08-18"
+],
+"series-secret-invasion": [
+"Secret Invasion",
+"2023-06-21"
+],
+"series-echo": [
+"Echo",
+"2024-01-09"
+],
+"series-agatha-all-along": [
+"Agatha All Along",
+"2024-09-18"
+],
+"series-x-men-97": [
+"X-Men '97",
+"2024-03-20"
+],
+"series-daredevil-born-again": [
+"Daredevil: Born Again",
+"2025-03-04"
+],
+"series-your-friendly-neighborhood-spider-man": [
+"Your Friendly Neighborhood Spider-Man",
+"2025-01-29"
+],
+"series-eyes-of-wakanda": [
+"Eyes of Wakanda",
+"2025-08-01"
+],
+"series-ironheart": [
+"Ironheart",
+"2025-06-24"
+],
+"series-marvel-zombies": [
+"Marvel Zombies",
+"2025-09-24"
+],
+"series-wonder-man": [
+"Wonder Man",
+"2026-01-27"
+],
+"series-visionquest": [
+"VisionQuest",
+"2026-10-13"
+],
+"series-werewolf-by-night": [
+"Werewolf by Night",
+"2022-09-25"
+],
+"series-the-guardians-of-the-galaxy-holiday-special": [
+"The Guardians of the Galaxy Holiday Special",
+"2022-11-24"
+],
+"series-the-punisher-one-last-kill": [
+"The Punisher: One Last Kill",
+"2026-05-12"
+]
+}

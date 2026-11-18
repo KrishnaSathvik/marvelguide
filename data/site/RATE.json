@@ -1,0 +1,26 @@
+{
+ "ess": [
+  "Essential",
+  "ess"
+ ],
+ "rec": [
+  "Recommended",
+  "rec"
+ ],
+ "opt": [
+  "Optional",
+  "opt"
+ ],
+ "new": [
+  "New",
+  "new"
+ ],
+ "spc": [
+  "Special",
+  "opt"
+ ],
+ "up": [
+  "Upcoming",
+  "new"
+ ]
+}

@@ -1,0 +1,37 @@
+[
+ {
+  "i": "film",
+  "k": "Marvel.com",
+  "b": "Avengers: Doomsday",
+  "s": "The official film page: synopsis, cast and release info.",
+  "u": "https://www.marvel.com/movies/avengers-doomsday"
+ },
+ {
+  "i": "play",
+  "k": "YouTube",
+  "b": "Official trailer",
+  "s": "Watch the trailer on Marvel Entertainment's channel.",
+  "u": "https://www.youtube.com/watch?v=irVNGjRFZGk"
+ },
+ {
+  "i": "ticket",
+  "k": "Fandango",
+  "b": "Get tickets",
+  "s": "Showtimes and tickets for opening weekend.",
+  "u": "https://www.fandango.com/avengersdoomsday"
+ },
+ {
+  "i": "tv",
+  "k": "Disney+",
+  "b": "Stream the MCU",
+  "s": "Every watch-list title, in the “Countdown to Avengers: Doomsday” collection.",
+  "u": "https://www.disneyplus.com/brand/marvel"
+ },
+ {
+  "i": "library",
+  "k": "TMDB",
+  "b": "The Movie Database",
+  "s": "Where this site's posters, stills and cast lists come from. This product uses the TMDB API but is not endorsed or certified by TMDB.",
+  "u": "https://www.themoviedb.org/"
+ }
+]

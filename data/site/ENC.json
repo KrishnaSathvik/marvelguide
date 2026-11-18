@@ -1,0 +1,1010 @@
+{
+ "e-mcu": [
+  {
+   "id": "mcu-one",
+   "img": "bd-iron-man",
+   "badge": "Since 2008",
+   "tag": "canon",
+   "title": "One connected story",
+   "sub": "Iron Man (2008)",
+   "blocks": [
+    [
+     "What it is",
+     "The Marvel Cinematic Universe is the shared world of Marvel Studios' films and Disney+ series. Every project happens in the same reality, so heroes, events and consequences carry from one story to the next."
+    ],
+    [
+     "How it started",
+     "It began with Iron Man on May 2, 2008. After the credits, Nick Fury showed up in Tony Stark's house to talk about “the Avengers Initiative.” Four years and five films later, that promise paid off in The Avengers (2012)."
+    ]
+   ],
+   "lead": [
+    "Why it worked",
+    "Nobody had built a movie universe like a comic book before. Post-credits scenes became the glue, and fans learned to stay until the very end."
+   ]
+  },
+  {
+   "id": "mcu-feige",
+   "img": "bd-avengers",
+   "badge": "Who runs it",
+   "tag": "canon",
+   "title": "Marvel Studios and Kevin Feige",
+   "sub": "The studio behind every project",
+   "blocks": [
+    [
+     "Who's in charge",
+     "Kevin Feige has run Marvel Studios since 2007 and plans how all the stories fit together. Disney bought Marvel in 2009, and every MCU project since has been a Disney release."
+    ],
+    [
+     "Comics vs. the MCU",
+     "Marvel Comics has been publishing since 1939, with thousands of characters and many versions of each. The MCU borrows from the comics but tells its own version. When the two disagree, the movie version is what counts on screen."
+    ]
+   ],
+   "lead": [
+    "Good to know",
+    "“Marvel movies” made by other studios, like Sony's Venom films or Fox's X-Men films, weren't originally MCU. Some of them are now being pulled in through the multiverse."
+   ]
+  },
+  {
+   "id": "mcu-rights",
+   "img": "bd-civil-war",
+   "badge": "2015–2019",
+   "tag": "canon",
+   "title": "Why some heroes showed up late",
+   "sub": "Spider-Man, the X-Men and the Fantastic Four",
+   "blocks": [
+    [
+     "The short version",
+     "When the MCU started, Marvel didn't own the film rights to all its characters. Sony had Spider-Man, and Fox had the X-Men and the Fantastic Four."
+    ],
+    [
+     "What changed",
+     "A deal with Sony let Tom Holland's Spider-Man debut in Captain America: Civil War (2016). Disney's purchase of 21st Century Fox, completed in 2019, brought the X-Men and the Fantastic Four home."
+    ]
+   ],
+   "lead": [
+    "Why it matters for Doomsday",
+    "That's why the Fantastic Four only arrived in 2025 and the original X-Men cast is joining now. Doctor Doom came with the Fox deal too."
+   ]
+  },
+  {
+   "id": "mcu-disney",
+   "img": "bd-wandavision",
+   "badge": "Since 2021",
+   "tag": "canon",
+   "title": "Disney+ joins the story",
+   "sub": "WandaVision (2021)",
+   "blocks": [
+    [
+     "What changed",
+     "Starting with WandaVision in January 2021, Marvel Studios began making series for Disney+. They aren't side projects: they're full chapters of the same story."
+    ],
+    [
+     "Biggest examples",
+     "Loki introduced the TVA and the multiverse rules. WandaVision turned Wanda into the Scarlet Witch. The Falcon and the Winter Soldier made Sam Wilson Captain America."
+    ]
+   ],
+   "lead": [
+    "Tip",
+    "You don't need every series. The Disney+ series chapter below marks which ones are essential."
+   ]
+  }
+ ],
+ "e-phases": [
+  {
+   "id": "phase-1",
+   "img": "bd-avengers",
+   "badge": "Phase 1 · 2008–2012",
+   "tag": "canon",
+   "title": "Avengers assemble",
+   "sub": "The Infinity Saga",
+   "blocks": [
+    [
+     "Films & series",
+     "Iron Man · The Incredible Hulk · Iron Man 2 · Thor · Captain America: The First Avenger · The Avengers"
+    ],
+    [
+     "What happens",
+     "The founding heroes get their origin stories, one film each. Nick Fury and S.H.I.E.L.D. bring them together, and they stop Loki's alien invasion of New York."
+    ],
+    [
+     "Main villain",
+     "Loki and the Chitauri army"
+    ]
+   ],
+   "lead": [
+    "How it ends",
+    "The Battle of New York. In the post-credits scene, Thanos smiles: he sent the army."
+   ]
+  },
+  {
+   "id": "phase-2",
+   "img": "bd-ultron",
+   "badge": "Phase 2 · 2013–2015",
+   "tag": "canon",
+   "title": "Cracks in the team",
+   "sub": "The Infinity Saga",
+   "blocks": [
+    [
+     "Films & series",
+     "Iron Man 3 · Thor: The Dark World · Captain America: The Winter Soldier · Guardians of the Galaxy · Avengers: Age of Ultron · Ant-Man"
+    ],
+    [
+     "What happens",
+     "S.H.I.E.L.D. turns out to be riddled with HYDRA and collapses. The cosmic side opens up with the Guardians. Tony builds Ultron to protect the world, it backfires, and the team is shaken."
+    ],
+    [
+     "Main villain",
+     "Ultron and HYDRA"
+    ]
+   ],
+   "lead": [
+    "How it ends",
+    "Sokovia is destroyed and Vision is born. The world starts asking who keeps superheroes in check."
+   ]
+  },
+  {
+   "id": "phase-3",
+   "img": "bd-iw",
+   "badge": "Phase 3 · 2016–2019",
+   "tag": "canon",
+   "title": "The war with Thanos",
+   "sub": "The Infinity Saga",
+   "blocks": [
+    [
+     "Films & series",
+     "Captain America: Civil War · Doctor Strange · Guardians Vol. 2 · Spider-Man: Homecoming · Thor: Ragnarok · Black Panther · Avengers: Infinity War · Ant-Man and the Wasp · Captain Marvel · Avengers: Endgame · Spider-Man: Far From Home"
+    ],
+    [
+     "What happens",
+     "The Avengers split over government control. Thanos finally comes for the Infinity Stones, wins, and erases half of all life. Five years later the Avengers reverse it with a time heist."
+    ],
+    [
+     "Main villain",
+     "Thanos"
+    ]
+   ],
+   "lead": [
+    "How it ends",
+    "Endgame closes the Infinity Saga, and Far From Home acts as the epilogue."
+   ]
+  },
+  {
+   "id": "phase-4",
+   "img": "bd-nwh",
+   "badge": "Phase 4 · 2021–2022",
+   "tag": "canon",
+   "title": "A world after the Blip",
+   "sub": "The Multiverse Saga",
+   "blocks": [
+    [
+     "Films & series",
+     "WandaVision · The Falcon and the Winter Soldier · Loki · Black Widow · What If…? · Shang-Chi · Eternals · Hawkeye · Spider-Man: No Way Home · Moon Knight · Doctor Strange in the Multiverse of Madness · Ms. Marvel · Thor: Love and Thunder · She-Hulk · Werewolf by Night · Black Panther: Wakanda Forever · The Guardians of the Galaxy Holiday Special"
+    ],
+    [
+     "What happens",
+     "Everyone deals with grief and new roles: Sam takes the shield, Kate Bishop learns from Clint, Shuri becomes Black Panther. Meanwhile the multiverse cracks open in Loki, No Way Home and Multiverse of Madness."
+    ],
+    [
+     "Main villain",
+     "No single villain"
+    ]
+   ],
+   "lead": [
+    "How it ends",
+    "The multiverse is open, and He Who Remains has warned of his many variants."
+   ]
+  },
+  {
+   "id": "phase-5",
+   "img": "bd-thunderbolts",
+   "badge": "Phase 5 · 2023–2025",
+   "tag": "canon",
+   "title": "New teams form",
+   "sub": "The Multiverse Saga",
+   "blocks": [
+    [
+     "Films & series",
+     "Ant-Man and the Wasp: Quantumania · Guardians Vol. 3 · Secret Invasion · Loki season 2 · The Marvels · What If…? season 2 · Echo · Agatha All Along · Deadpool & Wolverine · Captain America: Brave New World · Daredevil: Born Again · Thunderbolts* · Ironheart"
+    ],
+    [
+     "What happens",
+     "Kang is introduced, then dropped from the saga. Loki takes his place at the heart of the timelines. Deadpool & Wolverine brings the Fox X-Men universe on board, and Thunderbolts* forms a new team."
+    ],
+    [
+     "Main villain",
+     "Kang (at first)"
+    ]
+   ],
+   "lead": [
+    "How it ends",
+    "Yelena's misfits are unveiled as the New Avengers, and a Fantastic Four ship arrives from another dimension."
+   ]
+  },
+  {
+   "id": "phase-6",
+   "img": "bd-ff",
+   "badge": "Phase 6 · 2025–2027",
+   "tag": "canon",
+   "title": "Doom arrives",
+   "sub": "The Multiverse Saga",
+   "blocks": [
+    [
+     "Films & series",
+     "The Fantastic Four: First Steps · Spider-Man: Brand New Day · Avengers: Doomsday · Avengers: Secret Wars, plus Disney+ series like VisionQuest"
+    ],
+    [
+     "What happens",
+     "The Fantastic Four arrive from Earth-828, Doom makes his move, and heroes from three universes collide."
+    ],
+    [
+     "Main villain",
+     "Doctor Doom"
+    ]
+   ],
+   "lead": [
+    "How it ends",
+    "Avengers: Secret Wars (Dec 17, 2027) ends the Multiverse Saga."
+   ]
+  }
+ ],
+ "e-stones": [
+  {
+   "id": "stones-origin",
+   "img": "bd-gotg",
+   "badge": "The basics",
+   "tag": "canon",
+   "title": "Six stones from the Big Bang",
+   "sub": "Explained in Guardians of the Galaxy (2014)",
+   "blocks": [
+    [
+     "What they are",
+     "When the universe was born, six singularities were blasted out and became the Infinity Stones. Each one controls a part of existence: Space, Mind, Reality, Power, Time and Soul."
+    ],
+    [
+     "Why they matter",
+     "One stone is dangerous. All six together, in a gauntlet strong enough to hold them, let the wearer do anything with a snap of their fingers."
+    ]
+   ],
+   "lead": [
+    "The thread",
+    "From 2008 to 2019, almost every Avengers-level story is secretly about one of these stones."
+   ]
+  },
+  {
+   "id": "stone-space",
+   "img": "bd-cafa",
+   "badge": "Space Stone",
+   "swatch": "#2f6fe0",
+   "tag": "canon",
+   "title": "The Space Stone",
+   "sub": "Kept in: The Tesseract",
+   "blocks": [
+    [
+     "First seen",
+     "Thor (2011) post-credits; its WWII history is in Captain America: The First Avenger"
+    ],
+    [
+     "What it does",
+     "Teleports anything anywhere and opens portals across space."
+    ],
+    [
+     "Its journey",
+     "Odin hid it on Earth. Red Skull used it to power HYDRA's weapons in WWII. Howard Stark fished it out of the ocean, S.H.I.E.L.D. studied it, and Loki stole it to open the portal over New York. After Ragnarok, Loki took it from Asgard's vault."
+    ]
+   ],
+   "lead": [
+    "How it ended up",
+    "Thanos crushed the Tesseract and took the stone in Infinity War."
+   ]
+  },
+  {
+   "id": "stone-mind",
+   "img": "bd-ultron",
+   "badge": "Mind Stone",
+   "swatch": "#e6b800",
+   "tag": "canon",
+   "title": "The Mind Stone",
+   "sub": "Kept in: Loki's scepter",
+   "blocks": [
+    [
+     "First seen",
+     "The Avengers (2012)"
+    ],
+    [
+     "What it does",
+     "Controls minds and can unlock powers and consciousness."
+    ],
+    [
+     "Its journey",
+     "Thanos gave Loki the scepter for the invasion. HYDRA used it to give Wanda and Pietro their powers. Tony and Bruce used it to build Ultron, and it ended up in Vision's forehead."
+    ]
+   ],
+   "lead": [
+    "How it ended up",
+    "Thanos ripped it out of Vision's head in Wakanda, killing him."
+   ]
+  },
+  {
+   "id": "stone-reality",
+   "img": "bd-dark-world",
+   "badge": "Reality Stone",
+   "swatch": "#d42020",
+   "tag": "canon",
+   "title": "The Reality Stone",
+   "sub": "Kept in: The Aether",
+   "blocks": [
+    [
+     "First seen",
+     "Thor: The Dark World (2013)"
+    ],
+    [
+     "What it does",
+     "Bends reality and matter to the user's will, including illusions."
+    ],
+    [
+     "Its journey",
+     "The Dark Elves tried to use it to plunge the universe into darkness. After Thor stopped Malekith, Asgard gave it to the Collector for safekeeping on Knowhere."
+    ]
+   ],
+   "lead": [
+    "How it ended up",
+    "Thanos took it from Knowhere and used it to fool Gamora."
+   ]
+  },
+  {
+   "id": "stone-power",
+   "img": "bd-gotg",
+   "badge": "Power Stone",
+   "swatch": "#7b3fe4",
+   "tag": "canon",
+   "title": "The Power Stone",
+   "sub": "Kept in: The Orb",
+   "blocks": [
+    [
+     "First seen",
+     "Guardians of the Galaxy (2014)"
+    ],
+    [
+     "What it does",
+     "Raw destructive energy. Most beings who touch it are destroyed."
+    ],
+    [
+     "Its journey",
+     "Star-Lord stole the Orb on Morag. Ronan used the stone to try to wipe out Xandar, and the Guardians stopped him by sharing the load. The Nova Corps then kept it on Xandar."
+    ]
+   ],
+   "lead": [
+    "How it ended up",
+    "Thanos wiped out Xandar to take it, just before Infinity War begins."
+   ]
+  },
+  {
+   "id": "stone-time",
+   "img": "bd-doctor-strange",
+   "badge": "Time Stone",
+   "swatch": "#14a05a",
+   "tag": "canon",
+   "title": "The Time Stone",
+   "sub": "Kept in: The Eye of Agamotto",
+   "blocks": [
+    [
+     "First seen",
+     "Doctor Strange (2016)"
+    ],
+    [
+     "What it does",
+     "Rewinds, fast-forwards and loops time."
+    ],
+    [
+     "Its journey",
+     "The Masters of the Mystic Arts guarded it at Kamar-Taj. Strange used it to trap Dormammu in an endless time loop until he gave up."
+    ]
+   ],
+   "lead": [
+    "How it ended up",
+    "Strange handed it to Thanos on Titan to save Tony. He had seen 14,000,605 futures and found the one where they win."
+   ]
+  },
+  {
+   "id": "stone-soul",
+   "img": "bd-iw",
+   "badge": "Soul Stone",
+   "swatch": "#ff7a1a",
+   "tag": "canon",
+   "title": "The Soul Stone",
+   "sub": "Kept in: Vormir",
+   "blocks": [
+    [
+     "First seen",
+     "Avengers: Infinity War (2018)"
+    ],
+    [
+     "What it does",
+     "Controls life and the soul itself. It was hidden for centuries, and the price is unique."
+    ],
+    [
+     "Its journey",
+     "Red Skull guards it on Vormir. To take it, you must sacrifice someone you love. Thanos threw Gamora from the cliff to claim it."
+    ]
+   ],
+   "lead": [
+    "How it ended up",
+    "In Endgame, Natasha gave her life on Vormir so the Avengers could get it back."
+   ]
+  }
+ ],
+ "e-infinity": [
+  {
+   "id": "inf-thanos",
+   "img": "bd-iw",
+   "badge": "The Mad Titan",
+   "tag": "canon",
+   "title": "Thanos",
+   "sub": "First glimpsed in The Avengers (2012) post-credits",
+   "blocks": [
+    [
+     "Who he is",
+     "A warlord from the planet Titan. He watched his world collapse from overpopulation and became convinced that killing half of all life, at random, would save the universe."
+    ],
+    [
+     "His family",
+     "He adopted Gamora and Nebula and raised them as weapons. Both ended up fighting him."
+    ],
+    [
+     "His plan",
+     "Collect all six stones in the Infinity Gauntlet, built for him by the dwarf Eitri, and snap."
+    ]
+   ],
+   "lead": [
+    "Why he matters",
+    "He was behind the Battle of New York, Ronan and Ultron's mind stone. Every phase of the Infinity Saga was building to him."
+   ]
+  },
+  {
+   "id": "inf-snap",
+   "img": "bd-black-panther",
+   "badge": "2018",
+   "tag": "canon",
+   "title": "The Snap",
+   "sub": "Avengers: Infinity War",
+   "blocks": [
+    [
+     "What happened",
+     "Thanos got the last stone from Vision in Wakanda, survived Thor's axe and snapped. Half of all living creatures in the universe turned to dust, including Spider-Man, Black Panther, Doctor Strange and most of the Guardians."
+    ],
+    [
+     "Who was left",
+     "Mostly the original Avengers: Tony, Steve, Thor, Bruce, Natasha, Rhodey, plus Rocket, Nebula, Okoye and Clint."
+    ]
+   ],
+   "lead": [
+    "The aftermath",
+    "Thanos used the stones to destroy the stones, so nobody could undo it. Thor killed him days later, but it didn't bring anyone back."
+   ]
+  },
+  {
+   "id": "inf-blip",
+   "img": "bd-ffh",
+   "badge": "2018–2023",
+   "tag": "canon",
+   "title": "The Blip",
+   "sub": "Named in Spider-Man: Far From Home",
+   "blocks": [
+    [
+     "What it is",
+     "The five years when half of all life was gone, and the moment everyone came back. People who returned hadn't aged a day, while everyone else had lived five years without them."
+    ],
+    [
+     "Ripples you see later",
+     "Peter's classmates are split into “blipped” and “not blipped” in Far From Home. Refugee crises drive The Falcon and the Winter Soldier. Clint's years as the vigilante Ronin catch up with him in Hawkeye."
+    ]
+   ],
+   "lead": [
+    "Why it matters",
+    "The Blip is why the world of Phase 4 feels shaken. Governments, families and heroes are all still recovering."
+   ]
+  },
+  {
+   "id": "inf-heist",
+   "img": "bd-ant-man",
+   "badge": "2023",
+   "tag": "canon",
+   "title": "The Time Heist",
+   "sub": "Avengers: Endgame",
+   "blocks": [
+    [
+     "How it started",
+     "Scott Lang escaped the Quantum Realm, where five years had felt like five hours. Tony cracked time travel using Pym Particles and the Quantum Realm."
+    ],
+    [
+     "The plan",
+     "Three teams went back to borrow the stones from the past: New York in 2012 (Space, Mind, Time), Asgard in 2013 (Reality) and Morag and Vormir in 2014 (Power, Soul). When the Tesseract got away, Tony and Steve made a second trip to a S.H.I.E.L.D. base in 1970."
+    ],
+    [
+     "What went wrong",
+     "The 2014 Nebula and Thanos found out and followed them to 2023."
+    ]
+   ],
+   "lead": [
+    "The ripple effect",
+    "In 2012, a Loki grabbed the Tesseract and vanished. That branch is what the Loki series is about."
+   ]
+  },
+  {
+   "id": "inf-end",
+   "img": "bd-endgame",
+   "badge": "2023",
+   "tag": "canon",
+   "title": "Endgame and the cost",
+   "sub": "Avengers: Endgame",
+   "blocks": [
+    [
+     "The undo",
+     "Bruce snapped with the stones and brought everyone back. Then 2014 Thanos attacked, and every returning hero joined the fight."
+    ],
+    [
+     "The sacrifice",
+     "Tony took the stones and snapped Thanos and his army out of existence. The power killed him."
+    ],
+    [
+     "Goodbyes",
+     "Steve returned the stones to their own times, then stayed in the past with Peggy and came back as an old man to give Sam the shield. Thor left with the Guardians."
+    ]
+   ],
+   "lead": [
+    "Why it matters",
+    "This is the end of the Infinity Saga, and the borrowed-and-returned stones are a big part of why the multiverse opens next."
+   ]
+  }
+ ],
+ "e-tva": [
+  {
+   "id": "tva-tva",
+   "img": "bd-loki",
+   "badge": "Loki (2021)",
+   "tag": "canon",
+   "title": "The TVA",
+   "sub": "Time Variance Authority",
+   "blocks": [
+    [
+     "What it is",
+     "An agency that exists outside of time and keeps history running on one approved path. It's staffed by agents like Mobius and Hunter B-15, with the cheerful cartoon clock Miss Minutes as its mascot."
+    ],
+    [
+     "How powerful it is",
+     "Very. Infinity Stones are useless there: agents keep them in desk drawers and use them as paperweights."
+    ],
+    [
+     "The twist",
+     "The agents were told the Time-Keepers created them. They were actually variants taken from their own timelines, with their memories wiped."
+    ]
+   ],
+   "lead": [
+    "Where it stands now",
+    "After Loki season 2, the TVA no longer prunes timelines. It watches the growing multiverse and keeps an eye on dangerous variants."
+   ]
+  },
+  {
+   "id": "tva-sacred-timeline",
+   "img": "bd-what-if",
+   "badge": "The rules",
+   "tag": "canon",
+   "title": "The Sacred Timeline and nexus events",
+   "sub": "Loki",
+   "blocks": [
+    [
+     "The Sacred Timeline",
+     "The one version of history the TVA allowed. Picture a single line running from the beginning of time to the end."
+    ],
+    [
+     "Nexus events",
+     "When someone does something they weren't “meant” to do, the line splits and a new branch starts. The TVA called those moments nexus events."
+    ],
+    [
+     "Pruning",
+     "The TVA cut those branches off with reset charges and arrested the people who caused them. Pruned people weren't killed: they were dumped in the Void at the end of time."
+    ]
+   ],
+   "lead": [
+    "Why it matters",
+    "With the TVA gone soft, every nexus event now creates a new universe. That's the multiverse the rest of the saga is about."
+   ]
+  },
+  {
+   "id": "tva-variants",
+   "img": "bd-mom",
+   "badge": "Everyone has them",
+   "tag": "canon",
+   "title": "Variants",
+   "sub": "Loki · What If…? · Multiverse of Madness",
+   "blocks": [
+    [
+     "What a variant is",
+     "Another version of the same person from a different timeline. Same core, different life."
+    ],
+    [
+     "Examples",
+     "Sylvie, Classic Loki, Kid Loki and even an alligator Loki are all Loki variants. Multiverse of Madness has several Doctor Stranges. He Who Remains and every Kang are variants of each other."
+    ],
+    [
+     "Where the line gets blurry",
+     "Robert Downey Jr. plays Doom even though he played Tony Stark. Marvel says Doom is not a Tony variant: “He's Victor Von Doom.”"
+    ]
+   ],
+   "lead": [
+    "Watch for",
+    "Doomsday brings in heroes from three universes, so expect to meet people who aren't quite the versions you know."
+   ]
+  },
+  {
+   "id": "tva-hwr",
+   "img": "bd-quant",
+   "badge": "The man behind it",
+   "tag": "canon",
+   "title": "He Who Remains and the Kangs",
+   "sub": "Loki · Quantumania",
+   "blocks": [
+    [
+     "Who he was",
+     "The person at the end of time running the TVA. A 31st-century scientist found other universes, his variants did too, and they went to war. He won, then built the TVA to keep only one timeline so it could never happen again."
+    ],
+    [
+     "What happened",
+     "Sylvie killed him at the end of Loki season 1. Timelines exploded outward, and the TVA started tracking the variants he'd warned about."
+    ],
+    [
+     "Kang",
+     "Quantumania introduced Kang the Conqueror and a whole Council of Kangs. Marvel later moved away from Kang and made Doctor Doom the saga's villain."
+    ]
+   ],
+   "lead": [
+    "Status",
+    "Kang's thread is on hold. Doom has taken over as the threat at the center of the multiverse."
+   ]
+  },
+  {
+   "id": "tva-loom",
+   "img": "story-2",
+   "badge": "Loki season 2",
+   "tag": "canon",
+   "title": "The Temporal Loom and Loki's choice",
+   "sub": "Loki season 2 finale",
+   "blocks": [
+    [
+     "The problem",
+     "The Temporal Loom was the machine that wove all those branches into usable time. With infinite branches, it was overloading and about to destroy every timeline."
+    ],
+    [
+     "Loki's choice",
+     "Loki destroyed the Loom and held the dying branches himself, weaving them into a living tree at the end of time, like Yggdrasil."
+    ],
+    [
+     "What it means",
+     "Every timeline now survives, and Loki sits on a throne at the center, keeping them alive."
+    ]
+   ],
+   "lead": [
+    "Why it matters for Doomsday",
+    "Loki is back in Doomsday. Whatever happens to him affects every universe at once."
+   ]
+  },
+  {
+   "id": "tva-anchor",
+   "img": "bd-dw",
+   "badge": "Deadpool & Wolverine",
+   "tag": "canon",
+   "title": "Anchor beings and the Time Ripper",
+   "sub": "Deadpool & Wolverine (2024)",
+   "blocks": [
+    [
+     "What an anchor being is",
+     "Some universes depend on one person. When that person dies, the universe slowly fades away."
+    ],
+    [
+     "Example",
+     "Logan was the anchor of Earth-10005, the Fox X-Men universe. His death in Logan (2017) started its slow end."
+    ],
+    [
+     "The Time Ripper",
+     "A rogue TVA agent, Paradox, tried to speed things up with a machine called the Time Ripper. Deadpool and a Wolverine variant stopped him, and that Wolverine became the new anchor."
+    ]
+   ],
+   "lead": [
+    "Open question",
+    "Who is Earth-616's anchor? Marvel hasn't said, and fans have a dozen theories."
+   ]
+  }
+ ],
+ "e-multiverse-rows": [
+  {
+   "id": "mv-incursion",
+   "img": "bd-mom",
+   "badge": "The danger",
+   "tag": "canon",
+   "title": "Incursions",
+   "sub": "Doctor Strange in the Multiverse of Madness",
+   "blocks": [
+    [
+     "What it is",
+     "An incursion happens when two universes drift into each other. They collide, and both can be destroyed."
+    ],
+    [
+     "Where we saw it",
+     "The Illuminati of Earth-838 explained that their own Strange caused one by misusing dark magic. In the mid-credits scene, Clea tells our Strange that he has caused one too."
+    ],
+    [
+     "In the comics",
+     "Incursions destroyed universe after universe, and the story ended with Doctor Doom building Battleworld out of the pieces in Secret Wars (2015)."
+    ]
+   ],
+   "lead": [
+    "Why it matters",
+    "The next two Avengers films are Doomsday and Secret Wars. The comic version of this story is the obvious blueprint."
+   ]
+  },
+  {
+   "id": "mv-cross",
+   "img": "bd-nwh",
+   "badge": "Getting across",
+   "tag": "soft",
+   "title": "How people cross between universes",
+   "sub": "No Way Home · Multiverse of Madness · Deadpool & Wolverine",
+   "blocks": [
+    [
+     "Magic",
+     "Strange's spell in No Way Home pulled villains and two other Spider-Men across. Wanda used the Darkhold to dreamwalk into other universes."
+    ],
+    [
+     "Powers",
+     "America Chavez can punch star-shaped portals between universes."
+    ],
+    [
+     "Technology",
+     "The TVA uses TemPads and time doors. Reed Richards worked on the math of crossing between dimensions in First Steps."
+    ]
+   ],
+   "lead": [
+    "Watch for",
+    "Doom has already crossed to Earth-828. How he does it may be a big part of Doomsday."
+   ]
+  }
+ ],
+ "e-time": [
+  {
+   "id": "time-quantum",
+   "img": "bd-ant-man",
+   "badge": "The doorway",
+   "tag": "canon",
+   "title": "The Quantum Realm and Pym Particles",
+   "sub": "Ant-Man · Endgame · Quantumania",
+   "blocks": [
+    [
+     "What it is",
+     "A dimension smaller than atoms, where time and space stop working normally. Hank Pym's particles let people shrink down into it."
+    ],
+    [
+     "Why it matters",
+     "Because time moves differently there, Tony could turn a trip through the Quantum Realm into time travel."
+    ],
+    [
+     "What's down there",
+     "Quantumania showed a whole world, with its own people, and the place Kang was exiled."
+    ]
+   ],
+   "lead": [
+    "Where you saw it",
+    "Ant-Man, Ant-Man and the Wasp, Endgame and Quantumania."
+   ]
+  },
+  {
+   "id": "time-rules",
+   "img": "bd-endgame",
+   "badge": "The rules",
+   "tag": "canon",
+   "title": "How time travel works in the MCU",
+   "sub": "Avengers: Endgame",
+   "blocks": [
+    [
+     "Rule 1",
+     "You can't change your own past. Going back and killing someone doesn't change the world you came from."
+    ],
+    [
+     "Rule 2",
+     "Changing the past creates a new branch, a separate timeline that goes its own way. The Ancient One and Bruce explain this in Endgame."
+    ],
+    [
+     "Rule 3",
+     "Return what you borrow. Steve put every stone back at the moment it was taken, so those branches didn't split off."
+    ]
+   ],
+   "lead": [
+    "Fans still argue about",
+    "Old Steve. The writers have said he lived in the main timeline all along. The directors say he must have gone to a branch and come back. The film never says."
+   ]
+  }
+ ],
+ "e-tech": [
+  {
+   "id": "tech-arc",
+   "img": "bd-iron-man",
+   "badge": "Iron Man (2008)",
+   "tag": "canon",
+   "title": "The Arc Reactor and Iron Man suits",
+   "sub": "Tony Stark's tech",
+   "blocks": [
+    [
+     "What it is",
+     "A miniature clean-energy reactor. Tony built the first one in a cave to keep shrapnel away from his heart, then used it to power his armor."
+    ],
+    [
+     "How the suits evolved",
+     "From the scrap-metal Mark I to suits that fly in pieces to his body, to nanotech armor in Infinity War that forms around him and shapes weapons on demand."
+    ],
+    [
+     "Legacy",
+     "Riri Williams builds her own armor in Ironheart, and Tony's tech is still all over the MCU."
+    ]
+   ],
+   "lead": [
+    "Fun fact",
+    "Tony built well over 80 suits. The Mark 85 is the one he wears in Endgame."
+   ]
+  },
+  {
+   "id": "tech-vibranium",
+   "img": "bd-black-panther",
+   "badge": "Black Panther (2018)",
+   "tag": "canon",
+   "title": "Vibranium",
+   "sub": "Wakanda's metal",
+   "blocks": [
+    [
+     "What it is",
+     "A metal from a meteorite that struck Wakanda long ago. It absorbs energy and is nearly indestructible."
+    ],
+    [
+     "Where you see it",
+     "Wakanda's technology and Black Panther suits, Captain America's shield, Vision's body and Bucky's arm."
+    ],
+    [
+     "Not just Wakanda",
+     "Wakanda Forever revealed that Talokan, Namor's underwater kingdom, has its own supply."
+    ]
+   ],
+   "lead": [
+    "Why it matters",
+    "Whoever controls vibranium has power. That's why Brave New World centers on a new metal, adamantium, from the Celestial in the Indian Ocean."
+   ]
+  },
+  {
+   "id": "tech-shield",
+   "img": "bd-cafa",
+   "badge": "The First Avenger (2011)",
+   "tag": "canon",
+   "title": "Captain America's shield",
+   "sub": "A vibranium disc",
+   "blocks": [
+    [
+     "Who made it",
+     "Howard Stark, Tony's father, built it for Steve during World War II."
+    ],
+    [
+     "Who carried it",
+     "Steve handed it to Sam at the end of Endgame. Sam gave it to the government, which passed it to John Walker. Sam took it back and became Captain America in The Falcon and the Winter Soldier."
+    ],
+    [
+     "What it can do",
+     "It absorbs impacts, bounces back when thrown and can block almost anything."
+    ]
+   ],
+   "lead": [
+    "Doomsday",
+    "Sam leads the Avengers as Captain America, while Steve returns too."
+   ]
+  },
+  {
+   "id": "tech-mjolnir",
+   "img": "bd-thor",
+   "badge": "Thor (2011)",
+   "tag": "canon",
+   "title": "Mjolnir and Stormbreaker",
+   "sub": "Thor's weapons",
+   "blocks": [
+    [
+     "Mjolnir",
+     "A hammer forged in the heart of a dying star. Only someone worthy can lift it. Hela crushed it in Ragnarok, and it was later rebuilt for Jane Foster in Love and Thunder."
+    ],
+    [
+     "Stormbreaker",
+     "The axe Thor forged in Infinity War. It can summon the Bifrost and nearly killed Thanos."
+    ],
+    [
+     "Worthy",
+     "Steve Rogers lifted Mjolnir in Endgame. Vision could too."
+    ]
+   ],
+   "lead": [
+    "Doomsday",
+    "The trailers appear to show Steve with Mjolnir again."
+   ]
+  },
+  {
+   "id": "tech-mystic",
+   "img": "bd-doctor-strange",
+   "badge": "Doctor Strange (2016)",
+   "tag": "canon",
+   "title": "The Mystic Arts and the Darkhold",
+   "sub": "Kamar-Taj",
+   "blocks": [
+    [
+     "The Mystic Arts",
+     "Sorcerers trained at Kamar-Taj use sling rings to open portals and spells to bend space. Wong is now the Sorcerer Supreme."
+    ],
+    [
+     "The Darkhold",
+     "A book of evil magic. It corrupted Wanda in WandaVision and Multiverse of Madness, and let her reach into other universes. She destroyed every copy at Mount Wundagore."
+    ],
+    [
+     "Why it matters",
+     "Magic is one of the main ways to cross between universes, and it's what started the incursion problem."
+    ]
+   ],
+   "lead": [
+    "Where to start",
+    "Doctor Strange, WandaVision, Multiverse of Madness, Agatha All Along."
+   ]
+  },
+  {
+   "id": "tech-rings",
+   "img": "bd-shang-chi",
+   "badge": "Shang-Chi (2021)",
+   "tag": "canon",
+   "title": "The Ten Rings",
+   "sub": "Shang-Chi and the Legend of the Ten Rings",
+   "blocks": [
+    [
+     "What they are",
+     "Ten ancient rings that gave Wenwu immense power and a thousand-year life. His son Shang-Chi now wields them."
+    ],
+    [
+     "The mystery",
+     "The mid-credits scene shows they're sending out a signal that nobody can identify. Their origin hasn't been explained."
+    ],
+    [
+     "Not the same as",
+     "The Ten Rings terrorist group in Iron Man, which was Wenwu's organization."
+    ]
+   ],
+   "lead": [
+    "Doomsday",
+    "Shang-Chi is confirmed for Doomsday."
+   ]
+  },
+  {
+   "id": "tech-tva",
+   "img": "bd-loki",
+   "badge": "Loki (2021)",
+   "tag": "canon",
+   "title": "TVA technology",
+   "sub": "Loki",
+   "blocks": [
+    [
+     "TemPads",
+     "Devices that open time doors to any point in time or any timeline."
+    ],
+    [
+     "Reset charges and pruning",
+     "Tools for deleting branches and arresting variants. The pruned end up in the Void."
+    ],
+    [
+     "Time-slipping",
+     "In Loki season 2, Loki was thrown back and forth through time. Learning to control it is how he ended up holding the timelines."
+    ]
+   ],
+   "lead": [
+    "Status",
+    "The TVA still exists and now helps watch the multiverse instead of cutting it down."
+   ]
+  }
+ ]
+}

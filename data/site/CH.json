@@ -1,0 +1,302 @@
+[
+ {
+  "id": "thor",
+  "n": "Thor",
+  "a": "Chris Hemsworth",
+  "tm": "avengers",
+  "meet": "Endgame",
+  "l": "https://www.marvel.com/characters/thor-thor-odinson",
+  "lp": 1
+ },
+ {
+  "id": "steve",
+  "n": "Steve Rogers",
+  "a": "Chris Evans",
+  "tm": "avengers",
+  "meet": "The First Avenger → Endgame",
+  "l": "https://www.marvel.com/characters/captain-america-steve-rogers",
+  "lp": 1
+ },
+ {
+  "id": "peggy",
+  "n": "Peggy Carter",
+  "a": "Hayley Atwell",
+  "tm": "avengers",
+  "meet": "The First Avenger",
+  "l": "https://www.marvel.com/movies/captain-america-the-first-avenger"
+ },
+ {
+  "id": "hulk",
+  "n": "Hulk",
+  "a": "Mark Ruffalo",
+  "s": "Bruce Banner",
+  "tm": "avengers",
+  "meet": "Endgame → Brand New Day",
+  "l": "https://www.marvel.com/characters/hulk-bruce-banner"
+ },
+ {
+  "id": "mobius",
+  "n": "Mobius",
+  "a": "Owen Wilson",
+  "tm": "avengers",
+  "meet": "Loki S1–2",
+  "l": "https://www.disneyplus.com/browse/entity-8f8c5cbb-e5ba-4285-9e2c-86abcac9fd50"
+ },
+ {
+  "id": "strange",
+  "n": "Doctor Strange",
+  "a": "Benedict Cumberbatch",
+  "tm": "avengers",
+  "meet": "Multiverse of Madness",
+  "l": "https://www.disneyplus.com/browse/entity-6fe6062c-2499-4f44-a48a-fc93f59cb504",
+  "rm": 1
+ },
+ {
+  "id": "wanda",
+  "n": "Scarlet Witch",
+  "a": "Elizabeth Olsen",
+  "s": "Wanda Maximoff",
+  "tm": "avengers",
+  "meet": "WandaVision → Multiverse of Madness",
+  "l": "https://www.disneyplus.com/browse/entity-90affd1f-0851-48bc-9cab-c142d5c9c20c",
+  "rm": 1
+ },
+ {
+  "id": "loki",
+  "n": "Loki",
+  "a": "Tom Hiddleston",
+  "tm": "avengers",
+  "meet": "Loki S1–2",
+  "l": "https://www.marvel.com/tv-shows/loki/1"
+ },
+ {
+  "id": "sam",
+  "n": "Sam Wilson",
+  "a": "Anthony Mackie",
+  "s": "Captain America",
+  "tm": "avengers",
+  "meet": "Brave New World",
+  "l": "https://www.marvel.com/characters/falcon-sam-wilson",
+  "lp": 1
+ },
+ {
+  "id": "joaquin",
+  "n": "Joaquin Torres",
+  "a": "Danny Ramirez",
+  "s": "Falcon",
+  "tm": "avengers",
+  "meet": "Brave New World",
+  "l": "https://www.marvel.com/movies/captain-america-brave-new-world"
+ },
+ {
+  "id": "scott",
+  "n": "Scott Lang",
+  "a": "Paul Rudd",
+  "s": "Ant-Man",
+  "tm": "avengers",
+  "meet": "Endgame · Quantumania",
+  "l": "https://www.marvel.com/movies/avengers-endgame"
+ },
+ {
+  "id": "cassie",
+  "n": "Cassie Lang",
+  "a": "Kathryn Newton",
+  "tm": "avengers",
+  "meet": "Quantumania",
+  "l": "https://www.disneyplus.com/brand/marvel"
+ },
+ {
+  "id": "shangchi",
+  "n": "Shang-Chi",
+  "a": "Simu Liu",
+  "tm": "avengers",
+  "meet": "Shang-Chi",
+  "l": "https://www.marvel.com/movies/shang-chi-and-the-legend-of-the-ten-rings"
+ },
+ {
+  "id": "yelena",
+  "n": "Yelena Belova",
+  "a": "Florence Pugh",
+  "tm": "new",
+  "meet": "Black Widow → Thunderbolts*",
+  "l": "https://www.marvel.com/characters/yelena-belova",
+  "lp": 1
+ },
+ {
+  "id": "bucky",
+  "n": "Bucky Barnes",
+  "a": "Sebastian Stan",
+  "s": "Winter Soldier",
+  "tm": "new",
+  "meet": "Thunderbolts*",
+  "l": "https://www.marvel.com/movies/thunderbolts"
+ },
+ {
+  "id": "redguardian",
+  "n": "Red Guardian",
+  "a": "David Harbour",
+  "tm": "new",
+  "meet": "Black Widow → Thunderbolts*",
+  "l": "https://www.marvel.com/movies/thunderbolts"
+ },
+ {
+  "id": "usagent",
+  "n": "U.S. Agent",
+  "a": "Wyatt Russell",
+  "tm": "new",
+  "meet": "Falcon & Winter Soldier → Thunderbolts*",
+  "l": "https://www.marvel.com/movies/thunderbolts"
+ },
+ {
+  "id": "ghost",
+  "n": "Ghost",
+  "a": "Hannah John-Kamen",
+  "tm": "new",
+  "meet": "Thunderbolts*",
+  "l": "https://www.marvel.com/movies/thunderbolts"
+ },
+ {
+  "id": "sentry",
+  "n": "Sentry",
+  "a": "Lewis Pullman",
+  "s": "Bob Reynolds",
+  "tm": "new",
+  "meet": "Thunderbolts*",
+  "l": "https://www.marvel.com/movies/thunderbolts"
+ },
+ {
+  "id": "reed",
+  "n": "Reed Richards",
+  "a": "Pedro Pascal",
+  "s": "Mister Fantastic",
+  "tm": "ff",
+  "meet": "First Steps",
+  "l": "https://www.marvel.com/movies/the-fantastic-four-first-steps"
+ },
+ {
+  "id": "sue",
+  "n": "Sue Storm",
+  "a": "Vanessa Kirby",
+  "s": "Invisible Woman",
+  "tm": "ff",
+  "meet": "First Steps",
+  "l": "https://www.marvel.com/movies/the-fantastic-four-first-steps"
+ },
+ {
+  "id": "johnny",
+  "n": "Johnny Storm",
+  "a": "Joseph Quinn",
+  "s": "Human Torch",
+  "tm": "ff",
+  "meet": "First Steps",
+  "l": "https://www.marvel.com/movies/the-fantastic-four-first-steps"
+ },
+ {
+  "id": "ben",
+  "n": "Ben Grimm",
+  "a": "Ebon Moss-Bachrach",
+  "s": "The Thing",
+  "tm": "ff",
+  "meet": "First Steps",
+  "l": "https://www.marvel.com/movies/the-fantastic-four-first-steps"
+ },
+ {
+  "id": "xavier",
+  "n": "Professor X",
+  "a": "Patrick Stewart",
+  "tm": "x",
+  "meet": "X-Men · X2",
+  "l": "https://www.marvel.com/characters/professor-x",
+  "lp": 1
+ },
+ {
+  "id": "magneto",
+  "n": "Magneto",
+  "a": "Ian McKellen",
+  "tm": "x",
+  "meet": "X-Men · X2",
+  "l": "https://www.disneyplus.com/brand/marvel"
+ },
+ {
+  "id": "cyclops",
+  "n": "Cyclops",
+  "a": "James Marsden",
+  "tm": "x",
+  "meet": "X-Men · X2",
+  "l": "https://www.disneyplus.com/brand/marvel"
+ },
+ {
+  "id": "mystique",
+  "n": "Mystique",
+  "a": "Rebecca Romijn",
+  "tm": "x",
+  "meet": "X-Men · X2",
+  "l": "https://www.disneyplus.com/brand/marvel"
+ },
+ {
+  "id": "nightcrawler",
+  "n": "Nightcrawler",
+  "a": "Alan Cumming",
+  "tm": "x",
+  "meet": "X2",
+  "l": "https://www.disneyplus.com/brand/marvel"
+ },
+ {
+  "id": "beast",
+  "n": "Beast",
+  "a": "Kelsey Grammer",
+  "tm": "x",
+  "meet": "The Marvels (mid-credits)",
+  "l": "https://www.disneyplus.com/brand/marvel"
+ },
+ {
+  "id": "gambit",
+  "n": "Gambit",
+  "a": "Channing Tatum",
+  "tm": "x",
+  "meet": "Deadpool & Wolverine",
+  "l": "https://www.disneyplus.com/brand/marvel"
+ },
+ {
+  "id": "shuri",
+  "n": "Shuri",
+  "a": "Letitia Wright",
+  "s": "Black Panther",
+  "tm": "wak",
+  "meet": "Wakanda Forever",
+  "l": "https://www.marvel.com/movies/black-panther-wakanda-forever"
+ },
+ {
+  "id": "mbaku",
+  "n": "M'Baku",
+  "a": "Winston Duke",
+  "tm": "wak",
+  "meet": "Wakanda Forever",
+  "l": "https://www.marvel.com/movies/black-panther-wakanda-forever"
+ },
+ {
+  "id": "namor",
+  "n": "Namor",
+  "a": "Tenoch Huerta Mejía",
+  "tm": "wak",
+  "meet": "Wakanda Forever",
+  "l": "https://www.marvel.com/movies/black-panther-wakanda-forever"
+ },
+ {
+  "id": "attuma",
+  "n": "Attuma",
+  "a": "Alex Livinalli",
+  "tm": "wak",
+  "meet": "Wakanda Forever",
+  "l": "https://www.disneyplus.com/browse/entity-86e14fdb-3841-4282-ad38-07c8c4aab4b6",
+  "rm": 1
+ },
+ {
+  "id": "namora",
+  "n": "Namora",
+  "a": "Mabel Cadena",
+  "tm": "wak",
+  "meet": "Wakanda Forever",
+  "l": "https://www.marvel.com/movies/black-panther-wakanda-forever"
+ }
+]

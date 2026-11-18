@@ -1,0 +1,77 @@
+[
+ {
+  "id": "e-mcu",
+  "t": "What is the MCU?",
+  "i": "compass"
+ },
+ {
+  "id": "e-films",
+  "t": "Every MCU film",
+  "i": "film"
+ },
+ {
+  "id": "e-series",
+  "t": "Disney+ series",
+  "i": "tv"
+ },
+ {
+  "id": "e-infinity",
+  "t": "The Infinity Saga",
+  "i": "gem"
+ },
+ {
+  "id": "e-heroes",
+  "t": "Character encyclopedia",
+  "i": "users"
+ },
+ {
+  "id": "e-villains",
+  "t": "Villain encyclopedia",
+  "i": "skull"
+ },
+ {
+  "id": "e-teams",
+  "t": "The teams",
+  "i": "shield"
+ },
+ {
+  "id": "e-tva",
+  "t": "Sacred Timeline & the TVA",
+  "i": "git-branch"
+ },
+ {
+  "id": "e-multiverse",
+  "t": "The multiverse",
+  "i": "orbit"
+ },
+ {
+  "id": "e-time",
+  "t": "Time travel & Quantum Realm",
+  "i": "hourglass"
+ },
+ {
+  "id": "e-tech",
+  "t": "Technology & artifacts",
+  "i": "cpu"
+ },
+ {
+  "id": "e-power",
+  "t": "Power scale",
+  "i": "gauge"
+ },
+ {
+  "id": "e-map",
+  "t": "Connection map",
+  "i": "network"
+ },
+ {
+  "id": "e-orders",
+  "t": "Watch orders",
+  "i": "route"
+ },
+ {
+  "id": "e-road",
+  "t": "Road to Doomsday",
+  "i": "flame"
+ }
+]

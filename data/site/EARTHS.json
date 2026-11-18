@@ -1,0 +1,50 @@
+[
+ {
+  "n": "616",
+  "t": "The Sacred Timeline",
+  "p": "The main MCU, where Iron Man, the Avengers and nearly everything you've seen takes place.",
+  "c": "#c98a12",
+  "tg": "canon",
+  "id": "earth-616"
+ },
+ {
+  "n": "838",
+  "t": "The Illuminati's world",
+  "p": "Visited in Doctor Strange in the Multiverse of Madness, home to a different roster of heroes.",
+  "c": "#6d43e8",
+  "tg": "canon",
+  "id": "earth-838"
+ },
+ {
+  "n": "828",
+  "t": "The Fantastic Four",
+  "p": "The retro-1960s reality of The Fantastic Four: First Steps.",
+  "c": "#ff6a2b",
+  "tg": "canon",
+  "id": "earth-828"
+ },
+ {
+  "n": "10005",
+  "t": "The Fox X-Men",
+  "p": "Two decades of X-Men films. Its heroes finally cross into the MCU through the multiverse.",
+  "c": "#1d64d8",
+  "tg": "canon",
+  "id": "earth-10005"
+ },
+ {
+  "n": "Sony",
+  "t": "The Spider-Verse",
+  "p": "Sony's Spider-Man worlds, bridged in No Way Home when three Spider-Men met.",
+  "c": "#e2231a",
+  "tg": "soft",
+  "id": "earth-sony"
+ },
+ {
+  "n": "What If",
+  "t": "Animated realities",
+  "p": "What If…? explores countless “what could have happened” branches, and Marvel Zombies spins out of one.",
+  "c": "#0f8b8d",
+  "tg": "soft",
+  "id": "earth-what-if"
+ }
+]

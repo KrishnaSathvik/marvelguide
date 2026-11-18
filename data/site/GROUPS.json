@@ -1,0 +1,110 @@
+[
+ {
+  "id": "g-basics",
+  "n": "Basics",
+  "i": "compass",
+  "d": "What the MCU is, its six phases, all 40 films and every Disney+ series.",
+  "ch": [
+   [
+    "e-mcu",
+    "What is the MCU?"
+   ],
+   [
+    "e-phases",
+    "Phases & sagas"
+   ],
+   [
+    "e-films",
+    "Every film"
+   ],
+   [
+    "e-series",
+    "Disney+ series"
+   ]
+  ]
+ },
+ {
+  "id": "g-infinity",
+  "n": "Infinity Saga",
+  "i": "gem",
+  "d": "The six Stones, Thanos, the Snap, the Blip and the Time Heist.",
+  "ch": [
+   [
+    "e-stones",
+    "The Infinity Stones"
+   ],
+   [
+    "e-infinity",
+    "Thanos, the Snap & the Blip"
+   ]
+  ]
+ },
+ {
+  "id": "g-characters",
+  "n": "Characters",
+  "i": "users",
+  "d": "77 characters, the big villains, every team and who's strongest.",
+  "ch": [
+   [
+    "e-heroes",
+    "Character directory"
+   ],
+   [
+    "e-villains",
+    "Villains"
+   ],
+   [
+    "e-teams",
+    "Teams"
+   ],
+   [
+    "e-power",
+    "Power scale"
+   ]
+  ]
+ },
+ {
+  "id": "g-multiverse",
+  "n": "Multiverse",
+  "i": "orbit",
+  "d": "The TVA, timelines, variants, anchor beings, incursions and time travel.",
+  "ch": [
+   [
+    "e-tva",
+    "The TVA & timelines"
+   ],
+   [
+    "e-multiverse",
+    "The multiverse"
+   ],
+   [
+    "e-time",
+    "Time travel"
+   ]
+  ]
+ },
+ {
+  "id": "g-toolkit",
+  "n": "Toolkit",
+  "i": "route",
+  "d": "The tech and magic objects, how it all connects and the best watch orders.",
+  "ch": [
+   [
+    "e-tech",
+    "Tech & artifacts"
+   ],
+   [
+    "e-map",
+    "Connection map"
+   ],
+   [
+    "e-orders",
+    "Watch orders"
+   ],
+   [
+    "e-road",
+    "Road to Doomsday"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,307 @@
+{
+ "film-iron-man": [
+  "Robert Downey Jr.",
+  "Terrence Howard",
+  "Jeff Bridges"
+ ],
+ "film-the-incredible-hulk": [
+  "Edward Norton",
+  "Liv Tyler",
+  "Tim Roth"
+ ],
+ "film-iron-man-2": [
+  "Robert Downey Jr.",
+  "Gwyneth Paltrow",
+  "Don Cheadle"
+ ],
+ "film-thor": [
+  "Chris Hemsworth",
+  "Natalie Portman",
+  "Tom Hiddleston"
+ ],
+ "film-captain-america-the-first-avenger": [
+  "Chris Evans",
+  "Hayley Atwell",
+  "Sebastian Stan"
+ ],
+ "film-the-avengers": [
+  "Robert Downey Jr.",
+  "Chris Evans",
+  "Mark Ruffalo"
+ ],
+ "film-iron-man-3": [
+  "Robert Downey Jr.",
+  "Gwyneth Paltrow",
+  "Don Cheadle"
+ ],
+ "film-thor-the-dark-world": [
+  "Chris Hemsworth",
+  "Natalie Portman",
+  "Tom Hiddleston"
+ ],
+ "film-captain-america-the-winter-soldier": [
+  "Chris Evans",
+  "Samuel L. Jackson",
+  "Scarlett Johansson"
+ ],
+ "film-guardians-of-the-galaxy": [
+  "Chris Pratt",
+  "Zoe Saldaña",
+  "Dave Bautista"
+ ],
+ "film-avengers-age-of-ultron": [
+  "Robert Downey Jr.",
+  "Chris Hemsworth",
+  "Mark Ruffalo"
+ ],
+ "film-ant-man": [
+  "Paul Rudd",
+  "Michael Douglas",
+  "Evangeline Lilly"
+ ],
+ "film-captain-america-civil-war": [
+  "Chris Evans",
+  "Robert Downey Jr.",
+  "Scarlett Johansson"
+ ],
+ "film-doctor-strange": [
+  "Benedict Cumberbatch",
+  "Chiwetel Ejiofor",
+  "Rachel McAdams"
+ ],
+ "film-guardians-of-the-galaxy-vol-2": [
+  "Chris Pratt",
+  "Zoe Saldaña",
+  "Dave Bautista"
+ ],
+ "film-spider-man-homecoming": [
+  "Tom Holland",
+  "Michael Keaton",
+  "Robert Downey Jr."
+ ],
+ "film-thor-ragnarok": [
+  "Chris Hemsworth",
+  "Mark Ruffalo",
+  "Tom Hiddleston"
+ ],
+ "film-black-panther": [
+  "Chadwick Boseman",
+  "Michael B. Jordan",
+  "Lupita Nyong'o"
+ ],
+ "film-avengers-infinity-war": [
+  "Robert Downey Jr.",
+  "Chris Evans",
+  "Chris Hemsworth"
+ ],
+ "film-ant-man-and-the-wasp": [
+  "Paul Rudd",
+  "Evangeline Lilly",
+  "Michael Douglas"
+ ],
+ "film-captain-marvel": [
+  "Brie Larson",
+  "Samuel L. Jackson",
+  "Ben Mendelsohn"
+ ],
+ "film-avengers-endgame": [
+  "Robert Downey Jr.",
+  "Chris Evans",
+  "Mark Ruffalo"
+ ],
+ "film-spider-man-far-from-home": [
+  "Tom Holland",
+  "Jake Gyllenhaal",
+  "Samuel L. Jackson"
+ ],
+ "film-black-widow": [
+  "Scarlett Johansson",
+  "Florence Pugh",
+  "Rachel Weisz"
+ ],
+ "film-shang-chi-and-the-legend-of-the-ten-rings": [
+  "Simu Liu",
+  "Tony Leung Chiu-wai",
+  "Awkwafina"
+ ],
+ "film-eternals": [
+  "Gemma Chan",
+  "Richard Madden",
+  "Angelina Jolie"
+ ],
+ "film-spider-man-no-way-home": [
+  "Tom Holland",
+  "Zendaya",
+  "Benedict Cumberbatch"
+ ],
+ "film-doctor-strange-in-the-multiverse-of-madness": [
+  "Benedict Cumberbatch",
+  "Xochitl Gomez",
+  "Elizabeth Olsen"
+ ],
+ "film-thor-love-and-thunder": [
+  "Chris Hemsworth",
+  "Natalie Portman",
+  "Christian Bale"
+ ],
+ "film-black-panther-wakanda-forever": [
+  "Letitia Wright",
+  "Tenoch Huerta Mejía",
+  "Lupita Nyong'o"
+ ],
+ "film-ant-man-and-the-wasp-quantumania": [
+  "Paul Rudd",
+  "Evangeline Lilly",
+  "Michael Douglas"
+ ],
+ "film-guardians-of-the-galaxy-vol-3": [
+  "Chris Pratt",
+  "Zoe Saldaña",
+  "Dave Bautista"
+ ],
+ "film-the-marvels": [
+  "Brie Larson",
+  "Teyonah Parris",
+  "Iman Vellani"
+ ],
+ "film-deadpool-wolverine": [
+  "Ryan Reynolds",
+  "Hugh Jackman",
+  "Emma Corrin"
+ ],
+ "film-captain-america-brave-new-world": [
+  "Anthony Mackie",
+  "Harrison Ford",
+  "Danny Ramirez"
+ ],
+ "film-thunderbolts": [
+  "Florence Pugh",
+  "Sebastian Stan",
+  "Julia Louis-Dreyfus"
+ ],
+ "film-the-fantastic-four-first-steps": [
+  "Pedro Pascal",
+  "Vanessa Kirby",
+  "Ebon Moss-Bachrach"
+ ],
+ "film-spider-man-brand-new-day": [
+  "Tom Holland",
+  "Sadie Sink",
+  "Tramell Tillman"
+ ],
+ "film-avengers-doomsday": [
+  "Robert Downey Jr.",
+  "Chris Evans",
+  "Chris Hemsworth"
+ ],
+ "film-avengers-secret-wars": [
+  "Robert Downey Jr.",
+  "Pedro Pascal",
+  "Vanessa Kirby"
+ ],
+ "poster-xmen": [
+  "Hugh Jackman",
+  "Patrick Stewart",
+  "Ian McKellen"
+ ],
+ "poster-x2": [
+  "Hugh Jackman",
+  "Patrick Stewart",
+  "Ian McKellen"
+ ],
+ "poster-cafa": [
+  "Chris Evans",
+  "Hayley Atwell",
+  "Sebastian Stan"
+ ],
+ "poster-avengers": [
+  "Robert Downey Jr.",
+  "Chris Evans",
+  "Mark Ruffalo"
+ ],
+ "poster-iw": [
+  "Robert Downey Jr.",
+  "Chris Evans",
+  "Chris Hemsworth"
+ ],
+ "poster-endgame": [
+  "Robert Downey Jr.",
+  "Chris Evans",
+  "Mark Ruffalo"
+ ],
+ "poster-loki": [
+  "Tom Hiddleston",
+  "Sophia Di Martino",
+  "Wunmi Mosaku"
+ ],
+ "poster-shangchi": [
+  "Simu Liu",
+  "Tony Leung Chiu-wai",
+  "Awkwafina"
+ ],
+ "poster-nwh": [
+  "Tom Holland",
+  "Zendaya",
+  "Benedict Cumberbatch"
+ ],
+ "poster-wf": [
+  "Letitia Wright",
+  "Tenoch Huerta Mejía",
+  "Lupita Nyong'o"
+ ],
+ "poster-bnw": [
+  "Anthony Mackie",
+  "Harrison Ford",
+  "Danny Ramirez"
+ ],
+ "poster-dw": [
+  "Ryan Reynolds",
+  "Hugh Jackman",
+  "Emma Corrin"
+ ],
+ "poster-mom": [
+  "Benedict Cumberbatch",
+  "Xochitl Gomez",
+  "Elizabeth Olsen"
+ ],
+ "poster-tb": [
+  "Florence Pugh",
+  "Sebastian Stan",
+  "Julia Louis-Dreyfus"
+ ],
+ "poster-ff": [
+  "Pedro Pascal",
+  "Vanessa Kirby",
+  "Ebon Moss-Bachrach"
+ ],
+ "poster-bnd": [
+  "Tom Holland",
+  "Sadie Sink",
+  "Tramell Tillman"
+ ],
+ "poster-bw": [
+  "Scarlett Johansson",
+  "Florence Pugh",
+  "Rachel Weisz"
+ ],
+ "poster-fws": [
+  "Anthony Mackie",
+  "Sebastian Stan",
+  "Wyatt Russell"
+ ],
+ "poster-quant": [
+  "Paul Rudd",
+  "Evangeline Lilly",
+  "Michael Douglas"
+ ],
+ "poster-vq": [
+  "Paul Bettany",
+  "James Spader",
+  "Ruaridh Mollica"
+ ],
+ "poster-marvels": [
+  "Brie Larson",
+  "Teyonah Parris",
+  "Iman Vellani"
+ ]
+}

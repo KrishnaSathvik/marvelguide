@@ -1,0 +1,332 @@
+[
+ {
+  "id": "xmen",
+  "n": "X-Men",
+  "y": 2000,
+  "t": "Film",
+  "m": 104,
+  "lane": "blue",
+  "why": "Where it started for Xavier, Magneto, Cyclops and Mystique. Their split over how mutants should live alongside humans is the core of a relationship Doomsday brings back.",
+  "ch": [
+   "Professor X",
+   "Magneto",
+   "Cyclops",
+   "Mystique"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-e9f59c82-de76-4a18-a849-192532ff9b2d",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "x2",
+  "n": "X2",
+  "y": 2003,
+  "t": "Film",
+  "m": 134,
+  "lane": "blue",
+  "why": "Deepens the Xavier–Magneto rivalry and introduces Alan Cumming's Nightcrawler. If you only watch one legacy X-Men film, guides say make it this one.",
+  "ch": [
+   "Nightcrawler",
+   "Professor X",
+   "Magneto"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-54748282-5bf7-496c-8db9-a9aa3b7f57ac",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "cafa",
+  "n": "Captain America: The First Avenger",
+  "y": 2011,
+  "t": "Film",
+  "m": 124,
+  "lane": "gold",
+  "why": "Steve Rogers' origin and his story with Peggy Carter. Chris Evans and Hayley Atwell are both confirmed to return.",
+  "ch": [
+   "Steve Rogers",
+   "Peggy Carter",
+   "Bucky Barnes"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-8e68c43a-117c-4f4d-b217-0db106a1a614",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "avengers",
+  "n": "The Avengers",
+  "y": 2012,
+  "t": "Film",
+  "m": 143,
+  "lane": "gold",
+  "why": "The team assembles for the first time, and Thor and Loki clash on Earth. This is the original dynamic the new film builds against.",
+  "ch": [
+   "Thor",
+   "Loki",
+   "Steve Rogers"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-d2ab699b-67da-4906-a7a4-5bc542c953cf",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "iw",
+  "n": "Avengers: Infinity War",
+  "y": 2018,
+  "t": "Film",
+  "m": 149,
+  "lane": "gold",
+  "why": "The Russo brothers' previous Avengers event. Wakanda's battle and Thor's arc set up the heroes who are still standing.",
+  "ch": [
+   "Thor",
+   "Bucky Barnes",
+   "M'Baku",
+   "Shuri"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-9a136e06-852a-41bf-b71d-fa061cb43225",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "endgame",
+  "n": "Avengers: Endgame",
+  "y": 2019,
+  "t": "Film",
+  "m": 181,
+  "lane": "gold",
+  "why": "Closes out the original team. Steve hands the shield to Sam, Thor leaves still grieving, and Scott Lang's return from the Quantum Realm kicks off the finale.",
+  "ch": [
+   "Steve Rogers",
+   "Sam Wilson",
+   "Thor",
+   "Scott Lang"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-28e07482-7213-4ce6-94ca-bd195963ca81",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "loki",
+  "n": "Loki (Seasons 1–2)",
+  "y": 2021,
+  "t": "Series · 12 eps",
+  "m": 570,
+  "lane": "purple",
+  "why": "The only series on the official list. It explains how branching timelines work, and season 2's finale leaves Loki holding the multiverse together — the structure Doomsday threatens.",
+  "ch": [
+   "Loki"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-8f8c5cbb-e5ba-4285-9e2c-86abcac9fd50",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "shangchi",
+  "n": "Shang-Chi and the Legend of the Ten Rings",
+  "y": 2021,
+  "t": "Film",
+  "m": 132,
+  "lane": "green",
+  "why": "The only full introduction to Simu Liu's Shang-Chi, who is confirmed for Doomsday.",
+  "ch": [
+   "Shang-Chi"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-92243dd0-bcfe-4365-ae76-1fa3cf1a2ab9",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "nwh",
+  "n": "Spider-Man: No Way Home",
+  "y": 2021,
+  "t": "Film",
+  "m": 148,
+  "lane": "purple",
+  "why": "Proof that characters from other franchises' universes can cross into the MCU. Doomsday does the same thing on a much bigger scale.",
+  "ch": [
+   "Multiverse crossover"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-295fb45a-c8bb-477e-816f-b0706b4d9984",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "wf",
+  "n": "Black Panther: Wakanda Forever",
+  "y": 2022,
+  "t": "Film",
+  "m": 161,
+  "lane": "green",
+  "why": "Shuri takes up the Black Panther mantle, M'Baku steps up, and Namor's undersea kingdom of Talokan is revealed. All three characters are confirmed.",
+  "ch": [
+   "Shuri",
+   "M'Baku",
+   "Namor"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-86e14fdb-3841-4282-ad38-07c8c4aab4b6",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "bnw",
+  "n": "Captain America: Brave New World",
+  "y": 2025,
+  "t": "Film",
+  "m": 118,
+  "lane": "green",
+  "why": "Sam Wilson's first film as Captain America, with Joaquin Torres as the new Falcon.",
+  "ch": [
+   "Sam Wilson",
+   "Joaquin Torres"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-3064ac7f-ef4d-4f89-b92f-b5524da92a72",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "dw",
+  "n": "Deadpool & Wolverine",
+  "y": 2024,
+  "t": "Film",
+  "m": 128,
+  "lane": "blue",
+  "why": "The bridge between the Fox-era universe and the MCU, and where Channing Tatum finally plays Gambit, a role he returns to in Doomsday.",
+  "ch": [
+   "Gambit",
+   "Multiverse crossover"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-120ae1e6-2240-4924-a4ce-f8de6e28b0b1",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "mom",
+  "n": "Doctor Strange in the Multiverse of Madness",
+  "y": 2022,
+  "t": "Film",
+  "m": 126,
+  "lane": "purple",
+  "why": "The MCU's big look at the wider multiverse, and the film that explains incursions: two universes colliding, with one destroyed.",
+  "ch": [
+   "Incursions"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-6fe6062c-2499-4f44-a48a-fc93f59cb504",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "tb",
+  "n": "Thunderbolts*",
+  "y": 2025,
+  "t": "Film",
+  "m": 127,
+  "lane": "green",
+  "why": "Yelena, Bucky, Red Guardian, U.S. Agent, Ghost and Sentry form a team, and by the end they're publicly branded the New Avengers.",
+  "ch": [
+   "Yelena",
+   "Bucky",
+   "Red Guardian",
+   "U.S. Agent",
+   "Ghost",
+   "Sentry"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-f51dce23-7d8f-490a-9f0c-be1b5432c2a9",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "ff",
+  "n": "The Fantastic Four: First Steps",
+  "y": 2025,
+  "t": "Film",
+  "m": 115,
+  "lane": "orange",
+  "why": "Meet Reed, Sue, Johnny and Ben in their own retro-future universe. The mid-credits scene was the MCU's first tease of Doctor Doom.",
+  "ch": [
+   "Reed",
+   "Sue",
+   "Johnny",
+   "Ben",
+   "Doom"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-2142a7a9-4c49-438d-a492-296c4e08b714",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "bnd",
+  "n": "Spider-Man: Brand New Day",
+  "y": 2026,
+  "t": "Film",
+  "m": null,
+  "lane": "green",
+  "why": "The last MCU movie before Doomsday. Kevin Feige has said it takes place before Doomsday, and Yelena appears in it. Not on Disney+'s list.",
+  "ch": [
+   "Yelena"
+  ],
+  "link": null,
+  "lt": ""
+ },
+ {
+  "id": "bw",
+  "n": "Black Widow",
+  "y": 2021,
+  "t": "Film",
+  "m": 134,
+  "lane": "green",
+  "why": "Introduces Yelena and Red Guardian, both confirmed, and their family history with Natasha. Makes Thunderbolts* hit harder.",
+  "ch": [
+   "Yelena",
+   "Red Guardian"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-d9cd6bd1-bcf8-4a3b-8f92-0fdd4f79ac08",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "fws",
+  "n": "The Falcon and the Winter Soldier",
+  "y": 2021,
+  "t": "Series · 6 eps",
+  "m": 330,
+  "lane": "green",
+  "why": "Sam decides whether to pick up the shield, Bucky confronts his past, and John Walker first takes the Captain America title and disgraces it.",
+  "ch": [
+   "Sam Wilson",
+   "Bucky",
+   "U.S. Agent",
+   "Joaquin Torres"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-3c08a31a-2350-4aaf-90d0-88def4c551bf",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "quant",
+  "n": "Ant-Man and the Wasp: Quantumania",
+  "y": 2023,
+  "t": "Film",
+  "m": 125,
+  "lane": "green",
+  "why": "The latest look at Scott Lang and the grown-up Cassie (Kathryn Newton), both confirmed for Doomsday.",
+  "ch": [
+   "Scott Lang",
+   "Cassie Lang"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-eb1453f3-48aa-4af0-85f5-8ca4916c7415",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "vq",
+  "n": "VisionQuest",
+  "y": 2026,
+  "t": "Series · 8 eps",
+  "m": null,
+  "lane": "purple",
+  "why": "The final chapter of the WandaVision trilogy, and the last MCU release before Doomsday. Stay for the second post-credits scene in episode 8: it leads straight into the movie.",
+  "ch": [
+   "Vision",
+   "Tommy",
+   "Billy",
+   "Ultron"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-8744ec55-8d14-4631-99b4-c889a2d6013f",
+  "lt": "Watch on Disney+"
+ },
+ {
+  "id": "marvels",
+  "n": "The Marvels",
+  "y": 2023,
+  "t": "Film",
+  "m": 105,
+  "lane": "blue",
+  "why": "Worth it for the mid-credits scene, which brought Kelsey Grammer's Beast into the MCU as an early sign the X-Men were coming.",
+  "ch": [
+   "Beast"
+  ],
+  "link": "https://www.disneyplus.com/browse/entity-75c90eca-8969-4edb-ac1a-7165cff2671c",
+  "lt": "Watch on Disney+"
+ }
+]

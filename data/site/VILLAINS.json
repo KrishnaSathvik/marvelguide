@@ -1,0 +1,93 @@
+[
+ {
+  "n": "Thanos",
+  "p": "Erased half of all life",
+  "sc": "universal",
+  "w": 100,
+  "id": "villain-thanos"
+ },
+ {
+  "n": "Doctor Doom",
+  "p": "Expected to threaten the whole multiverse",
+  "sc": "universal",
+  "w": 98,
+  "id": "villain-doctor-doom"
+ },
+ {
+  "n": "Kang the Conqueror",
+  "p": "Variants set out to conquer all timelines",
+  "sc": "universal",
+  "w": 94,
+  "id": "villain-kang-the-conqueror"
+ },
+ {
+  "n": "Dormammu",
+  "p": "Would consume the universe",
+  "sc": "universal",
+  "w": 90,
+  "id": "villain-dormammu"
+ },
+ {
+  "n": "Galactus",
+  "p": "Devourer of worlds, defeated on Earth-828",
+  "sc": "cosmic",
+  "w": 86,
+  "id": "villain-galactus"
+ },
+ {
+  "n": "Hela",
+  "p": "The Goddess of Death",
+  "sc": "cosmic",
+  "w": 80,
+  "id": "villain-hela"
+ },
+ {
+  "n": "Scarlet Witch",
+  "p": "Grief-driven rampage across the multiverse",
+  "sc": "cosmic",
+  "w": 78,
+  "id": "villain-scarlet-witch"
+ },
+ {
+  "n": "The High Evolutionary",
+  "p": "Set out to engineer a perfect species",
+  "sc": "cosmic",
+  "w": 70,
+  "id": "villain-the-high-evolutionary"
+ },
+ {
+  "n": "Gorr the God Butcher",
+  "p": "Swore to kill every god",
+  "sc": "cosmic",
+  "w": 66,
+  "id": "villain-gorr-the-god-butcher"
+ },
+ {
+  "n": "Ultron",
+  "p": "Tried to “save” Earth by ending humanity",
+  "sc": "global",
+  "w": 58,
+  "id": "villain-ultron"
+ },
+ {
+  "n": "Red Skull",
+  "p": "HYDRA world domination",
+  "sc": "global",
+  "w": 46,
+  "id": "villain-red-skull"
+ },
+ {
+  "n": "Green Goblin",
+  "p": "Set out to break Spider-Man",
+  "sc": "street",
+  "w": 34,
+  "id": "villain-green-goblin"
+ },
+ {
+  "n": "Kingpin",
+  "p": "Rules New York's underworld",
+  "sc": "street",
+  "w": 26,
+  "id": "villain-kingpin"
+ }
+]

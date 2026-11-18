@@ -1,0 +1,56 @@
+[
+ {
+  "n": "The Arc Reactor",
+  "i": "cpu",
+  "p": "Tony Stark's miniature clean-energy core. It kept him alive and powers every Iron Man suit.",
+  "id": "tech-the-arc-reactor"
+ },
+ {
+  "n": "Nanotech Armor",
+  "i": "shield",
+  "p": "Suits from the Mark 50 onward form instantly from a housing unit and shape weapons on demand.",
+  "id": "tech-nanotech-armor"
+ },
+ {
+  "n": "Vibranium",
+  "i": "gem",
+  "p": "Wakanda's near-indestructible, energy-absorbing metal. It makes Cap's shield and powers a nation.",
+  "id": "tech-vibranium"
+ },
+ {
+  "n": "Pym Particles",
+  "i": "atom",
+  "p": "Shrink or enlarge any matter. The key that unlocked Quantum Realm time travel.",
+  "id": "tech-pym-particles"
+ },
+ {
+  "n": "Mysterio's Illusions",
+  "i": "eye",
+  "p": "Drone-projected holograms convincing enough to fake a multiverse.",
+  "id": "tech-mysterio-s-illusions"
+ },
+ {
+  "n": "TVA Technology",
+  "i": "hourglass",
+  "p": "TemPads, reset charges and pruning devices that operate outside of time itself.",
+  "id": "tech-tva-technology"
+ },
+ {
+  "n": "Captain America's Shield",
+  "i": "shield",
+  "p": "A vibranium disc carried by Steve Rogers, and now Sam Wilson's responsibility.",
+  "id": "tech-captain-america-s-shield"
+ },
+ {
+  "n": "Mjolnir & Stormbreaker",
+  "i": "zap",
+  "p": "Thor's enchanted hammer and the axe forged in Infinity War. Only the worthy can lift Mjolnir.",
+  "id": "tech-mjolnir-stormbreaker"
+ },
+ {
+  "n": "The Ten Rings",
+  "i": "orbit",
+  "p": "The ancient rings worn by Wenwu and later his son Shang-Chi. Their origin is still a mystery.",
+  "id": "tech-the-ten-rings"
+ }
+]

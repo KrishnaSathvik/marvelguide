@@ -1,0 +1,35 @@
+[
+ {
+  "k": "mcu",
+  "c": "gold",
+  "code": "Earth-616",
+  "tag": "The main MCU",
+  "h": "Our universe",
+  "what": "This is the world we've followed since Iron Man in 2008. Marvel Comics has always called its main universe Earth-616, and the MCU took that name in Multiverse of Madness. It's also the TVA's “Sacred Timeline.”",
+  "who": "Sam Wilson's Captain America, Thor, Loki, Shang-Chi, Ant-Man, Shuri and Wakanda, plus Yelena's New Avengers.",
+  "now": "There's been no proper Avengers team since Endgame. Feige says Doomsday is the first time they reassemble, with Sam in charge.",
+  "seen": "Everything from Iron Man to Thunderbolts*"
+ },
+ {
+  "k": "ff",
+  "c": "orange",
+  "code": "Earth-828",
+  "tag": "The Fantastic Four's world",
+  "h": "A retro-future Earth",
+  "what": "A separate universe that looks like the 1960s dreamed the future would look. The number is a tribute to Fantastic Four co-creator Jack Kirby, born on August 28 (8/28). Director Matt Shakman put the team on their own Earth so they could be the first and only heroes there, not latecomers to the Avengers' world.",
+  "who": "Reed Richards, Sue Storm, Johnny Storm, Ben Grimm and their son Franklin, plus H.E.R.B.I.E.",
+  "now": "They've saved their Earth from Galactus. Four years later, Doom has found his way into their home and is taking an interest in Franklin.",
+  "seen": "The Fantastic Four: First Steps"
+ },
+ {
+  "k": "x",
+  "c": "blue",
+  "code": "Earth-10005",
+  "tag": "The Fox X-Men universe",
+  "h": "The original X-Men's world",
+  "what": "The world of the X-Men films Fox made from 2000 onward. Marvel's official handbook gave it the number 10005 back in 2008, and Deadpool & Wolverine made it MCU canon when the TVA referred to it by that number. It nearly died when its anchor, Logan, passed away, but it was saved and is thriving again.",
+  "who": "Professor X, Magneto, Cyclops, Mystique, Nightcrawler and Beast from the original cast, plus Channing Tatum's Gambit and Deadpool.",
+  "now": "The original X-Men cast is officially in Doomsday. Hugh Jackman's Wolverine is not on the official cast list.",
+  "seen": "X-Men · X2 · Deadpool & Wolverine"
+ }
+]

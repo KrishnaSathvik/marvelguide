@@ -1,0 +1,44 @@
+[
+ {
+  "n": "Absolute beginner",
+  "s": "~8 films",
+  "c": "#e2231a",
+  "p": "The greatest hits: Iron Man → The Avengers → The Winter Soldier → Guardians of the Galaxy → Infinity War → Endgame → No Way Home → Deadpool & Wolverine.",
+  "id": "order-absolute-beginner"
+ },
+ {
+  "n": "Release order",
+  "s": "The classic",
+  "c": "#c98a12",
+  "p": "Watch everything in the order it premiered, from 2008 on. That's how the story was meant to unfold, with every surprise intact.",
+  "id": "order-release-order"
+ },
+ {
+  "n": "Chronological",
+  "s": "In-story time",
+  "c": "#1d64d8",
+  "p": "Follow the in-universe timeline: start with Captain America: The First Avenger (1940s) and Captain Marvel (1990s), then move forward.",
+  "id": "order-chronological"
+ },
+ {
+  "n": "Family-friendly",
+  "s": "Lighter tone",
+  "c": "#16864a",
+  "p": "Skip the R-rated and darker entries: the Avengers films, Guardians, Ant-Man, Spider-Man, Black Panther, Captain Marvel.",
+  "id": "order-family-friendly"
+ },
+ {
+  "n": "Doomsday prep",
+  "s": "The shortcut",
+  "c": "#6d43e8",
+  "p": "Endgame → Loki S1–2 → No Way Home → Multiverse of Madness → Deadpool & Wolverine → Thunderbolts* → Fantastic Four.",
+  "id": "order-doomsday-prep"
+ },
+ {
+  "n": "Ultimate completionist",
+  "s": "Everything",
+  "c": "#111",
+  "p": "Every film and series in timeline order, including the animated What If…? branches.",
+  "id": "order-ultimate-completionist"
+ }
+]

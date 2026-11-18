@@ -1,0 +1,65 @@
+[
+ {
+  "n": "The Avengers",
+  "e": "Est. 2012",
+  "c": "#e2231a",
+  "p": "Earth's Mightiest Heroes, assembled by Nick Fury to face threats no single hero could.",
+  "m": "Iron Man · Captain America · Thor · Hulk · Black Widow · Hawkeye",
+  "tg": "canon",
+  "id": "team-the-avengers"
+ },
+ {
+  "n": "The New Avengers",
+  "e": "Est. 2025",
+  "c": "#16864a",
+  "p": "Reformed antiheroes revealed to the world as its new team at the end of Thunderbolts*.",
+  "m": "Yelena · Bucky · Red Guardian · Ghost · U.S. Agent · Sentry",
+  "tg": "canon",
+  "id": "team-the-new-avengers"
+ },
+ {
+  "n": "Guardians of the Galaxy",
+  "e": "Est. 2014",
+  "c": "#0f8b8d",
+  "p": "A ragtag cosmic crew protecting the galaxy, now led by Rocket.",
+  "m": "Star-Lord · Gamora · Rocket · Groot · Drax · Nebula · Mantis",
+  "tg": "canon",
+  "id": "team-guardians-of-the-galaxy"
+ },
+ {
+  "n": "The Fantastic Four",
+  "e": "Est. 2025",
+  "c": "#ff6a2b",
+  "p": "Marvel's First Family, arriving from Earth-828 with cosmic powers.",
+  "m": "Mister Fantastic · Invisible Woman · Human Torch · The Thing",
+  "tg": "canon",
+  "id": "team-the-fantastic-four"
+ },
+ {
+  "n": "The X-Men",
+  "e": "Multiverse",
+  "c": "#1d64d8",
+  "p": "Mutants sworn to protect a world that fears them, entering the MCU through the multiverse.",
+  "m": "Professor X · Magneto · Cyclops · Mystique · Nightcrawler · Beast · Gambit",
+  "tg": "canon",
+  "id": "team-the-x-men"
+ },
+ {
+  "n": "The Illuminati",
+  "e": "Earth-838",
+  "c": "#111",
+  "p": "A secret council of heroes from another universe who judged Doctor Strange in Multiverse of Madness.",
+  "m": "Professor X (838) · Captain Carter · Captain Marvel (Maria Rambeau) · Black Bolt · Mister Fantastic (838)",
+  "tg": "canon",
+  "id": "team-the-illuminati"
+ },
+ {
+  "n": "Young Avengers",
+  "e": "Forming",
+  "c": "#d6336c",
+  "p": "The next generation, being seeded across recent films and series.",
+  "m": "Kate Bishop · Kamala Khan · Cassie Lang · Wiccan · America Chavez",
+  "tg": "theory",
+  "id": "team-young-avengers"
+ }
+]

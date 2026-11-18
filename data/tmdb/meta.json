@@ -1,0 +1,978 @@
+{
+ "film-iron-man": {
+  "tmdb": 1726,
+  "kind": "movie",
+  "title": "Iron Man",
+  "date": "2008-04-30",
+  "runtime": 126,
+  "poster": "/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
+  "backdrop": "/cKvDv2LpwVEqbdXWoQl4XgGN6le.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Terrence Howard",
+   "Jeff Bridges",
+   "Gwyneth Paltrow"
+  ],
+  "vote": 7.668
+ },
+ "film-the-incredible-hulk": {
+  "tmdb": 1724,
+  "kind": "movie",
+  "title": "The Incredible Hulk",
+  "date": "2008-06-12",
+  "runtime": 114,
+  "poster": "/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
+  "backdrop": "/xfBnQ4mgf1jYZsscJGJjr6ce0Ar.jpg",
+  "cast": [
+   "Edward Norton",
+   "Liv Tyler",
+   "Tim Roth",
+   "William Hurt"
+  ],
+  "vote": 6.266
+ },
+ "film-iron-man-2": {
+  "tmdb": 10138,
+  "kind": "movie",
+  "title": "Iron Man 2",
+  "date": "2010-04-28",
+  "runtime": 124,
+  "poster": "/6WBeq4fCfn7AN0o21W9qNcRF2l9.jpg",
+  "backdrop": "/7lmBufEG7P7Y1HClYK3gCxYrkgS.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Gwyneth Paltrow",
+   "Don Cheadle",
+   "Scarlett Johansson"
+  ],
+  "vote": 6.856
+ },
+ "film-thor": {
+  "tmdb": 10195,
+  "kind": "movie",
+  "title": "Thor",
+  "date": "2011-04-27",
+  "runtime": 115,
+  "poster": "/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg",
+  "backdrop": "/cDJ61O1STtbWNBwefuqVrRe3d7l.jpg",
+  "cast": [
+   "Chris Hemsworth",
+   "Natalie Portman",
+   "Tom Hiddleston",
+   "Anthony Hopkins"
+  ],
+  "vote": 6.772
+ },
+ "film-captain-america-the-first-avenger": {
+  "tmdb": 1771,
+  "kind": "movie",
+  "title": "Captain America: The First Avenger",
+  "date": "2011-07-22",
+  "runtime": 124,
+  "poster": "/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
+  "backdrop": "/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg",
+  "cast": [
+   "Chris Evans",
+   "Hayley Atwell",
+   "Sebastian Stan",
+   "Tommy Lee Jones"
+  ],
+  "vote": 7.013
+ },
+ "film-the-avengers": {
+  "tmdb": 24428,
+  "kind": "movie",
+  "title": "The Avengers",
+  "date": "2012-04-25",
+  "runtime": 143,
+  "poster": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+  "backdrop": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Chris Evans",
+   "Mark Ruffalo",
+   "Chris Hemsworth"
+  ],
+  "vote": 8.085
+ },
+ "film-iron-man-3": {
+  "tmdb": 68721,
+  "kind": "movie",
+  "title": "Iron Man 3",
+  "date": "2013-04-18",
+  "runtime": 130,
+  "poster": "/qhPtAc1TKbMPqNvcdXSOn9Bn7hZ.jpg",
+  "backdrop": "/4TSqtluelcWByj8YZdqwzQVjI0O.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Gwyneth Paltrow",
+   "Don Cheadle",
+   "Guy Pearce"
+  ],
+  "vote": 6.932
+ },
+ "film-thor-the-dark-world": {
+  "tmdb": 76338,
+  "kind": "movie",
+  "title": "Thor: The Dark World",
+  "date": "2013-10-30",
+  "runtime": 112,
+  "poster": "/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg",
+  "backdrop": "/5o88bbqcV5STn56jqOeovaaWbAE.jpg",
+  "cast": [
+   "Chris Hemsworth",
+   "Natalie Portman",
+   "Tom Hiddleston",
+   "Christopher Eccleston"
+  ],
+  "vote": 6.504
+ },
+ "film-captain-america-the-winter-soldier": {
+  "tmdb": 100402,
+  "kind": "movie",
+  "title": "Captain America: The Winter Soldier",
+  "date": "2014-03-20",
+  "runtime": 136,
+  "poster": "/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg",
+  "backdrop": "/jJvrPQAHFKmz4pVano4UtWTsRgA.jpg",
+  "cast": [
+   "Chris Evans",
+   "Samuel L. Jackson",
+   "Scarlett Johansson",
+   "Robert Redford"
+  ],
+  "vote": 7.7
+ },
+ "film-guardians-of-the-galaxy": {
+  "tmdb": 118340,
+  "kind": "movie",
+  "title": "Guardians of the Galaxy",
+  "date": "2014-07-30",
+  "runtime": 121,
+  "poster": "/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
+  "backdrop": "/uLtVbjvS1O7gXL8lUOwsFOH4man.jpg",
+  "cast": [
+   "Chris Pratt",
+   "Zoe Salda\u00f1a",
+   "Dave Bautista",
+   "Vin Diesel"
+  ],
+  "vote": 7.9
+ },
+ "film-avengers-age-of-ultron": {
+  "tmdb": 99861,
+  "kind": "movie",
+  "title": "Avengers: Age of Ultron",
+  "date": "2015-04-22",
+  "runtime": 141,
+  "poster": "/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
+  "backdrop": "/kIBK5SKwgqIIuRKhhWrJn3XkbPq.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Chris Hemsworth",
+   "Mark Ruffalo",
+   "Chris Evans"
+  ],
+  "vote": 7.278
+ },
+ "film-ant-man": {
+  "tmdb": 102899,
+  "kind": "movie",
+  "title": "Ant-Man",
+  "date": "2015-07-14",
+  "runtime": 117,
+  "poster": "/rQRnQfUl3kfp78nCWq8Ks04vnq1.jpg",
+  "backdrop": "/1K3JmSNUN8OpjYsCjc0Hy0SYxAb.jpg",
+  "cast": [
+   "Paul Rudd",
+   "Michael Douglas",
+   "Evangeline Lilly",
+   "Corey Stoll"
+  ],
+  "vote": 7.066
+ },
+ "film-captain-america-civil-war": {
+  "tmdb": 271110,
+  "kind": "movie",
+  "title": "Captain America: Civil War",
+  "date": "2016-04-27",
+  "runtime": 147,
+  "poster": "/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
+  "backdrop": "/7FWlcZq3r6525LWOcvO9kNWurN1.jpg",
+  "cast": [
+   "Chris Evans",
+   "Robert Downey Jr.",
+   "Scarlett Johansson",
+   "Sebastian Stan"
+  ],
+  "vote": 7.455
+ },
+ "film-doctor-strange": {
+  "tmdb": 284052,
+  "kind": "movie",
+  "title": "Doctor Strange",
+  "date": "2016-10-25",
+  "runtime": 115,
+  "poster": "/uGBVj3bEbCoZbDjjl9wTxcygko1.jpg",
+  "backdrop": "/kkoiH8ZWxJ9WSAjOadGtuHUQxbm.jpg",
+  "cast": [
+   "Benedict Cumberbatch",
+   "Chiwetel Ejiofor",
+   "Rachel McAdams",
+   "Benedict Wong"
+  ],
+  "vote": 7.425
+ },
+ "film-guardians-of-the-galaxy-vol-2": {
+  "tmdb": 283995,
+  "kind": "movie",
+  "title": "Guardians of the Galaxy Vol. 2",
+  "date": "2017-04-25",
+  "runtime": 137,
+  "poster": "/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
+  "backdrop": "/aJn9XeesqsrSLKcHfHP4u5985hn.jpg",
+  "cast": [
+   "Chris Pratt",
+   "Zoe Salda\u00f1a",
+   "Dave Bautista",
+   "Vin Diesel"
+  ],
+  "vote": 7.607
+ },
+ "film-spider-man-homecoming": {
+  "tmdb": 315635,
+  "kind": "movie",
+  "title": "Spider-Man: Homecoming",
+  "date": "2017-07-05",
+  "runtime": 133,
+  "poster": "/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+  "backdrop": "/lAsr1ytUq0ATWdCbcjf59pupPFy.jpg",
+  "cast": [
+   "Tom Holland",
+   "Michael Keaton",
+   "Robert Downey Jr.",
+   "Marisa Tomei"
+  ],
+  "vote": 7.3
+ },
+ "film-thor-ragnarok": {
+  "tmdb": 284053,
+  "kind": "movie",
+  "title": "Thor: Ragnarok",
+  "date": "2017-10-24",
+  "runtime": 131,
+  "poster": "/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+  "backdrop": "/vLmHH8jAy8Jq8uBsLucd3592WGh.jpg",
+  "cast": [
+   "Chris Hemsworth",
+   "Mark Ruffalo",
+   "Tom Hiddleston",
+   "Cate Blanchett"
+  ],
+  "vote": 7.578
+ },
+ "film-black-panther": {
+  "tmdb": 284054,
+  "kind": "movie",
+  "title": "Black Panther",
+  "date": "2018-02-13",
+  "runtime": 135,
+  "poster": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+  "backdrop": "/b6ZJZHUdMEFECvGiDpJjlfUWela.jpg",
+  "cast": [
+   "Chadwick Boseman",
+   "Michael B. Jordan",
+   "Lupita Nyong'o",
+   "Danai Gurira"
+  ],
+  "vote": 7.358
+ },
+ "film-avengers-infinity-war": {
+  "tmdb": 299536,
+  "kind": "movie",
+  "title": "Avengers: Infinity War",
+  "date": "2018-04-25",
+  "runtime": 149,
+  "poster": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+  "backdrop": "/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Chris Evans",
+   "Chris Hemsworth",
+   "Josh Brolin"
+  ],
+  "vote": 8.247
+ },
+ "film-ant-man-and-the-wasp": {
+  "tmdb": 363088,
+  "kind": "movie",
+  "title": "Ant-Man and the Wasp",
+  "date": "2018-07-04",
+  "runtime": 119,
+  "poster": "/cFQEO687n1K6umXbInzocxcnAQz.jpg",
+  "backdrop": "/iYdgEUE2W2aJkgqfSjf1x3gFfuV.jpg",
+  "cast": [
+   "Paul Rudd",
+   "Evangeline Lilly",
+   "Michael Douglas",
+   "Hannah John-Kamen"
+  ],
+  "vote": 6.891
+ },
+ "film-captain-marvel": {
+  "tmdb": 299537,
+  "kind": "movie",
+  "title": "Captain Marvel",
+  "date": "2019-03-06",
+  "runtime": 124,
+  "poster": "/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
+  "backdrop": "/qAzYK4YPSWDc7aa4R43LcwRIAyb.jpg",
+  "cast": [
+   "Brie Larson",
+   "Samuel L. Jackson",
+   "Ben Mendelsohn",
+   "Jude Law"
+  ],
+  "vote": 6.764
+ },
+ "film-avengers-endgame": {
+  "tmdb": 299534,
+  "kind": "movie",
+  "title": "Avengers: Endgame",
+  "date": "2019-04-24",
+  "runtime": 181,
+  "poster": "/jtDv3lCnST0fZRvdYFwR5CVwK2x.jpg",
+  "backdrop": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Chris Evans",
+   "Mark Ruffalo",
+   "Chris Hemsworth"
+  ],
+  "vote": 8.2
+ },
+ "film-spider-man-far-from-home": {
+  "tmdb": 429617,
+  "kind": "movie",
+  "title": "Spider-Man: Far From Home",
+  "date": "2019-06-28",
+  "runtime": 129,
+  "poster": "/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg",
+  "backdrop": "/wqBW5ltBJu0gs26yCc8shQQV82d.jpg",
+  "cast": [
+   "Tom Holland",
+   "Jake Gyllenhaal",
+   "Samuel L. Jackson",
+   "Marisa Tomei"
+  ],
+  "vote": 7.385
+ },
+ "film-black-widow": {
+  "tmdb": 497698,
+  "kind": "movie",
+  "title": "Black Widow",
+  "date": "2021-07-07",
+  "runtime": 134,
+  "poster": "/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
+  "backdrop": "/keIxh0wPr2Ymj0Btjh4gW7JJ89e.jpg",
+  "cast": [
+   "Scarlett Johansson",
+   "Florence Pugh",
+   "Rachel Weisz",
+   "David Harbour"
+  ],
+  "vote": 7.139
+ },
+ "film-shang-chi-and-the-legend-of-the-ten-rings": {
+  "tmdb": 566525,
+  "kind": "movie",
+  "title": "Shang-Chi and the Legend of the Ten Rings",
+  "date": "2021-09-01",
+  "runtime": 132,
+  "poster": "/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg",
+  "backdrop": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg",
+  "cast": [
+   "Simu Liu",
+   "Tony Leung Chiu-wai",
+   "Awkwafina",
+   "Ben Kingsley"
+  ],
+  "vote": 7.478
+ },
+ "film-eternals": {
+  "tmdb": 524434,
+  "kind": "movie",
+  "title": "Eternals",
+  "date": "2021-11-03",
+  "runtime": 156,
+  "poster": "/lFByFSLV5WDJEv3KabbdAF959F2.jpg",
+  "backdrop": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg",
+  "cast": [
+   "Gemma Chan",
+   "Richard Madden",
+   "Angelina Jolie",
+   "Salma Hayek Pinault"
+  ],
+  "vote": 6.737
+ },
+ "film-spider-man-no-way-home": {
+  "tmdb": 634649,
+  "kind": "movie",
+  "title": "Spider-Man: No Way Home",
+  "date": "2021-12-15",
+  "runtime": 148,
+  "poster": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+  "backdrop": "/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
+  "cast": [
+   "Tom Holland",
+   "Zendaya",
+   "Benedict Cumberbatch",
+   "Jacob Batalon"
+  ],
+  "vote": 7.945
+ },
+ "film-doctor-strange-in-the-multiverse-of-madness": {
+  "tmdb": 453395,
+  "kind": "movie",
+  "title": "Doctor Strange in the Multiverse of Madness",
+  "date": "2022-05-04",
+  "runtime": 126,
+  "poster": "/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg",
+  "backdrop": "/AdyJH8kDm8xT8IKTlgpEC15ny4u.jpg",
+  "cast": [
+   "Benedict Cumberbatch",
+   "Xochitl Gomez",
+   "Elizabeth Olsen",
+   "Chiwetel Ejiofor"
+  ],
+  "vote": 7.216
+ },
+ "film-thor-love-and-thunder": {
+  "tmdb": 616037,
+  "kind": "movie",
+  "title": "Thor: Love and Thunder",
+  "date": "2022-07-06",
+  "runtime": 119,
+  "poster": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+  "backdrop": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg",
+  "cast": [
+   "Chris Hemsworth",
+   "Natalie Portman",
+   "Christian Bale",
+   "Tessa Thompson"
+  ],
+  "vote": 6.344
+ },
+ "film-black-panther-wakanda-forever": {
+  "tmdb": 505642,
+  "kind": "movie",
+  "title": "Black Panther: Wakanda Forever",
+  "date": "2022-11-09",
+  "runtime": 162,
+  "poster": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+  "backdrop": "/83H0C66AcvkwpG2738VCTHMY9uv.jpg",
+  "cast": [
+   "Letitia Wright",
+   "Tenoch Huerta Mej\u00eda",
+   "Lupita Nyong'o",
+   "Danai Gurira"
+  ],
+  "vote": 7.0
+ },
+ "film-ant-man-and-the-wasp-quantumania": {
+  "tmdb": 640146,
+  "kind": "movie",
+  "title": "Ant-Man and the Wasp: Quantumania",
+  "date": "2023-02-15",
+  "runtime": 125,
+  "poster": "/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg",
+  "backdrop": "/m8JTwHFwX7I7JY5fPe4SjqejWag.jpg",
+  "cast": [
+   "Paul Rudd",
+   "Evangeline Lilly",
+   "Michael Douglas",
+   "Michelle Pfeiffer"
+  ],
+  "vote": 6.193
+ },
+ "film-guardians-of-the-galaxy-vol-3": {
+  "tmdb": 447365,
+  "kind": "movie",
+  "title": "Guardians of the Galaxy Vol. 3",
+  "date": "2023-05-03",
+  "runtime": 150,
+  "poster": "/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
+  "backdrop": "/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg",
+  "cast": [
+   "Chris Pratt",
+   "Zoe Salda\u00f1a",
+   "Dave Bautista",
+   "Karen Gillan"
+  ],
+  "vote": 7.93
+ },
+ "film-the-marvels": {
+  "tmdb": 609681,
+  "kind": "movie",
+  "title": "The Marvels",
+  "date": "2023-11-08",
+  "runtime": 105,
+  "poster": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
+  "backdrop": "/feSiISwgEpVzR1v3zv2n2AU4ANJ.jpg",
+  "cast": [
+   "Brie Larson",
+   "Teyonah Parris",
+   "Iman Vellani",
+   "Samuel L. Jackson"
+  ],
+  "vote": 5.891
+ },
+ "film-deadpool-wolverine": {
+  "tmdb": 533535,
+  "kind": "movie",
+  "title": "Deadpool & Wolverine",
+  "date": "2024-07-24",
+  "runtime": 128,
+  "poster": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+  "backdrop": "/by8z9Fe8y7p4jo2YlW2SZDnptyT.jpg",
+  "cast": [
+   "Ryan Reynolds",
+   "Hugh Jackman",
+   "Emma Corrin",
+   "Matthew Macfadyen"
+  ],
+  "vote": 7.585
+ },
+ "film-captain-america-brave-new-world": {
+  "tmdb": 822119,
+  "kind": "movie",
+  "title": "Captain America: Brave New World",
+  "date": "2025-02-12",
+  "runtime": 119,
+  "poster": "/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+  "backdrop": "/ce3prrjh9ZehEl5JinNqr4jIeaB.jpg",
+  "cast": [
+   "Anthony Mackie",
+   "Harrison Ford",
+   "Danny Ramirez",
+   "Shira Haas"
+  ],
+  "vote": 5.949
+ },
+ "film-thunderbolts": {
+  "tmdb": 986056,
+  "kind": "movie",
+  "title": "Thunderbolts*",
+  "date": "2025-04-30",
+  "runtime": 127,
+  "poster": "/hqcexYHbiTBfDIdDWxrxPtVndBX.jpg",
+  "backdrop": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+  "cast": [
+   "Florence Pugh",
+   "Sebastian Stan",
+   "Julia Louis-Dreyfus",
+   "Lewis Pullman"
+  ],
+  "vote": 7.3
+ },
+ "film-the-fantastic-four-first-steps": {
+  "tmdb": 617126,
+  "kind": "movie",
+  "title": "The Fantastic 4: First Steps",
+  "date": "2025-07-23",
+  "runtime": 115,
+  "poster": "/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg",
+  "backdrop": "/s94NjfKkcSczZ1FembwmQZwsuwY.jpg",
+  "cast": [
+   "Pedro Pascal",
+   "Vanessa Kirby",
+   "Ebon Moss-Bachrach",
+   "Joseph Quinn"
+  ],
+  "vote": 6.9
+ },
+ "film-spider-man-brand-new-day": {
+  "tmdb": 969681,
+  "kind": "movie",
+  "title": "Spider-Man: Brand New Day",
+  "date": "2026-07-29",
+  "runtime": 145,
+  "poster": "/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+  "backdrop": "/subj7knTn4DeS6KS7qI66EQKe9i.jpg",
+  "cast": [
+   "Tom Holland",
+   "Sadie Sink",
+   "Tramell Tillman",
+   "Zendaya"
+  ],
+  "vote": 8.5
+ },
+ "film-avengers-doomsday": {
+  "tmdb": 1003596,
+  "kind": "movie",
+  "title": "Avengers: Doomsday",
+  "date": "2026-12-16",
+  "runtime": 165,
+  "poster": "/1zqWkLwC1zLBBBtIWzmkmWeMWnT.jpg",
+  "backdrop": "/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Chris Evans",
+   "Chris Hemsworth",
+   "Pedro Pascal"
+  ],
+  "vote": 0.0
+ },
+ "film-avengers-secret-wars": {
+  "tmdb": 1003598,
+  "kind": "movie",
+  "title": "Avengers: Secret Wars",
+  "date": "2027-12-15",
+  "runtime": 0,
+  "poster": "/f0YBuh4hyiAheXhh4JnJWoKi9g5.jpg",
+  "backdrop": "/rytc6Lf4447C0CDncwFa4gxe0vY.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Pedro Pascal",
+   "Vanessa Kirby",
+   "Ebon Moss-Bachrach"
+  ],
+  "vote": 0.0
+ },
+ "poster-xmen": {
+  "tmdb": 36657,
+  "kind": "movie",
+  "title": "X-Men",
+  "date": "2000-07-13",
+  "runtime": 104,
+  "poster": "/bRDAc4GogyS9ci3ow7UnInOcriN.jpg",
+  "backdrop": "/3QUVzbcNyfGe3ocWkYAT8emK8Co.jpg",
+  "cast": [
+   "Hugh Jackman",
+   "Patrick Stewart",
+   "Ian McKellen",
+   "Famke Janssen"
+  ],
+  "vote": 7.023
+ },
+ "poster-x2": {
+  "tmdb": 36658,
+  "kind": "movie",
+  "title": "X2",
+  "date": "2003-04-27",
+  "runtime": 133,
+  "poster": "/bst4alFUXCxISwdRUKSMhhkrX1M.jpg",
+  "backdrop": "/s8ftvFvafWWEhApISamHx32bx6h.jpg",
+  "cast": [
+   "Hugh Jackman",
+   "Patrick Stewart",
+   "Ian McKellen",
+   "James Marsden"
+  ],
+  "vote": 7.047
+ },
+ "poster-cafa": {
+  "tmdb": 1771,
+  "kind": "movie",
+  "title": "Captain America: The First Avenger",
+  "date": "2011-07-22",
+  "runtime": 124,
+  "poster": "/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
+  "backdrop": "/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg",
+  "cast": [
+   "Chris Evans",
+   "Hayley Atwell",
+   "Sebastian Stan",
+   "Tommy Lee Jones"
+  ],
+  "vote": 7.013
+ },
+ "poster-avengers": {
+  "tmdb": 24428,
+  "kind": "movie",
+  "title": "The Avengers",
+  "date": "2012-04-25",
+  "runtime": 143,
+  "poster": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+  "backdrop": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Chris Evans",
+   "Mark Ruffalo",
+   "Chris Hemsworth"
+  ],
+  "vote": 8.085
+ },
+ "poster-iw": {
+  "tmdb": 299536,
+  "kind": "movie",
+  "title": "Avengers: Infinity War",
+  "date": "2018-04-25",
+  "runtime": 149,
+  "poster": "/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+  "backdrop": "/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Chris Evans",
+   "Chris Hemsworth",
+   "Josh Brolin"
+  ],
+  "vote": 8.247
+ },
+ "poster-endgame": {
+  "tmdb": 299534,
+  "kind": "movie",
+  "title": "Avengers: Endgame",
+  "date": "2019-04-24",
+  "runtime": 181,
+  "poster": "/jtDv3lCnST0fZRvdYFwR5CVwK2x.jpg",
+  "backdrop": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+  "cast": [
+   "Robert Downey Jr.",
+   "Chris Evans",
+   "Mark Ruffalo",
+   "Chris Hemsworth"
+  ],
+  "vote": 8.2
+ },
+ "poster-loki": {
+  "tmdb": 84958,
+  "kind": "tv",
+  "title": "Loki",
+  "date": "2021-06-09",
+  "runtime": null,
+  "poster": "/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+  "backdrop": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg",
+  "cast": [
+   "Tom Hiddleston",
+   "Sophia Di Martino",
+   "Wunmi Mosaku",
+   "Owen Wilson"
+  ],
+  "vote": 8.182
+ },
+ "poster-shangchi": {
+  "tmdb": 566525,
+  "kind": "movie",
+  "title": "Shang-Chi and the Legend of the Ten Rings",
+  "date": "2021-09-01",
+  "runtime": 132,
+  "poster": "/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg",
+  "backdrop": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg",
+  "cast": [
+   "Simu Liu",
+   "Tony Leung Chiu-wai",
+   "Awkwafina",
+   "Ben Kingsley"
+  ],
+  "vote": 7.478
+ },
+ "poster-nwh": {
+  "tmdb": 634649,
+  "kind": "movie",
+  "title": "Spider-Man: No Way Home",
+  "date": "2021-12-15",
+  "runtime": 148,
+  "poster": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+  "backdrop": "/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
+  "cast": [
+   "Tom Holland",
+   "Zendaya",
+   "Benedict Cumberbatch",
+   "Jacob Batalon"
+  ],
+  "vote": 7.945
+ },
+ "poster-wf": {
+  "tmdb": 505642,
+  "kind": "movie",
+  "title": "Black Panther: Wakanda Forever",
+  "date": "2022-11-09",
+  "runtime": 162,
+  "poster": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+  "backdrop": "/83H0C66AcvkwpG2738VCTHMY9uv.jpg",
+  "cast": [
+   "Letitia Wright",
+   "Tenoch Huerta Mej\u00eda",
+   "Lupita Nyong'o",
+   "Danai Gurira"
+  ],
+  "vote": 7.0
+ },
+ "poster-bnw": {
+  "tmdb": 822119,
+  "kind": "movie",
+  "title": "Captain America: Brave New World",
+  "date": "2025-02-12",
+  "runtime": 119,
+  "poster": "/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+  "backdrop": "/ce3prrjh9ZehEl5JinNqr4jIeaB.jpg",
+  "cast": [
+   "Anthony Mackie",
+   "Harrison Ford",
+   "Danny Ramirez",
+   "Shira Haas"
+  ],
+  "vote": 5.949
+ },
+ "poster-dw": {
+  "tmdb": 533535,
+  "kind": "movie",
+  "title": "Deadpool & Wolverine",
+  "date": "2024-07-24",
+  "runtime": 128,
+  "poster": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+  "backdrop": "/by8z9Fe8y7p4jo2YlW2SZDnptyT.jpg",
+  "cast": [
+   "Ryan Reynolds",
+   "Hugh Jackman",
+   "Emma Corrin",
+   "Matthew Macfadyen"
+  ],
+  "vote": 7.585
+ },
+ "poster-mom": {
+  "tmdb": 453395,
+  "kind": "movie",
+  "title": "Doctor Strange in the Multiverse of Madness",
+  "date": "2022-05-04",
+  "runtime": 126,
+  "poster": "/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg",
+  "backdrop": "/AdyJH8kDm8xT8IKTlgpEC15ny4u.jpg",
+  "cast": [
+   "Benedict Cumberbatch",
+   "Xochitl Gomez",
+   "Elizabeth Olsen",
+   "Chiwetel Ejiofor"
+  ],
+  "vote": 7.216
+ },
+ "poster-tb": {
+  "tmdb": 986056,
+  "kind": "movie",
+  "title": "Thunderbolts*",
+  "date": "2025-04-30",
+  "runtime": 127,
+  "poster": "/hqcexYHbiTBfDIdDWxrxPtVndBX.jpg",
+  "backdrop": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+  "cast": [
+   "Florence Pugh",
+   "Sebastian Stan",
+   "Julia Louis-Dreyfus",
+   "Lewis Pullman"
+  ],
+  "vote": 7.3
+ },
+ "poster-ff": {
+  "tmdb": 617126,
+  "kind": "movie",
+  "title": "The Fantastic 4: First Steps",
+  "date": "2025-07-23",
+  "runtime": 115,
+  "poster": "/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg",
+  "backdrop": "/s94NjfKkcSczZ1FembwmQZwsuwY.jpg",
+  "cast": [
+   "Pedro Pascal",
+   "Vanessa Kirby",
+   "Ebon Moss-Bachrach",
+   "Joseph Quinn"
+  ],
+  "vote": 6.9
+ },
+ "poster-bnd": {
+  "tmdb": 969681,
+  "kind": "movie",
+  "title": "Spider-Man: Brand New Day",
+  "date": "2026-07-29",
+  "runtime": 145,
+  "poster": "/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+  "backdrop": "/subj7knTn4DeS6KS7qI66EQKe9i.jpg",
+  "cast": [
+   "Tom Holland",
+   "Sadie Sink",
+   "Tramell Tillman",
+   "Zendaya"
+  ],
+  "vote": 8.5
+ },
+ "poster-bw": {
+  "tmdb": 497698,
+  "kind": "movie",
+  "title": "Black Widow",
+  "date": "2021-07-07",
+  "runtime": 134,
+  "poster": "/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
+  "backdrop": "/keIxh0wPr2Ymj0Btjh4gW7JJ89e.jpg",
+  "cast": [
+   "Scarlett Johansson",
+   "Florence Pugh",
+   "Rachel Weisz",
+   "David Harbour"
+  ],
+  "vote": 7.139
+ },
+ "poster-fws": {
+  "tmdb": 88396,
+  "kind": "tv",
+  "title": "The Falcon and the Winter Soldier",
+  "date": "2021-03-19",
+  "runtime": null,
+  "poster": "/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+  "backdrop": "/aTjbqMONy77fHJrIYu14g1F0d5h.jpg",
+  "cast": [
+   "Anthony Mackie",
+   "Sebastian Stan",
+   "Wyatt Russell",
+   "Erin Kellyman"
+  ],
+  "vote": 7.581
+ },
+ "poster-quant": {
+  "tmdb": 640146,
+  "kind": "movie",
+  "title": "Ant-Man and the Wasp: Quantumania",
+  "date": "2023-02-15",
+  "runtime": 125,
+  "poster": "/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg",
+  "backdrop": "/m8JTwHFwX7I7JY5fPe4SjqejWag.jpg",
+  "cast": [
+   "Paul Rudd",
+   "Evangeline Lilly",
+   "Michael Douglas",
+   "Michelle Pfeiffer"
+  ],
+  "vote": 6.193
+ },
+ "poster-vq": {
+  "tmdb": 213375,
+  "kind": "tv",
+  "title": "VisionQuest",
+  "date": "2026-10-13",
+  "runtime": null,
+  "poster": "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+  "backdrop": "/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
+  "cast": [
+   "Paul Bettany",
+   "James Spader",
+   "Ruaridh Mollica",
+   "Todd Stashwick"
+  ],
+  "vote": 8.3
+ },
+ "poster-marvels": {
+  "tmdb": 609681,
+  "kind": "movie",
+  "title": "The Marvels",
+  "date": "2023-11-08",
+  "runtime": 105,
+  "poster": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
+  "backdrop": "/feSiISwgEpVzR1v3zv2n2AU4ANJ.jpg",
+  "cast": [
+   "Brie Larson",
+   "Teyonah Parris",
+   "Iman Vellani",
+   "Samuel L. Jackson"
+  ],
+  "vote": 5.891
+ }
+}

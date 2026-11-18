@@ -1,0 +1,178 @@
+[
+ {
+  "id": "villain-row-loki",
+  "img": "bd-avengers",
+  "badge": "Phase 1",
+  "tag": "canon",
+  "title": "Loki",
+  "sub": "Thor · The Avengers",
+  "blocks": [
+   [
+    "What he wanted",
+    "To rule. First Asgard, then Earth, which he invaded with Thanos's Chitauri army in The Avengers."
+   ],
+   [
+    "How it ended",
+    "The Avengers beat him in New York. He slowly turned into a hero across the Thor films and his own series."
+   ]
+  ],
+  "lead": [
+   "Now",
+   "He's the one holding every timeline together, and he's on the heroes' side in Doomsday."
+  ]
+ },
+ {
+  "id": "villain-row-ultron",
+  "img": "bd-ultron",
+  "badge": "Phase 2",
+  "tag": "canon",
+  "title": "Ultron",
+  "sub": "Avengers: Age of Ultron",
+  "blocks": [
+   [
+    "What he wanted",
+    "Tony and Bruce built him with the Mind Stone to protect the world. He decided the only way to save Earth was to wipe out humanity."
+   ],
+   [
+    "How it ended",
+    "The Avengers stopped him in Sokovia, and Vision destroyed his last body."
+   ]
+  ],
+  "lead": [
+   "Now",
+   "Ultron returned in VisionQuest (2026)."
+  ]
+ },
+ {
+  "id": "villain-row-hela",
+  "img": "bd-ragnarok",
+  "badge": "Phase 3",
+  "tag": "canon",
+  "title": "Hela",
+  "sub": "Thor: Ragnarok",
+  "blocks": [
+   [
+    "What she wanted",
+    "Odin's firstborn and the Goddess of Death. She wanted the throne of Asgard and an empire across the Nine Realms."
+   ],
+   [
+    "How it ended",
+    "Thor let Surtur destroy Asgard to stop her, and her with it."
+   ]
+  ],
+  "lead": [
+   "Why she matters",
+   "She crushed Mjolnir with one hand, one of the most shocking moments in the Thor films."
+  ]
+ },
+ {
+  "id": "villain-row-thanos",
+  "img": "bd-iw",
+  "badge": "Phase 1–3",
+  "tag": "canon",
+  "title": "Thanos",
+  "sub": "Avengers: Infinity War · Endgame",
+  "blocks": [
+   [
+    "What he wanted",
+    "To wipe out half of all life to “balance” the universe."
+   ],
+   [
+    "How it ended",
+    "He won in Infinity War. Thor killed him afterward, and a 2014 version who came to 2023 was snapped away by Tony."
+   ]
+  ],
+  "lead": [
+   "Why he matters",
+   "The villain the whole Infinity Saga built toward, and the standard every big bad gets compared to."
+  ]
+ },
+ {
+  "id": "villain-row-dormammu",
+  "img": "bd-doctor-strange",
+  "badge": "Phase 3",
+  "tag": "canon",
+  "title": "Dormammu",
+  "sub": "Doctor Strange",
+  "blocks": [
+   [
+    "What he wanted",
+    "The ruler of the Dark Dimension, hungry to absorb Earth."
+   ],
+   [
+    "How it ended",
+    "Strange trapped him in a time loop until he agreed to leave."
+   ]
+  ],
+  "lead": [
+   "Watch for",
+   "Clea, introduced in Multiverse of Madness, is tied to the Dark Dimension in the comics."
+  ]
+ },
+ {
+  "id": "villain-row-kang",
+  "img": "bd-quant",
+  "badge": "Phase 4–5",
+  "tag": "canon",
+  "title": "He Who Remains & Kang",
+  "sub": "Loki · Quantumania",
+  "blocks": [
+   [
+    "What they wanted",
+    "He Who Remains wanted to keep one timeline to stop his variants. Kang the Conqueror wanted to escape exile and rule."
+   ],
+   [
+    "How it ended",
+    "He Who Remains was killed by Sylvie. Kang was beaten in the Quantum Realm, but a Council of Kangs was waiting."
+   ]
+  ],
+  "lead": [
+   "Now",
+   "Marvel dropped Kang as the saga's main villain in 2024."
+  ]
+ },
+ {
+  "id": "villain-row-galactus",
+  "img": "bd-ff",
+  "badge": "Phase 6",
+  "tag": "canon",
+  "title": "Galactus",
+  "sub": "The Fantastic Four: First Steps",
+  "blocks": [
+   [
+    "What he wanted",
+    "A giant cosmic being who eats planets to survive. He offered to spare Earth-828 if Reed and Sue gave him their baby, Franklin."
+   ],
+   [
+    "How it ended",
+    "The Fantastic Four used Franklin as bait and sent Galactus away, with help from the Silver Surfer."
+   ]
+  ],
+  "lead": [
+   "Why he matters",
+   "He showed how powerful Franklin is, and that's exactly what Doom seems interested in."
+  ]
+ },
+ {
+  "id": "villain-row-doom",
+  "img": "story-7",
+  "badge": "Phase 6",
+  "tag": "canon",
+  "title": "Doctor Doom",
+  "sub": "Avengers: Doomsday · Secret Wars",
+  "blocks": [
+   [
+    "Who he is",
+    "Victor von Doom, ruler of Latveria, a genius scientist and sorcerer, and one of Marvel's greatest villains. Robert Downey Jr. plays him."
+   ],
+   [
+    "What we know",
+    "He appeared to Franklin on Earth-828 in First Steps. Marvel says he's not a Tony Stark variant."
+   ]
+  ],
+  "lead": [
+   "Next",
+   "He's the villain of both Doomsday (Dec 18, 2026) and Secret Wars (Dec 17, 2027)."
+  ]
+ }
+]
