@@ -24,7 +24,9 @@ export const LIMITS = {
   /** Messages of history sent to the model (user + assistant). */
   maxHistory: 20,
   /** Output cap per answer. Includes reasoning tokens, which both models spend even when hidden. */
-  maxOutputTokens: { primary: 2_000, fallback: 4_000 },
+  maxOutputTokens: { primary: 4_000, fallback: 4_000 },
+  /** How hard the models think before answering. "low" gave shallow lore answers; "medium" is the floor for "why/how" questions. */
+  effort: (process.env.CHAT_EFFORT || "medium") as "low" | "medium" | "high",
   /** Model calls per answer (tool round-trips + final text). */
   maxSteps: 4,
   /** Per-IP rate limits. */

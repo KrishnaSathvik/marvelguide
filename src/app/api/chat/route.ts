@@ -145,8 +145,8 @@ export async function POST(req: Request) {
       maxOutputTokens: LIMITS.maxOutputTokens[which],
       maxRetries: 1,
       providerOptions: {
-        openai: { reasoningEffort: "low", reasoningSummary: null },
-        anthropic: { effort: "low" },
+        openai: { reasoningEffort: LIMITS.effort, reasoningSummary: null },
+        anthropic: { effort: LIMITS.effort },
       },
       onError: ({ error }) => console.error(`[chat] ${which} model error`, error),
     });
