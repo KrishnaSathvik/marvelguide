@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState, useSyncExternalStore } from "react";
-import { Icon } from "@/components/Icon";
+import Image from "next/image";
 import { ChatBox } from "./ChatBox";
 
 const noop = () => () => {};
@@ -35,7 +35,7 @@ export function ChatLauncher() {
     </div>
   ) : (
     <button type="button" className="chat-fab" onClick={() => setOpen(true)} aria-label="Ask the Watcher">
-      <Icon name="message-circle" />
+      <Image src="/brand/watcher.png" alt="" width={256} height={256} sizes="34px" />
       Ask the Watcher
     </button>
   );

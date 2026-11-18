@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
@@ -51,8 +52,7 @@ export function SiteHeader() {
       <header className="topbar">
         <div className="wrap">
           <Link className="logo" href="/" aria-label="Marvel Guide home">
-            <b>MARVEL</b>
-            <i>GUIDE</i>
+            <Image src="/brand/logo-640.png" alt="Marvel Guide" width={640} height={509} priority sizes="80px" />
           </Link>
           <nav className="tabsnav" aria-label="Pages">
             {TABS.map((t) => (

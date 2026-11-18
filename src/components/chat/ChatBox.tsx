@@ -2,6 +2,7 @@
 
 import { useChat } from "@ai-sdk/react";
 import type { UIMessage } from "ai";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useLayoutEffect, useRef, useState, type ComponentProps, type ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
@@ -17,11 +18,11 @@ const STARTERS: { icon: string; text: string }[] = [
 ];
 const MAX_CHARS = 800;
 
-/** The Watcher's avatar: a comic-style badge with an eye (the Watcher sees everything). */
+/** The Watcher's avatar: the mascot in a comic badge. */
 export function GuideAvatar({ size = "sm" }: { size?: "sm" | "lg" }) {
   return (
     <span className={`cb-avatar ${size}`} aria-hidden="true">
-      <Icon name="eye" />
+      <Image src="/brand/watcher.png" alt="" width={256} height={256} sizes={size === "lg" ? "64px" : "34px"} />
     </span>
   );
 }
