@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 
 export const SITE = {
   name: "Marvel Guide",
-  url: "https://marvelguide.app",
+  // Production host is www (marvelguide.app 308-redirects here in Vercel → Domains).
+  url: "https://www.marvelguide.app",
   tagline: "Avengers: Doomsday watch guide & MCU explained",
 };
 

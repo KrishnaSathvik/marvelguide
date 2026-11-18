@@ -8,6 +8,7 @@ import { Search } from "@/components/Search";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getArtMap } from "@/lib/art";
 import { chatAvailability } from "@/lib/chat/config";
+import { SITE } from "@/lib/seo";
 import "./globals.css";
 
 const anton = Anton({ weight: "400", subsets: ["latin"], variable: "--font-anton", display: "swap" });
@@ -21,7 +22,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const bangers = Bangers({ weight: "400", subsets: ["latin"], variable: "--font-bangers", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://marvelguide.app"),
+  metadataBase: new URL(SITE.url),
   title: {
     default: "Marvel Guide · Avengers: Doomsday watch guide & MCU explained",
     template: "%s · Marvel Guide",
