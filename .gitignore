@@ -55,3 +55,7 @@ next-env.d.ts
 /assets/
 /docs/reference/
 /public/art/
+
+# internal notes, never public
+/AGENTS.md
+/docs/planning/
