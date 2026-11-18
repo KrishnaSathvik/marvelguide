@@ -91,7 +91,6 @@ import ORDERS_ from "@data/site/ORDERS.json";
 import SERIES_ from "@data/site/SERIES.json";
 import TEAMS_E_ from "@data/site/TEAMS_E.json";
 import TIERS_ from "@data/site/TIERS.json";
-import TVA_ from "@data/site/TVA.json";
 import VILLAINS_ from "@data/site/VILLAINS.json";
 import VROWS_ from "@data/site/VROWS.json";
 
@@ -149,7 +148,6 @@ export const DIRT = DIRT_ as Record<string, string>;
 export const VILLAINS = VILLAINS_ as { id: string; n: string; p: string; sc: "universal" | "cosmic" | "global" | "street"; w: number }[];
 export const TEAMS_E = TEAMS_E_ as { id: string; n: string; e: string; c: string; p: string; m: string; tg: string }[];
 export const TIERS = TIERS_ as [string, string, string, string[]][];
-export const TVA = TVA_ as { id: string; n: string; p: string }[];
 export const EARTHS = EARTHS_ as { id: string; n: string; t: string; p: string; c: string; tg: string }[];
 export const ORDERS = ORDERS_ as { id: string; n: string; s: string; c: string; p: string }[];
 export const EIGHT = EIGHT_ as { id: string; n: string; p: string; tg: string }[];
@@ -164,9 +162,7 @@ export type NewsPara = string | { label: string; text: string; tag?: string };
 export type NewsItem = {
   id: string;
   section: "latest" | "visionquest" | "rumors";
-  /** ISO date (YYYY-MM-DD), or null when the source gives none. Sort on this. */
-  date: string | null;
-  /** Shown after the date, e.g. "The Hollywood Reporter" or "Release plan". */
+  /** Dateline label, e.g. "The Hollywood Reporter" or "Release plan". Cards carry no dates (owner's call). */
   source: string;
   tag: "Official" | "Canon" | "Report" | "Unconfirmed" | "Rumor";
   title: string;

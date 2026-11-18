@@ -2,7 +2,6 @@
  {
   "id": "news-hulk",
   "section": "latest",
-  "date": "2026-11-13",
   "source": "The Hollywood Reporter",
   "tag": "Official",
   "title": "The Hulk is in Doomsday",
@@ -23,7 +22,6 @@
  {
   "id": "news-runtime",
   "section": "latest",
-  "date": "2026-11-16",
   "source": "Report",
   "tag": "Unconfirmed",
   "title": "Runtime: about 2½ hours",
@@ -40,7 +38,6 @@
  {
   "id": "news-release",
   "section": "latest",
-  "date": null,
   "source": "Release plan",
   "tag": "Official",
   "title": "Dec 16 internationally, Dec 18 in the US",
@@ -61,7 +58,6 @@
  {
   "id": "news-feige",
   "section": "latest",
-  "date": null,
   "source": "Empire interview",
   "tag": "Official",
   "title": "The Avengers are back together",
@@ -78,7 +74,6 @@
  {
   "id": "news-encore",
   "section": "latest",
-  "date": "2026-11-13",
   "source": "Disney+",
   "tag": "Canon",
   "title": "Endgame: Encore is streaming",
@@ -98,7 +93,6 @@
  {
   "id": "news-boxoffice",
   "section": "latest",
-  "date": null,
   "source": "Box office tracking",
   "tag": "Unconfirmed",
   "title": "Eyeing a $1B+ opening",
@@ -116,7 +110,6 @@
   "id": "news-wanda",
   "section": "visionquest",
   "big": true,
-  "date": "2026-11-10",
   "source": "Post-credits scene 2 · Confirmed on screen",
   "tag": "Canon",
   "title": "The post-credits scene that sets up Doomsday",
@@ -148,7 +141,6 @@
  {
   "id": "news-finale",
   "section": "visionquest",
-  "date": "2026-11-10",
   "source": "Episode 8 “Forever” · Recap",
   "tag": "Canon",
   "title": "How VisionQuest ended",
@@ -174,37 +166,65 @@
  {
   "id": "rumor-thor",
   "section": "rumors",
-  "date": null,
   "source": "",
   "tag": "Rumor",
   "title": "Thor's yellow lightning",
   "body": [
    "A Doomsday billboard spotted in Shanghai shows Thor with yellow lightning instead of blue, while Steve Rogers holds Mjolnir. Fans read it as the Odinforce. Marvel hasn't confirmed anything."
   ],
-  "links": []
+  "links": [
+   {
+    "name": "ComicBookMovie",
+    "url": "https://comicbookmovie.com/avengers/avengers-doomsday/avengers-doomsday-billboard-confirms-thor-will-be-given-a-major-power-upgrade---spoilers-a230912"
+   },
+   {
+    "name": "/Film",
+    "url": "https://www.slashfilm.com/2312895/avengers-doomsday-billboard-thor-power-upgrade-spoiler-odinforce/"
+   }
+  ]
  },
  {
   "id": "rumor-vision",
   "section": "rumors",
-  "date": null,
   "source": "",
   "tag": "Rumor",
   "title": "Did Mackie spoil Vision?",
   "body": [
    "Anthony Mackie said he “got to hang out with” Paul Bettany while filming Doomsday. On The Tonight Show he walked it back: he never said Bettany was in the film, and he was “next door” while Bettany shot his own show."
   ],
-  "links": []
+  "links": [
+   {
+    "name": "The Direct",
+    "url": "https://thedirect.com/article/paul-bettany-vision-avengers-doomsday-captain-america"
+   },
+   {
+    "name": "CinemaBlend",
+    "url": "https://www.cinemablend.com/movies/did-anthony-mackie-just-spoil-surprise-avengers-doomsday-character-vision-paul-bettany"
+   },
+   {
+    "name": "ComicBookMovie",
+    "url": "https://comicbookmovie.com/avengers/avengers-doomsday/avengers-doomsday-eyes-1b-opening-weekend-as-anthony-mackie-walks-back-spoiler-bombshell-a231024"
+   }
+  ]
  },
  {
   "id": "rumor-stitch",
   "section": "rumors",
-  "date": null,
   "source": "",
   "tag": "Rumor",
   "title": "Stitch toys tease more",
   "body": [
-   "A Hot Toys Stitch × Doomsday Cosbi line includes Scarlet Witch (now all but confirmed), plus Thanos and Ghost Rider, neither of whom has been announced."
+   "A Hot Toys Stitch × Doomsday Cosbi line includes Scarlet Witch (strongly rumored), plus Thanos and Ghost Rider, neither of whom has been announced."
   ],
-  "links": []
+  "links": [
+   {
+    "name": "SuperHeroHype",
+    "url": "https://www.superherohype.com/news/704862-stitch-marvel-cosbi-collection-series-2"
+   },
+   {
+    "name": "ComingSoon",
+    "url": "https://www.comingsoon.net/movies/news/2220104-stitch-marvel-cosbi-collection-series-2"
+   }
+  ]
  }
 ]

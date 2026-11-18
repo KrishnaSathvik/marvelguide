@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
+import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Doomsday Guide",
-  description: "Ready for Avengers: Doomsday in 4 steps: the story so far, what to watch, the 3 universes and the characters.",
+  description:
+    "Ready for Avengers: Doomsday in 4 steps: the story so far, what to watch, the 3 universes and the characters.",
 };
 
 const STEPS = [
@@ -19,6 +21,7 @@ export default function GuidePage() {
     <main>
       <section id="guide-top" className="gintro">
         <div className="wrap">
+          <Reveal />
           <span className="kicker rv">
             <Icon name="flame" />
             The Doomsday Guide
@@ -33,7 +36,7 @@ export default function GuidePage() {
           <ol className="steps">
             {STEPS.map((s, i) => (
               <li key={s.href} className="rv">
-                <Link href={s.href}>
+                <Link href={s.href} prefetch>
                   <span className="n">{i + 1}</span>
                   <b>{s.b}</b>
                   <small>{s.s}</small>

@@ -77,7 +77,7 @@ export function Pager({ prev, next }: { prev: PagerLink; next: PagerLink }) {
   return (
     <nav className="pager" aria-label="Pages">
       {prev ? (
-        <Link className="pv" href={prev.href}>
+        <Link className="pv" href={prev.href} prefetch>
           <small>{prev.top ?? "← Back"}</small>
           <b>{prev.title}</b>
         </Link>
@@ -88,7 +88,7 @@ export function Pager({ prev, next }: { prev: PagerLink; next: PagerLink }) {
         </span>
       )}
       {next ? (
-        <Link className="nx" href={next.href}>
+        <Link className="nx" href={next.href} prefetch>
           <small>{next.top ?? "Next →"}</small>
           <b>{next.title}</b>
         </Link>

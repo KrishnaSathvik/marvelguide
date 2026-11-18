@@ -271,7 +271,7 @@ function Road() {
               <small>Universes</small>
             </div>
             <div>
-              <b>30</b>
+              <b>32</b>
               <small>Cast confirmed</small>
             </div>
             <div>

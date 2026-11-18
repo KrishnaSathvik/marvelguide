@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { Icon } from "@/components/Icon";
 import { Spoiler } from "@/components/Spoiler";
 import { FAQ } from "@/content";
+import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -16,6 +17,7 @@ export default function FaqPage() {
     <main>
       <section id="faq">
         <div className="wrap">
+          <Reveal />
           <span className="kicker rv">
             <Icon name="circle-help" />
             <em style={{ color: "#fff" }}>Fan questions</em>

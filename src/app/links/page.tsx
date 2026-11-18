@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Icon } from "@/components/Icon";
 import { LINKS } from "@/content";
+import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Official links",
@@ -12,6 +13,7 @@ export default function LinksPage() {
     <main>
       <section id="official">
         <div className="wrap">
+          <Reveal />
           <span className="kicker rv">
             <Icon name="star" />
             Straight from the source

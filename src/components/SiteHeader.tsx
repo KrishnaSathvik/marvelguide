@@ -82,7 +82,7 @@ export function SiteHeader() {
         <nav className="subnav" aria-label="Sections" ref={subRef}>
           <div className="wrap">
             {sub.items.map((it) => (
-              <Link key={it.href} href={it.href} aria-current={it.active ? "page" : undefined}>
+              <Link key={it.href} href={it.href} prefetch aria-current={it.active ? "page" : undefined}>
                 {it.label}
               </Link>
             ))}

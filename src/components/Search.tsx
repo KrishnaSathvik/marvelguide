@@ -155,7 +155,7 @@ export function Search() {
       el = visibleById(it.target) ?? el;
     }
     history.replaceState(history.state, "", `${it.path}#${it.target}`);
-    el.classList.add("in");
+    el.setAttribute("data-in", "");
     // "start" (not center): some cards are taller than the screen. scroll-padding-top clears the header.
     el.scrollIntoView({ behavior: "instant", block: "start" });
     // Flash via the Web Animations API: React may rewrite the element's class list (e.g. staggered

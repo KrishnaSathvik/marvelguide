@@ -1298,5 +1298,40 @@
   "key": "dir-attuma",
   "file": "images/dir-attuma.webp",
   "source": "uploaded"
+ },
+ {
+  "key": "char-hulk",
+  "file": "images/char-hulk.avif",
+  "source": "uploaded"
+ },
+ {
+  "key": "char-mbaku",
+  "file": "images/char-mbaku.avif",
+  "source": "uploaded"
+ },
+ {
+  "key": "char-redguardian",
+  "file": "images/char-redguardian.avif",
+  "source": "uploaded"
+ },
+ {
+  "key": "char-yelena",
+  "file": "images/char-yelena.avif",
+  "source": "uploaded"
+ },
+ {
+  "key": "dir-namora",
+  "file": "images/dir-namora.webp",
+  "source": "uploaded"
+ },
+ {
+  "key": "dir-yelena-belova",
+  "file": "images/char-yelena.avif",
+  "source": "uploaded"
+ },
+ {
+  "key": "dir-red-guardian",
+  "file": "images/char-redguardian.avif",
+  "source": "uploaded"
  }
 ]

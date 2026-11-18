@@ -3,10 +3,12 @@ import { Icon } from "@/components/Icon";
 import { Spoiler } from "@/components/Spoiler";
 import { Tag } from "@/components/ui";
 import { NEWS, type NewsItem, type NewsPara } from "@/content";
+import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "News",
-  description: "The latest Avengers: Doomsday news, dated and sourced, each labelled Official, Canon, Report or Unconfirmed.",
+  description:
+    "The latest Avengers: Doomsday news, sourced and labelled Official, Canon, Report or Unconfirmed.",
 };
 
 const TAG_CLASS: Record<NewsItem["tag"], string> = {
@@ -17,13 +19,6 @@ const TAG_CLASS: Record<NewsItem["tag"], string> = {
   Rumor: "rumor",
 };
 
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-/** "2026-11-13" → "Nov 13" (parsed by hand so the server's time zone can't shift the day). */
-const shortDate = (iso: string) => {
-  const [, m, d] = iso.split("-").map(Number);
-  return `${MONTHS[m - 1]} ${d}`;
-};
-const dateline = (n: NewsItem) => [n.date && shortDate(n.date), n.source].filter(Boolean).join(" · ");
 
 function Para({ p }: { p: NewsPara }) {
   if (typeof p === "string") return <p>{p}</p>;
@@ -34,11 +29,25 @@ function Para({ p }: { p: NewsPara }) {
   );
 }
 
+function Sources({ links }: { links: NewsItem["links"] }) {
+  if (!links.length) return null;
+  return (
+    <div className="src">
+      Sources:{" "}
+      {links.map((l) => (
+        <a key={l.url} href={l.url} target="_blank" rel="noopener noreferrer">
+          {l.name}
+        </a>
+      ))}
+    </div>
+  );
+}
+
 function Card({ n }: { n: NewsItem }) {
   return (
     <article className={n.big ? "nc big rv" : "nc rv"} id={n.id}>
       <div className="top">
-        <small className="d">{n.date ? <time dateTime={n.date}>{dateline(n)}</time> : dateline(n)}</small>
+        <small className="d">{n.source}</small>
         <span className={`tag ${TAG_CLASS[n.tag]}`}>{n.tag}</span>
       </div>
       <h3>{n.title}</h3>
@@ -61,16 +70,7 @@ function Card({ n }: { n: NewsItem }) {
           </ul>
         </Spoiler>
       )}
-      {n.links.length > 0 && (
-        <div className="src">
-          Sources:{" "}
-          {n.links.map((l) => (
-            <a key={l.url} href={l.url} target="_blank" rel="noopener noreferrer">
-              {l.name}
-            </a>
-          ))}
-        </div>
-      )}
+      <Sources links={n.links} />
     </article>
   );
 }
@@ -82,6 +82,7 @@ export default function NewsPage() {
     <main>
       <section id="latest" className="newspage">
         <div className="wrap">
+          <Reveal />
           <span className="kicker rv" style={{ background: "var(--red)" }}>
             <Icon name="zap" />
             Week of Nov 16, 2026
@@ -121,6 +122,7 @@ export default function NewsPage() {
                 {n.body.map((p, i) => (
                   <Para key={i} p={p} />
                 ))}
+                <Sources links={n.links} />
               </div>
             ))}
           </div>

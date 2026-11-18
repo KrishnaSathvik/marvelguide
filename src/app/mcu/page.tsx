@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
 import { MCU_GROUPS } from "@/lib/routes";
+import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "MCU Explained",
@@ -10,10 +11,34 @@ export const metadata: Metadata = {
 };
 
 const SURE = [
-  { t: "canon", l: "Canon", b: "It's official", p: "It happened on screen, or Marvel Studios said it officially. Treat it as fact.", e: "Example: Thanos snapped away half of all life." },
-  { t: "soft", l: "Soft canon", b: "Strongly hinted", p: "Shown in passing, implied or confirmed outside the films, but never fully spelled out on screen.", e: "Example: exactly how people cross between universes." },
-  { t: "theory", l: "Theory", b: "A reasoned guess", p: "What fans, or we, expect based on the clues. Marvel hasn't confirmed it.", e: "Example: the Young Avengers forming." },
-  { t: "edit", l: "Editorial", b: "Our opinion", p: "Our own rankings and judgment calls, like power tiers and villain threat levels.", e: "Example: ranking Thanos above Galactus." },
+  {
+    t: "canon",
+    l: "Canon",
+    b: "It's official",
+    p: "It happened on screen, or Marvel Studios said it officially. Treat it as fact.",
+    e: "Example: Thanos snapped away half of all life.",
+  },
+  {
+    t: "soft",
+    l: "Soft canon",
+    b: "Strongly hinted",
+    p: "Shown in passing, implied or confirmed outside the films, but never fully spelled out on screen.",
+    e: "Example: exactly how people cross between universes.",
+  },
+  {
+    t: "theory",
+    l: "Theory",
+    b: "A reasoned guess",
+    p: "What fans, or we, expect based on the clues. Marvel hasn't confirmed it.",
+    e: "Example: the Young Avengers forming.",
+  },
+  {
+    t: "edit",
+    l: "Editorial",
+    b: "Our opinion",
+    p: "Our own rankings and judgment calls, like power tiers and villain threat levels.",
+    e: "Example: ranking Thanos above Galactus.",
+  },
 ];
 
 export default function McuPage() {
@@ -21,6 +46,7 @@ export default function McuPage() {
     <main>
       <section id="encyclopedia" className="gintro">
         <div className="wrap">
+          <Reveal />
           <span className="kicker rv">
             <Icon name="library" />
             MCU Explained
@@ -35,7 +61,7 @@ export default function McuPage() {
           <ol className="steps steps5">
             {MCU_GROUPS.map((g) => (
               <li key={g.slug} className="rv">
-                <Link href={`/mcu/${g.slug}`}>
+                <Link href={`/mcu/${g.slug}`} prefetch>
                   <span className="n">
                     <Icon name={g.icon} />
                   </span>
