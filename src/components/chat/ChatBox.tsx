@@ -17,11 +17,11 @@ const STARTERS: { icon: string; text: string }[] = [
 ];
 const MAX_CHARS = 800;
 
-/** The guide's avatar: a small comic-style badge. */
+/** The Watcher's avatar: a comic-style badge with an eye (the Watcher sees everything). */
 export function GuideAvatar({ size = "sm" }: { size?: "sm" | "lg" }) {
   return (
     <span className={`cb-avatar ${size}`} aria-hidden="true">
-      MG
+      <Icon name="eye" />
     </span>
   );
 }
@@ -83,7 +83,7 @@ function Working({ m }: { m?: UIMessage }) {
           {tool.type === "tool-search_web" ? "Searching trusted sources…" : "Looking through the guide…"}
         </span>
       ) : (
-        <span className="cb-typing" aria-label="The guide is typing">
+        <span className="cb-typing" aria-label="The Watcher is typing">
           <i />
           <i />
           <i />
@@ -97,7 +97,7 @@ function Empty({ onPick }: { onPick: (t: string) => void }) {
   return (
     <div className="cb-empty">
       <GuideAvatar size="lg" />
-      <h2>Ask the Marvel Guide</h2>
+      <h2>Ask the Watcher</h2>
       <p>Films, lore, comics and the road to Doomsday. Answers come from this guide first, then trusted sources.</p>
       <div className="cb-starters">
         {STARTERS.map((s) => (
@@ -175,7 +175,7 @@ export function ChatBox({
       <header className="cb-head">
         <GuideAvatar />
         <div className="cb-who">
-          <b>Marvel Guide</b>
+          <b>The Watcher</b>
           <span>
             <i className="cb-dot" />
             {busy ? "Typing…" : "Fan guide · labels rumors as rumors"}

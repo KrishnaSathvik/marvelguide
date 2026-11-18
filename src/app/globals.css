@@ -574,6 +574,14 @@
     font-size: 26px;
     box-shadow: 4px 4px 0 var(--ink);
   }
+  .cb-avatar .ico {
+    width: 18px;
+    height: 18px;
+  }
+  .cb-avatar.lg .ico {
+    width: 32px;
+    height: 32px;
+  }
 
   /* Messages */
   .cb-list {

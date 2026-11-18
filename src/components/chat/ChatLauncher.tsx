@@ -30,13 +30,13 @@ export function ChatLauncher() {
   if (!isClient || pathname === "/ask") return null;
 
   return open ? (
-    <div className="cb-panel-wrap" role="dialog" aria-label="Ask the Marvel Guide">
+    <div className="cb-panel-wrap" role="dialog" aria-label="Ask the Watcher">
       <ChatBox variant="panel" autoFocus onClose={() => setOpen(false)} />
     </div>
   ) : (
-    <button type="button" className="chat-fab" onClick={() => setOpen(true)} aria-label="Ask the Marvel Guide">
+    <button type="button" className="chat-fab" onClick={() => setOpen(true)} aria-label="Ask the Watcher">
       <Icon name="message-circle" />
-      Ask the guide
+      Ask the Watcher
     </button>
   );
 }
