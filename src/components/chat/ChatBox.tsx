@@ -206,10 +206,6 @@ export function ChatBox({
         <GuideAvatar />
         <div className="cb-who">
           <b>The Watcher</b>
-          <span>
-            <i className="cb-dot" />
-            {busy ? "Typing…" : "Fan guide · labels rumors as rumors"}
-          </span>
         </div>
         {messages.length > 0 && (
           <button
@@ -337,7 +333,7 @@ export function ChatBox({
             )}
           </form>
         )}
-        <p className="cb-note">Unofficial fan guide. It can make mistakes, and rumors are labelled as rumors.</p>
+        <p className="cb-note">Unofficial fan guide · rumors labelled</p>
       </div>
     </div>
   );
