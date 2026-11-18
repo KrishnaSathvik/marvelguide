@@ -14,8 +14,8 @@ const norm = (s: string) =>
   s
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/[’']/g, "'");
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\u2019']/g, "'");
 
 /** Wrap matched words in <mark> (legacy `hl`), without building HTML strings. */
 function highlight(s: string, words: string[]): ReactNode {

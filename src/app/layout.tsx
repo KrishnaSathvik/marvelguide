@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { Anton, Bangers, Inter, Oswald } from "next/font/google";
 import { Suspense } from "react";
 import { ArtProvider } from "@/components/ArtProvider";
+import { ChatLauncher } from "@/components/chat/ChatLauncher";
 import { HashRedirect } from "@/components/HashRedirect";
 import { Search } from "@/components/Search";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getArtMap } from "@/lib/art";
+import { chatAvailability } from "@/lib/chat/config";
 import "./globals.css";
 
 const anton = Anton({ weight: "400", subsets: ["latin"], variable: "--font-anton", display: "swap" });
@@ -59,6 +61,11 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         <Suspense fallback={null}>
           <Search />
         </Suspense>
+        {chatAvailability().open && (
+          <Suspense fallback={null}>
+            <ChatLauncher />
+          </Suspense>
+        )}
       </body>
     </html>
   );
