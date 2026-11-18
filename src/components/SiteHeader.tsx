@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 import { GUIDE_STEPS, MCU_GROUPS, TABS } from "@/lib/routes";
 
 const isActiveTab = (pathname: string, href: string) =>
@@ -36,6 +37,13 @@ function subnavFor(pathname: string): { items: SubItem[] } | null {
 export function SiteHeader() {
   const pathname = usePathname() ?? "/";
   const sub = subnavFor(pathname);
+  const subRef = useRef<HTMLElement>(null);
+  // Keep the active sub-nav item visible on phones, where the sub-nav scrolls sideways (as in legacy).
+  useEffect(() => {
+    const sn = subRef.current;
+    const a = sn?.querySelector<HTMLElement>("a[aria-current]");
+    if (sn && a) sn.scrollLeft = a.offsetLeft - sn.clientWidth / 2 + a.offsetWidth / 2;
+  }, [pathname]);
   return (
     <>
       <header className="topbar">
@@ -66,7 +74,7 @@ export function SiteHeader() {
         </div>
       </header>
       {sub && (
-        <nav className="subnav" aria-label="Sections">
+        <nav className="subnav" aria-label="Sections" ref={subRef}>
           <div className="wrap">
             {sub.items.map((it) => (
               <Link key={it.href} href={it.href} aria-current={it.active ? "page" : undefined}>

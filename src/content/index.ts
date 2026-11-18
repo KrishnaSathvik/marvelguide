@@ -78,3 +78,78 @@ export type RosterCard = {
   rm?: number;
 };
 export const CH = CH_ as RosterCard[];
+
+/* ---------- MCU Explained ---------- */
+import DIR_ from "@data/site/DIR.json";
+import DIRT_ from "@data/site/DIRT.json";
+import EARTHS_ from "@data/site/EARTHS.json";
+import EIGHT_ from "@data/site/EIGHT.json";
+import ENC_ from "@data/site/ENC.json";
+import FILMS_ from "@data/site/FILMS.json";
+import FINFO_ from "@data/site/FINFO.json";
+import ORDERS_ from "@data/site/ORDERS.json";
+import SERIES_ from "@data/site/SERIES.json";
+import TEAMS_E_ from "@data/site/TEAMS_E.json";
+import TIERS_ from "@data/site/TIERS.json";
+import TVA_ from "@data/site/TVA.json";
+import VILLAINS_ from "@data/site/VILLAINS.json";
+import VROWS_ from "@data/site/VROWS.json";
+
+/** Same as legacy `slug()`. */
+export const slug = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
+/** Encyclopedia row: image + badge + titled text blocks (legacy `erow`). */
+export type EncRow = {
+  id: string;
+  badge: string;
+  tag?: string;
+  title: string;
+  sub?: string;
+  blocks: [string, string][];
+  lead?: [string, string];
+  swatch?: string;
+};
+export const ENC = ENC_ as unknown as Record<string, EncRow[]>;
+export const VROWS = VROWS_ as unknown as EncRow[];
+
+export type Film = { id: string; n: string; y: number; ph: number; star: boolean; up: boolean };
+export const FILMS = FILMS_ as Film[];
+/** Film descriptions. FINFO's first field is a dead legacy rating and is never exposed. */
+export const FILM_DESC: Record<string, string> = Object.fromEntries(
+  Object.entries(FINFO_ as Record<string, string[]>).map(([k, v]) => [k, v[1]]),
+);
+
+/** Series. Legacy `r` mixed old ratings with "spc" (special); only the special flag survives. */
+export type Series = { id: string; n: string; y: string; p: string; special: boolean; animated: boolean };
+const ANIMATED = new Set([
+  "I Am Groot",
+  "What If…?",
+  "X-Men '97",
+  "Your Friendly Neighborhood Spider-Man",
+  "Eyes of Wakanda",
+  "Marvel Zombies",
+]);
+export const SERIES: Series[] = (SERIES_ as { id: string; n: string; y: string; p: string; r: string }[]).map((s) => ({
+  id: s.id,
+  n: s.n,
+  y: s.y,
+  p: s.p,
+  special: s.r === "spc",
+  animated: ANIMATED.has(s.n),
+}));
+
+export type DirChar = { n: string; r: string; a: string; m: string; p: string; t: string; d: string; s: string };
+export const DIR = DIR_ as DirChar[];
+export const DIRT = DIRT_ as Record<string, string>;
+
+export const VILLAINS = VILLAINS_ as { id: string; n: string; p: string; sc: "universal" | "cosmic" | "global" | "street"; w: number }[];
+export const TEAMS_E = TEAMS_E_ as { id: string; n: string; e: string; c: string; p: string; m: string; tg: string }[];
+export const TIERS = TIERS_ as [string, string, string, string[]][];
+export const TVA = TVA_ as { id: string; n: string; p: string }[];
+export const EARTHS = EARTHS_ as { id: string; n: string; t: string; p: string; c: string; tg: string }[];
+export const ORDERS = ORDERS_ as { id: string; n: string; s: string; c: string; p: string }[];
+export const EIGHT = EIGHT_ as { id: string; n: string; p: string; tg: string }[];

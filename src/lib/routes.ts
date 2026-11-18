@@ -54,6 +54,7 @@ export type McuGroup = {
   slug: string;
   legacyId: string;
   title: string;
+  icon: string;
   description: string;
   chapters: McuChapter[];
 };
@@ -62,6 +63,7 @@ export const MCU_GROUPS: McuGroup[] = GROUPS.map((g) => ({
   slug: GROUP_SLUG[g.id],
   legacyId: g.id,
   title: g.n,
+  icon: g.i,
   description: g.d,
   chapters: (g.ch as [string, string][]).map(([id, title]) => ({
     slug: CHAPTER_SLUG[id],
