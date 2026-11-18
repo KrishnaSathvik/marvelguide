@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Art } from "@/components/Art";
 import { Countdown } from "@/components/Countdown";
+import { HeroSearch } from "@/components/HeroSearch";
 import { Icon } from "@/components/Icon";
 
 export default function HomePage() {
@@ -15,7 +16,8 @@ export default function HomePage() {
               <span className="l2">Doomsday</span>
               <span className="l3">Know the whole MCU.</span>
             </h1>
-            <p className="sub">What to watch, who&apos;s back, and what all the multiverse jargon means.</p>
+            <p className="sub">What to watch, who&apos;s back, and what all the multiverse jargon means. Search anything:</p>
+            <HeroSearch />
             <Countdown />
             <div className="facts">
               <div className="fact">

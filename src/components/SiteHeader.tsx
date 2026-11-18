@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { GUIDE_STEPS, MCU_GROUPS, TABS } from "@/lib/routes";
+import { openSearch } from "@/lib/search-events";
+import { Icon } from "./Icon";
 
 const isActiveTab = (pathname: string, href: string) =>
   href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
@@ -71,6 +73,9 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
+          <button type="button" className="sbtn" onClick={openSearch} aria-label="Search (press /)" title="Search (/)">
+            <Icon name="search" />
+          </button>
         </div>
       </header>
       {sub && (

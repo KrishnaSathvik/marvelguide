@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { Art } from "@/components/Art";
 import { Icon } from "@/components/Icon";
 import { C, CAST, LANE, OFFICIAL, TRACKS, WATCH, type TrackKey } from "@/content";
+import { useSearchReveal } from "@/lib/search-events";
 
 /* Same storage keys as the legacy site. */
 const KEY = "rtd-v3";
@@ -61,6 +62,12 @@ export function WatchList() {
   }, [rawDone]);
   const track: TrackKey = rawTrack && rawTrack in TRACKS ? (rawTrack as TrackKey) : "weekend";
   const ids = TRACKS[track].ids;
+  // Search result in another list: switch to the first list that contains it.
+  useSearchReveal("watch-", (target) => {
+    const id = target.slice("watch-".length);
+    const tr = (Object.keys(TRACKS) as TrackKey[]).find((k) => TRACKS[k].ids.includes(id));
+    if (tr && tr !== track) write(TRACK_KEY, tr);
+  });
 
   // Staggered card entrance, re-run when the track changes (legacy: 70ms per card).
   const [shown, setShown] = useState<{ track: TrackKey; n: number }>({ track, n: 0 });

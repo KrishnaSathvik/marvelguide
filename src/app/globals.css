@@ -343,3 +343,49 @@
     scroll-behavior: auto !important;
   }
 }
+
+@layer components {
+  /* header search button (legacy had search only on Home and via "/") */
+  .sbtn {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    color: #ccc;
+    border: 2px solid transparent;
+    background: none;
+    cursor: pointer;
+  }
+  .sbtn:hover {
+    color: #fff;
+    border-color: #444;
+  }
+  .sbtn .ico {
+    width: 18px;
+    height: 18px;
+  }
+  @media (max-width: 640px) {
+    .sbtn {
+      width: 32px;
+    }
+  }
+  /* hero search is a <button> (legacy used a div with role=button) */
+  button.hsearch {
+    width: 100%;
+    font: inherit;
+    text-align: left;
+    color: var(--mute);
+  }
+  button.hsearch > span:not(.ico) {
+    flex: 1;
+  }
+}
+
+@layer components {
+  /* Filtered-out cards. An attribute, not a class, so React never rewrites className
+     (which would drop the `in` class the scroll-reveal observer adds). */
+  [data-hide] {
+    display: none !important;
+  }
+}

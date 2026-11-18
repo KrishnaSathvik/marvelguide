@@ -4,6 +4,7 @@ import { useState, type CSSProperties } from "react";
 import { Art } from "@/components/Art";
 import { Icon } from "@/components/Icon";
 import { CH, DPLUS, TEAMS } from "@/content";
+import { useSearchReveal } from "@/lib/search-events";
 
 const tc = Object.fromEntries(TEAMS.map((t) => [t.k, t]));
 /* Confirmed first, rumored last. */
@@ -12,6 +13,7 @@ const CHIPS = [{ k: "all", n: `All (${CH.length})`, c: "#111" }, ...TEAMS, { k: 
 
 export function Roster() {
   const [k, setK] = useState("all");
+  useSearchReveal("char-", () => setK("all"));
   return (
     <>
       <div className="fbar" role="group" aria-label="Filter characters">
@@ -36,7 +38,8 @@ export function Roster() {
             <article
               key={h.id}
               id={`char-${h.id}`}
-              className={hidden ? "tc rv hide" : "tc rv"}
+              className="tc rv"
+              data-hide={hidden ? "" : undefined}
               style={{ "--tc": t.c } as CSSProperties}
             >
               <div className="team">

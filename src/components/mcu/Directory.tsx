@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Art } from "@/components/Art";
 import { Icon } from "@/components/Icon";
 import { C, DIR, DIRT, slug } from "@/content";
+import { useSearchReveal } from "@/lib/search-events";
 
 const TEAMS = Object.keys(DIRT);
 const statusClass = (s: string) =>
@@ -13,6 +14,10 @@ const statusClass = (s: string) =>
 export function Directory() {
   const [t, setT] = useState("all");
   const [q, setQ] = useState("");
+  useSearchReveal("dir-", () => {
+    setT("all");
+    setQ("");
+  });
   const needle = q.trim().toLowerCase();
   const visible = (c: (typeof DIR)[number]) =>
     (t === "all" || c.t === t) && (!needle || `${c.n} ${c.r} ${c.a} ${c.m}`.toLowerCase().includes(needle));
@@ -45,7 +50,7 @@ export function Directory() {
       </div>
       <div className="dgrid">
         {DIR.map((c) => (
-          <article key={c.n} className={visible(c) ? "dc rv" : "dc rv hide"} id={`dir-${slug(c.n)}`}>
+          <article key={c.n} className="dc rv" data-hide={visible(c) ? undefined : ""} id={`dir-${slug(c.n)}`}>
             <Art
               artKey={`dir-${slug(c.n)}`}
               alt={c.r !== c.n ? `${c.n} (${c.r})` : c.n}

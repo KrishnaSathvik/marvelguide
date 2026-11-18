@@ -3,6 +3,7 @@ import { Anton, Bangers, Inter, Oswald } from "next/font/google";
 import { Suspense } from "react";
 import { HashRedirect } from "@/components/HashRedirect";
 import { Reveal } from "@/components/Reveal";
+import { Search } from "@/components/Search";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
@@ -47,6 +48,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SiteFooter />
         <HashRedirect />
         <Reveal />
+        <Suspense fallback={null}>
+          <Search />
+        </Suspense>
       </body>
     </html>
   );

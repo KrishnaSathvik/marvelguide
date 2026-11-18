@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Art } from "@/components/Art";
 import { Icon } from "@/components/Icon";
 import { C, CAST, dpl, FILM_DESC, FILMS } from "@/content";
+import { useSearchReveal } from "@/lib/search-events";
 
 const FANDANGO = "https://www.fandango.com/avengersdoomsday";
 const PCOL: Record<number, string> = { 1: C.red, 2: C.orange, 3: C.gold, 4: C.teal, 5: C.blue, 6: C.purple };
@@ -20,6 +21,7 @@ const match = (f: string, ph: number) =>
 /** Every MCU film with phase filters. No Essential/Recommended/Optional ratings on MCU pages. */
 export function FilmsGrid() {
   const [f, setF] = useState("all");
+  useSearchReveal("film-", () => setF("all"));
   const shown = FILMS.filter((x) => match(f, x.ph)).length;
   return (
     <>
@@ -67,7 +69,8 @@ export function FilmsGrid() {
             <article
               key={film.id}
               id={film.id}
-              className={["box sc fm rv", film.up ? "up" : "", match(f, film.ph) ? "" : "hide"].filter(Boolean).join(" ")}
+              className={film.up ? "box sc fm rv up" : "box sc fm rv"}
+              data-hide={match(f, film.ph) ? undefined : ""}
             >
               <Art
                 artKey={film.id}

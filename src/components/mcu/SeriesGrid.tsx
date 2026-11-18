@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Art } from "@/components/Art";
 import { Icon } from "@/components/Icon";
 import { C, dpl, SERIES, type Series } from "@/content";
+import { useSearchReveal } from "@/lib/search-events";
 
 type Kind = "all" | "live" | "anim" | "spc";
 const CHIPS: [Kind, string][] = [
@@ -16,6 +17,7 @@ const kind = (s: Series): Kind => (s.special ? "spc" : s.animated ? "anim" : "li
 
 export function SeriesGrid() {
   const [k, setK] = useState<Kind>("all");
+  useSearchReveal("series-", () => setK("all"));
   return (
     <>
       <div className="fbar rv" role="group" aria-label="Filter series">
