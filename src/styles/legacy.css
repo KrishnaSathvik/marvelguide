@@ -98,7 +98,7 @@ section.alt{background:var(--white)}
 .rumors{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
 @media(max-width:900px){.rumors{grid-template-columns:1fr}}
 .rm{background:var(--white);border:var(--bw) solid var(--ink);box-shadow:4px 4px 0 var(--ink);padding:18px}
-.rm h4{font-family:var(--label);font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:.02em;margin-top:10px}
+.rm h4,.rm .rmh{font-family:var(--label);font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:.02em;margin-top:10px}
 .rm p{color:var(--ink2);font-size:14px;margin-top:6px}
 /* ---------- art frames (static image placeholders) ---------- */
 .art{position:relative;overflow:hidden;background:var(--paper2);isolation:isolate}
@@ -326,8 +326,8 @@ section.alt{background:var(--white)}
 
 /* FAQ (open cards, no dropdowns) */
 .qa{background:var(--white);border:var(--bw) solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
-.qa h4{font-family:var(--label);font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:.02em;padding:14px 18px;background:var(--yellow);border-bottom:var(--bw) solid var(--ink);display:flex;gap:10px;align-items:flex-start}
-.qa h4 .ico{color:var(--red);margin-top:3px}
+.qa h4,.qa .qh{font-family:var(--label);font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:.02em;padding:14px 18px;background:var(--yellow);border-bottom:var(--bw) solid var(--ink);display:flex;gap:10px;align-items:flex-start}
+.qa h4 .ico,.qa .qh .ico{color:var(--red);margin-top:3px}
 .qa p{padding:14px 18px 16px;color:var(--ink2);font-size:15px}
 
 /* ======== ENCYCLOPEDIA ======== */

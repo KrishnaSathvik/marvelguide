@@ -153,3 +153,31 @@ export const TVA = TVA_ as { id: string; n: string; p: string }[];
 export const EARTHS = EARTHS_ as { id: string; n: string; t: string; p: string; c: string; tg: string }[];
 export const ORDERS = ORDERS_ as { id: string; n: string; s: string; c: string; p: string }[];
 export const EIGHT = EIGHT_ as { id: string; n: string; p: string; tg: string }[];
+
+/* ---------- News, FAQ, Links ---------- */
+import FAQ_ from "@data/site/FAQ.json";
+import LINKS_ from "@data/site/LINKS.json";
+import NEWS_ from "@data/site/NEWS.json";
+
+/** A paragraph, or a labelled paragraph with an optional certainty tag ("What it means: … [Theory]"). */
+export type NewsPara = string | { label: string; text: string; tag?: string };
+export type NewsItem = {
+  id: string;
+  section: "latest" | "visionquest" | "rumors";
+  /** ISO date (YYYY-MM-DD), or null when the source gives none. Sort on this. */
+  date: string | null;
+  /** Shown after the date, e.g. "The Hollywood Reporter" or "Release plan". */
+  source: string;
+  tag: "Official" | "Canon" | "Report" | "Unconfirmed" | "Rumor";
+  title: string;
+  body: NewsPara[];
+  spoiler?: NewsPara[];
+  spoilerList?: string[];
+  big?: boolean;
+  links: { name: string; url: string }[];
+};
+export const NEWS = NEWS_ as NewsItem[];
+
+export type FaqItem = { g: string; q: string; a: string; sp?: number | boolean };
+export const FAQ = FAQ_ as FaqItem[];
+export const LINKS = LINKS_ as { i: string; k: string; b: string; s: string; u: string }[];
