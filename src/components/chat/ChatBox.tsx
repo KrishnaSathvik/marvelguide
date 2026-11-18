@@ -19,10 +19,10 @@ const STARTERS: { icon: string; text: string }[] = [
 const MAX_CHARS = 800;
 
 /** The Watcher's avatar: the mascot in a comic badge. */
-export function GuideAvatar({ size = "sm" }: { size?: "sm" | "lg" }) {
+export function GuideAvatar() {
   return (
-    <span className={`cb-avatar ${size}`} aria-hidden="true">
-      <Image src="/brand/watcher.png" alt="" width={256} height={256} sizes={size === "lg" ? "64px" : "34px"} />
+    <span className="cb-avatar" aria-hidden="true">
+      <Image src="/brand/watcher.png" alt="" width={256} height={256} sizes="34px" />
     </span>
   );
 }
@@ -97,8 +97,6 @@ function Working({ m }: { m?: UIMessage }) {
 function Empty({ onPick }: { onPick: (t: string) => void }) {
   return (
     <div className="cb-empty">
-      <GuideAvatar size="lg" />
-      <h2>Ask the Watcher</h2>
       <p>Films, lore, comics and the road to Doomsday. Answers come from this guide first, then trusted sources.</p>
       <div className="cb-starters">
         {STARTERS.map((s) => (
