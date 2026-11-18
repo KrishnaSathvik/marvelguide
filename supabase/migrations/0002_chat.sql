@@ -25,7 +25,7 @@ create table if not exists public.chat_log (
   input_tokens   integer,
   output_tokens  integer,
   cost_usd       numeric(10, 6),
-  sources        jsonb,                        -- urls used (site pages and web results)
+  sources        jsonb,                        -- {cited, searched, provided}: links in the answer / looked up via tools / given up front
   error          text
 );
 create index if not exists chat_log_created_at on public.chat_log (created_at desc);

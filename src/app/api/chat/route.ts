@@ -3,7 +3,7 @@
  *
  * Order of operations: availability gate → input validation → rate limit → daily spend cap →
  * site knowledge → stream from the primary model (tools: search_site, search_web) → fall back to the
- * secondary model if the primary fails before writing any text → log usage and add to today's spend.
+ * secondary model if the primary errors or ends without writing any text → log usage and add to today's spend.
  */
 import { anthropic } from "@ai-sdk/anthropic";
 import { openai } from "@ai-sdk/openai";
@@ -102,7 +102,9 @@ export async function POST(req: Request) {
     siteDocs: formatDocs(siteHits.filter((d) => !onPage.includes(d))),
   })}`;
 
-  const sources = new Set<string>([...siteHits, ...onPage].map((d) => d.href));
+  // What the model was given up front vs. what it went and looked up; links it cited are added at log time.
+  const provided = [...new Set([...siteHits, ...onPage].map((d) => d.href))];
+  const searched = new Set<string>();
   const tools = {
     search_site: tool({
       description:
@@ -110,7 +112,7 @@ export async function POST(req: Request) {
       inputSchema: z.object({ query: z.string().min(2).max(200).describe("What to look up") }),
       execute: async ({ query }) => {
         const docs = searchSite(query, 5);
-        docs.forEach((d) => sources.add(d.href));
+        docs.forEach((d) => searched.add(d.href));
         return docs.map((d) => ({ title: d.title, link: d.href, type: d.type, text: d.text.slice(0, 900) }));
       },
     }),
@@ -124,7 +126,7 @@ export async function POST(req: Request) {
       execute: async ({ query, kind }) => {
         try {
           const { sources: found } = await searchWeb(query, kind);
-          found.forEach((s) => sources.add(s.url));
+          found.forEach((s) => searched.add(s.url));
           return found.length ? found : "No results from trusted sources.";
         } catch (err) {
           console.error("[chat] web search failed", err);
@@ -183,18 +185,21 @@ export async function POST(req: Request) {
           held.splice(0).forEach((c) => writer.write(c));
         }
       }
-      if (!committed && errored) {
+      // No text from the primary, whether it errored or just ended empty (reasoning used up the output
+      // budget, or every step went to tool calls): answer with the fallback instead of a blank reply.
+      if (!committed) {
         await reader.cancel().catch(() => {});
+        console.warn(`[chat] primary gave no text (${errored ? "error" : "empty"}); using fallback`);
         model = FALLBACK_MODEL;
         fellBack = true;
         result = run("fallback");
         writer.merge(toUI(result));
-      } else if (!committed) {
-        held.forEach((c) => writer.write(c));
       }
 
       try {
-        const usage = await result.totalUsage;
+        const [usage, steps] = await Promise.all([result.totalUsage, result.steps]);
+        const answer = steps.map((s) => s.text).join("\n");
+        const cited = [...new Set([...answer.matchAll(/\]\(([^)\s]+)\)/g)].map((m) => m[1]))];
         const cost = costUsd(model, usage.inputTokens ?? 0, usage.outputTokens ?? 0);
         await Promise.all([
           sbRpc("add_chat_spend", { p_usd: cost }),
@@ -207,7 +212,7 @@ export async function POST(req: Request) {
             input_tokens: usage.inputTokens ?? null,
             output_tokens: usage.outputTokens ?? null,
             cost_usd: cost,
-            sources: [...sources],
+            sources: { cited, searched: [...searched], provided },
             error: failure ?? null,
           }),
         ]);
