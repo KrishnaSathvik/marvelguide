@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Anton, Bangers, Inter, Oswald } from "next/font/google";
 import { Suspense } from "react";
+import { ArtProvider } from "@/components/ArtProvider";
 import { HashRedirect } from "@/components/HashRedirect";
 import { Search } from "@/components/Search";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { getArtMap } from "@/lib/art";
 import "./globals.css";
 
 const anton = Anton({ weight: "400", subsets: ["latin"], variable: "--font-anton", display: "swap" });
@@ -27,7 +29,9 @@ export const metadata: Metadata = {
     "Fan-made Avengers: Doomsday watch guide and MCU encyclopedia. Unofficial fan project, not affiliated with Marvel or Disney.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  // Cached ('use cache', tag "art"), so this is part of the static shell.
+  const art = await getArtMap();
   return (
     <html
       lang="en"
@@ -49,7 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           <SiteHeader />
         </Suspense>
-        {children}
+        <ArtProvider map={art}>{children}</ArtProvider>
         <SiteFooter />
         <HashRedirect />
         <Suspense fallback={null}>
