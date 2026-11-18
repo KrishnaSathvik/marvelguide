@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
 import { MCU_GROUPS } from "@/lib/routes";
 import { Reveal } from "@/components/Reveal";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "MCU Explained",
   description:
     "The MCU reference library in five sections: basics, the Infinity Saga, characters, the multiverse and a toolkit of tech, maps and watch orders.",
-};
+  path: "/mcu",
+});
 
 const SURE = [
   {

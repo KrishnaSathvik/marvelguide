@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
 import { Reveal } from "@/components/Reveal";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Doomsday Guide",
   description:
     "Ready for Avengers: Doomsday in 4 steps: the story so far, what to watch, the 3 universes and the characters.",
-};
+  path: "/guide",
+});
 
 const STEPS = [
   { href: "/guide/story", b: "Catch up on the story", s: "Seven chapters, from Endgame to Doom" },

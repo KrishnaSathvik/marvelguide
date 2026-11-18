@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -14,7 +15,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/mcu/[group]">): Promise<Metadata> {
   const group = findGroup((await params).group);
-  return group ? { title: group.title, description: group.description } : {};
+  return group ? pageMeta({ title: group.title, description: group.description, path: `/mcu/${group.slug}` }) : {};
 }
 
 /** A group page holds all of its chapters, read top to bottom (legacy `.part.egrp`). */

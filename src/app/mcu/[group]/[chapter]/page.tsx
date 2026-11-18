@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { Chapter, CHAPTER_META } from "@/components/mcu/chapters";
@@ -24,7 +25,11 @@ export async function generateMetadata({ params }: PageProps<"/mcu/[group]/[chap
   const r = await resolve(params);
   if (!r) return {};
   const meta = CHAPTER_META[r.chapter.legacyId];
-  return { title: meta.title, description: meta.lede ?? r.group.description };
+  return pageMeta({
+    title: meta.title,
+    description: meta.lede ?? r.group.description,
+    path: `/mcu/${r.group.slug}/${r.chapter.slug}`,
+  });
 }
 
 /** A single chapter on its own page (deep links, search results, chatbot links). */

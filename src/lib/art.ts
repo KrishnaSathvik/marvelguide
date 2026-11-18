@@ -1,27 +1,16 @@
 import { cacheLife, cacheTag } from "next/cache";
-import MANIFEST from "../../images/manifest.json";
 
 /**
  * Image key → { src, focus }. Keys are the legacy `data-art` keys (AGENTS.md §6).
  *
- * Source of truth is the Supabase `art` table (Phase 3, filled by scripts/import-images.mjs). It is read
- * once and cached ('use cache', tag "art"): the Phase 4 admin calls revalidateTag("art") after a change.
- * Without Supabase config (or if it is unreachable) we fall back to images/ via public/art/, which
- * scripts/sync-images.mjs copies before dev/build.
+ * The only source is the Supabase `art` table (Storage bucket `art`). It is read once and cached
+ * ('use cache', tag "art"); the Phase 4 admin calls revalidateTag("art") after a change.
+ * There is deliberately no fallback: the result is cached for the life of a deployment, so a silent
+ * "no images" would ship a site of empty frames. If the table can't be read the build fails instead,
+ * and the previous deployment stays live.
  */
 export type ArtEntry = { src: string; focus?: string };
 export type ArtMap = Record<string, ArtEntry>;
-
-type ManifestEntry = { key: string; file: string; focus?: string };
-
-export function localArtMap(): ArtMap {
-  return Object.fromEntries(
-    (MANIFEST as ManifestEntry[]).map((e) => [
-      e.key,
-      { src: `/art/${e.file.replace(/^images\//, "")}`, ...(e.focus ? { focus: e.focus } : {}) },
-    ]),
-  );
-}
 
 export async function getArtMap(): Promise<ArtMap> {
   "use cache";
@@ -30,17 +19,13 @@ export async function getArtMap(): Promise<ArtMap> {
 
   const base = process.env.NEXT_PUBLIC_SUPABASE_URL?.replace(/\/$/, "");
   const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  if (!base || !anon) return localArtMap();
-  try {
-    const r = await fetch(`${base}/rest/v1/art?select=key,url,focus`, {
-      headers: { apikey: anon, Authorization: `Bearer ${anon}` },
-    });
-    if (!r.ok) throw new Error(`art table: HTTP ${r.status}`);
-    const rows = (await r.json()) as { key: string; url: string; focus: string | null }[];
-    if (!rows.length) throw new Error("art table is empty (run scripts/import-images.mjs)");
-    return Object.fromEntries(rows.map((x) => [x.key, { src: x.url, ...(x.focus ? { focus: x.focus } : {}) }]));
-  } catch (err) {
-    console.warn(`[art] Supabase unavailable, using local images/: ${(err as Error).message}`);
-    return localArtMap();
-  }
+  if (!base || !anon) throw new Error("[art] NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY are required.");
+
+  const r = await fetch(`${base}/rest/v1/art?select=key,url,focus`, {
+    headers: { apikey: anon, Authorization: `Bearer ${anon}` },
+  });
+  if (!r.ok) throw new Error(`[art] Could not read the art table: HTTP ${r.status}`);
+  const rows = (await r.json()) as { key: string; url: string; focus: string | null }[];
+  if (!rows.length) throw new Error("[art] The art table is empty.");
+  return Object.fromEntries(rows.map((x) => [x.key, { src: x.url, ...(x.focus ? { focus: x.focus } : {}) }]));
 }

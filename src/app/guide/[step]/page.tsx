@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { Suspense, type ComponentType } from "react";
 import { CharactersStep } from "@/components/guide/CharactersStep";
@@ -36,7 +37,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/guide/[step]">): Promise<Metadata> {
   const step = findStep((await params).step);
-  return step ? { title: step.title, description: STEP[step.slug].description } : {};
+  return step ? pageMeta({ title: step.title, description: STEP[step.slug].description, path: `/guide/${step.slug}` }) : {};
 }
 
 export default function GuideStepPage({ params }: PageProps<"/guide/[step]">) {

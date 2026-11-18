@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { Fragment } from "react";
 import { Icon } from "@/components/Icon";
 import { Spoiler } from "@/components/Spoiler";
 import { FAQ } from "@/content";
 import { Reveal } from "@/components/Reveal";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "FAQ",
-  description: "The things fans keep asking before Avengers: Doomsday, answered with what Marvel has actually said.",
-};
+  description:
+    "The things fans keep asking before Avengers: Doomsday, answered with what Marvel has actually said.",
+  path: "/faq",
+});
 
 const groups = [...new Set(FAQ.map((q) => q.g))];
 

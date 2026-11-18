@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { AskPageChat } from "@/components/chat/AskPageChat";
 import { chatAvailability } from "@/lib/chat/config";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Ask the Watcher",
-  description: "Ask anything about the MCU and Avengers: Doomsday. An unofficial fan guide that labels rumors.",
-};
+  description:
+    "Ask anything about the MCU and Avengers: Doomsday. An unofficial fan guide that labels rumors.",
+  path: "/ask",
+});
 
 /** Full-screen chat app under the site header. */
 export default function AskPage() {

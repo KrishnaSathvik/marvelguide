@@ -46,5 +46,12 @@ next-env.d.ts
 # local tooling
 /.playwright-mcp/
 
-# copied from images/ by scripts/sync-images.mjs
+
+# Images and third-party reference material stay local: the site serves images from Supabase Storage.
+# images/manifest.json is kept (scripts/import-images.mjs reads it to re-upload from a local images/ folder).
+/images/*
+!/images/manifest.json
+/data/tmdb/img/
+/assets/
+/docs/reference/
 /public/art/

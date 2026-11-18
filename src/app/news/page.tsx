@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { Icon } from "@/components/Icon";
 import { Spoiler } from "@/components/Spoiler";
 import { Tag } from "@/components/ui";
 import { NEWS, type NewsItem, type NewsPara } from "@/content";
 import { Reveal } from "@/components/Reveal";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "News",
   description:
     "The latest Avengers: Doomsday news, sourced and labelled Official, Canon, Report or Unconfirmed.",
-};
+  path: "/news",
+});
 
 const TAG_CLASS: Record<NewsItem["tag"], string> = {
   Official: "canon",

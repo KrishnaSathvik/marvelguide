@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { Icon } from "@/components/Icon";
 import { LINKS } from "@/content";
 import { Reveal } from "@/components/Reveal";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Official links",
-  description: "Official Avengers: Doomsday links: Marvel.com, the trailer, tickets, Disney+ and TMDB.",
-};
+  description:
+    "Official Avengers: Doomsday links: Marvel.com, the trailer, tickets, Disney+ and TMDB.",
+  path: "/links",
+});
 
 export default function LinksPage() {
   return (
