@@ -6,5 +6,5 @@ import { useIsClient } from "./ChatLauncher";
 /** Full-page chat on /ask (client-only: the conversation lives in sessionStorage). */
 export function AskPageChat() {
   const isClient = useIsClient();
-  return <div className="chat-page">{isClient ? <ChatBox autoFocus /> : null}</div>;
+  return isClient ? <ChatBox variant="page" autoFocus /> : <div className="cb cb-page" aria-busy="true" />;
 }

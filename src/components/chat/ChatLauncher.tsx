@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { Icon } from "@/components/Icon";
@@ -15,7 +14,7 @@ export const useIsClient = () =>
     () => false,
   );
 
-/** Floating "Ask" button + panel on every page except /ask (AGENTS.md §7). */
+/** Floating "Ask" button + chat panel on every page except /ask (AGENTS.md §7). */
 export function ChatLauncher() {
   const pathname = usePathname();
   const isClient = useIsClient();
@@ -30,28 +29,14 @@ export function ChatLauncher() {
 
   if (!isClient || pathname === "/ask") return null;
 
-  return (
-    <>
-      {open && (
-        <div className="chat-panel" role="dialog" aria-label="Ask the Marvel guide">
-          <div className="chat-head">
-            <b>Ask the guide</b>
-            <Link href="/ask" onClick={() => setOpen(false)}>
-              Full page
-            </Link>
-            <button type="button" onClick={() => setOpen(false)} aria-label="Close">
-              <Icon name="x" />
-            </button>
-          </div>
-          <ChatBox autoFocus />
-        </div>
-      )}
-      {!open && (
-        <button type="button" className="chat-fab" onClick={() => setOpen(true)} aria-label="Ask the Marvel guide">
-          <Icon name="sparkles" />
-          Ask
-        </button>
-      )}
-    </>
+  return open ? (
+    <div className="cb-panel-wrap" role="dialog" aria-label="Ask the Marvel Guide">
+      <ChatBox variant="panel" autoFocus onClose={() => setOpen(false)} />
+    </div>
+  ) : (
+    <button type="button" className="chat-fab" onClick={() => setOpen(true)} aria-label="Ask the Marvel Guide">
+      <Icon name="message-circle" />
+      Ask the guide
+    </button>
   );
 }

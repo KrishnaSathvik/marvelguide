@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { AskPageChat } from "@/components/chat/AskPageChat";
-import { Icon } from "@/components/Icon";
 import { chatAvailability } from "@/lib/chat/config";
 
 export const metadata: Metadata = {
@@ -8,26 +7,19 @@ export const metadata: Metadata = {
   description: "Ask anything about the MCU and Avengers: Doomsday. An unofficial fan guide that labels rumors.",
 };
 
+/** Full-screen chat app under the site header. */
 export default function AskPage() {
   const availability = chatAvailability();
   return (
-    <main>
-      <section id="ask">
-        <div className="wrap">
-          <span className="kicker">
-            <Icon name="sparkles" />
-            Ask the guide
-          </span>
-          <h1 className="h2">
-            Ask about the <span className="r">MCU</span>
-          </h1>
-          <p className="lede">
-            Films, lore, comics and the road to Doomsday. Answers come from this guide first, then trusted sources,
-            with rumors labelled as rumors.
-          </p>
-          {availability.open ? <AskPageChat /> : <p className="chat-error">{availability.reason}</p>}
+    <main className="ask-app">
+      <h1 className="sr-only">Ask the Marvel Guide</h1>
+      {availability.open ? (
+        <AskPageChat />
+      ) : (
+        <div className="cb cb-page">
+          <p className="cb-closed">{availability.reason}</p>
         </div>
-      </section>
+      )}
     </main>
   );
 }
