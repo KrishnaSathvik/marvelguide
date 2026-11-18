@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
-import { artSrc } from "@/lib/art";
+import { artFocus, artSrc } from "@/lib/art";
 import { Icon } from "./Icon";
 
 /**
@@ -27,11 +27,12 @@ export function Art({
   sizes?: string;
 }) {
   const src = artSrc(artKey);
+  const focus = artFocus(artKey);
   const style = color ? ({ "--c": `${color}55`, "--c2": color } as CSSProperties) : undefined;
   return (
     <div className={["art", src ? "has" : "", className ?? ""].join(" ").trim()} data-art={artKey} style={style}>
       {src ? (
-        <Image src={src} alt={alt} fill sizes={sizes} />
+        <Image src={src} alt={alt} fill sizes={sizes} style={focus ? { objectPosition: focus } : undefined} />
       ) : (
         <div className="ph" role="img" aria-label={alt}>
           <Icon name={icon} />

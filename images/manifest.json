@@ -1287,7 +1287,8 @@
  {
   "key": "feature-tony",
   "file": "images/feature-tony.jpg",
-  "source": "uploaded"
+  "source": "uploaded",
+  "focus": "center 18%"
  },
  {
   "key": "char-joaquin",

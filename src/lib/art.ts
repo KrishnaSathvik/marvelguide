@@ -5,11 +5,18 @@ import MANIFEST from "../../images/manifest.json";
  * Interim: images/ is copied to public/art/ by scripts/sync-images.mjs (runs before dev/build).
  * Phase 3 replaces this with the Supabase `art` table. Keys without a file show the placeholder.
  */
-const FILES: Record<string, string> = Object.fromEntries(
-  (MANIFEST as { key: string; file: string }[]).map((e) => [e.key, e.file.replace(/^images\//, "")]),
-);
+type Entry = { key: string; file: string; focus?: string };
+const ENTRIES: Record<string, Entry> = Object.fromEntries((MANIFEST as Entry[]).map((e) => [e.key, e]));
 
 export function artSrc(key: string): string | null {
-  const f = FILES[key];
-  return f ? `/art/${f}` : null;
+  const e = ENTRIES[key];
+  return e ? `/art/${e.file.replace(/^images\//, "")}` : null;
+}
+
+/**
+ * Optional crop focus for an image (a CSS object-position such as "center 20%"), stored per image in
+ * manifest.json because it depends on the photo, not the frame. Default is the center.
+ */
+export function artFocus(key: string): string | undefined {
+  return ENTRIES[key]?.focus;
 }
