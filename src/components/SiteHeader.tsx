@@ -73,7 +73,7 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
-          <button type="button" className="sbtn" onClick={openSearch} aria-label="Search (press /)" title="Search (/)">
+          <button type="button" className="hdr-search" onClick={openSearch} aria-label="Search (press /)" title="Search (/)">
             <Icon name="search" />
           </button>
         </div>

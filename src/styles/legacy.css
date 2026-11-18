@@ -33,12 +33,8 @@ mark{background:var(--yellow);color:inherit;padding:0 2px}
 .tocg .grp a{display:block;font-family:var(--label);font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:#ddd;text-decoration:none;padding:7px 0;border-top:1px solid #333}
 .tocg .grp a:hover{color:#fff;padding-left:6px;transition:padding .15s}
 .tocg .grp a em{font-style:normal;color:var(--red);margin-right:8px}
-.sbtn{margin-left:auto;display:flex;align-items:center;gap:10px;background:#fff;color:var(--mute);border:0;padding:8px 10px 8px 12px;min-width:250px;cursor:pointer;font-size:14px;text-align:left}
-.sbtn .ico{color:var(--ink);width:17px;height:17px}
-.sbtn span.t{flex:1}
 kbd{font-family:var(--label);font-size:11px;font-weight:600;border:1.5px solid currentColor;padding:1px 6px;letter-spacing:.04em;border-radius:3px;opacity:.75}
 
-@media(max-width:600px){.sbtn{min-width:0;padding:8px 10px}.sbtn span.t,.sbtn kbd{display:none}}
 
 /* ---------- common ---------- */
 section{position:relative;padding:92px 0;z-index:1;border-bottom:var(--bw) solid var(--ink)}

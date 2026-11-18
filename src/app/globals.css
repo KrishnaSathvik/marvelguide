@@ -346,7 +346,7 @@
 
 @layer components {
   /* header search button (legacy had search only on Home and via "/") */
-  .sbtn {
+  .hdr-search {
     flex: none;
     display: grid;
     place-items: center;
@@ -357,16 +357,16 @@
     background: none;
     cursor: pointer;
   }
-  .sbtn:hover {
+  .hdr-search:hover {
     color: #fff;
     border-color: #444;
   }
-  .sbtn .ico {
+  .hdr-search .ico {
     width: 18px;
     height: 18px;
   }
   @media (max-width: 640px) {
-    .sbtn {
+    .hdr-search {
       width: 32px;
     }
   }
