@@ -20,6 +20,7 @@ import {
 } from "ai";
 import { z } from "zod";
 import { chatAvailability, costUsd, FALLBACK_MODEL, LIMITS, PRIMARY_MODEL } from "@/lib/chat/config";
+import { isHuman, turnstileEnabled } from "@/lib/chat/human";
 import { contextBlock, SYSTEM_PROMPT } from "@/lib/chat/prompt";
 import { checkRateLimit } from "@/lib/chat/rate-limit";
 import { formatDocs, isNewsQuestion, newsDocs, pageDocs, searchSite } from "@/lib/chat/site-knowledge";
@@ -57,6 +58,13 @@ export async function POST(req: Request) {
   if (!limited.ok)
     return json(429, "You're asking faster than I can keep up. Try again in a moment.", {
       "Retry-After": String(limited.retryAfterSec),
+    });
+
+  // Turnstile: the visitor must have passed the check (signed cookie from /api/chat/verify).
+  if (turnstileEnabled() && !isHuman(req.headers.get("cookie")))
+    return new Response(JSON.stringify({ error: "Please confirm you're human first.", needsVerification: true }), {
+      status: 403,
+      headers: { "Content-Type": "application/json" },
     });
 
   let body: z.infer<typeof Body>;

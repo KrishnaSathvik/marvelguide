@@ -6,7 +6,8 @@ import Link from "next/link";
 import { useEffect, useRef, useState, type ComponentProps } from "react";
 import ReactMarkdown from "react-markdown";
 import { Icon } from "@/components/Icon";
-import { friendlyError, getChat, saveMessages } from "./chat-store";
+import { friendlyError, getChat, needsVerification, saveMessages } from "./chat-store";
+import { HumanCheck, humanVerified } from "./HumanCheck";
 
 const SUGGESTIONS = [
   "Why did Doctor Strange give Thanos the Time Stone?",
@@ -44,7 +45,8 @@ function Message({ m }: { m: UIMessage }) {
           ) : (
             <p key={i}>{p.text}</p>
           );
-        if (p.type.startsWith("tool-")) return <ToolNote key={i} type={p.type} state={(p as { state?: string }).state} />;
+        if (p.type.startsWith("tool-"))
+          return <ToolNote key={i} type={p.type} state={(p as { state?: string }).state} />;
         return null;
       })}
     </div>
@@ -55,6 +57,7 @@ function Message({ m }: { m: UIMessage }) {
 export function ChatBox({ autoFocus = false }: { autoFocus?: boolean }) {
   const { messages, sendMessage, status, error, stop, setMessages, clearError } = useChat({ chat: getChat() });
   const [input, setInput] = useState("");
+  const [human, setHuman] = useState(humanVerified);
   const listRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const busy = status === "submitted" || status === "streaming";
@@ -75,8 +78,12 @@ export function ChatBox({ autoFocus = false }: { autoFocus?: boolean }) {
     setInput("");
   };
 
+  // Show the check when this tab hasn't passed it, or the server says the 12h cookie is missing/expired.
+  const expired = needsVerification(error);
+  const showCheck = !human || expired;
+
   const waiting = status === "submitted" || (busy && messages[messages.length - 1]?.role === "user");
-  const errText = friendlyError(error);
+  const errText = expired ? null : friendlyError(error);
 
   return (
     <div className="chat-box">
@@ -103,38 +110,47 @@ export function ChatBox({ autoFocus = false }: { autoFocus?: boolean }) {
           </p>
         )}
       </div>
-      <form
-        className="chat-form"
-        onSubmit={(e) => {
-          e.preventDefault();
-          send(input);
-        }}
-      >
-        <textarea
-          ref={inputRef}
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" && !e.shiftKey) {
-              e.preventDefault();
-              send(input);
-            }
+      {showCheck ? (
+        <HumanCheck
+          onVerified={() => {
+            clearError();
+            setHuman(true);
           }}
-          placeholder="Ask about the MCU…"
-          aria-label="Your question"
-          maxLength={MAX_CHARS}
-          rows={2}
         />
-        {busy ? (
-          <button type="button" className="chat-send" onClick={() => stop()} aria-label="Stop">
-            <Icon name="x" />
-          </button>
-        ) : (
-          <button type="submit" className="chat-send" disabled={!input.trim()} aria-label="Send">
-            <Icon name="arrow-right" />
-          </button>
-        )}
-      </form>
+      ) : (
+        <form
+          className="chat-form"
+          onSubmit={(e) => {
+            e.preventDefault();
+            send(input);
+          }}
+        >
+          <textarea
+            ref={inputRef}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                send(input);
+              }
+            }}
+            placeholder="Ask about the MCU…"
+            aria-label="Your question"
+            maxLength={MAX_CHARS}
+            rows={2}
+          />
+          {busy ? (
+            <button type="button" className="chat-send" onClick={() => stop()} aria-label="Stop">
+              <Icon name="x" />
+            </button>
+          ) : (
+            <button type="submit" className="chat-send" disabled={!input.trim()} aria-label="Send">
+              <Icon name="arrow-right" />
+            </button>
+          )}
+        </form>
+      )}
       <div className="chat-foot">
         <span>Unofficial fan guide. It can be wrong; rumors are labelled.</span>
         {messages.length > 0 && !busy && (

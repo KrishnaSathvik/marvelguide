@@ -636,3 +636,17 @@
     font-size: 11.5px;
   }
 }
+
+@layer components {
+  .chat-human {
+    padding: 12px 14px;
+    border-top: var(--bw) solid var(--ink);
+    background: var(--white);
+    display: grid;
+    gap: 8px;
+  }
+  .chat-human > p:first-child {
+    font-size: 13.5px;
+    color: var(--ink2);
+  }
+}

@@ -47,6 +47,16 @@ export function getChat(): Chat<UIMessage> {
   return chat;
 }
 
+/** True when the server rejected the request because the Turnstile check is missing or expired. */
+export function needsVerification(err: Error | undefined): boolean {
+  if (!err) return false;
+  try {
+    return Boolean((JSON.parse(err.message) as { needsVerification?: boolean }).needsVerification);
+  } catch {
+    return false;
+  }
+}
+
 /** The route returns `{ "error": "…" }` for refusals like rate limits; show that text when present. */
 export function friendlyError(err: Error | undefined): string | null {
   if (!err) return null;
