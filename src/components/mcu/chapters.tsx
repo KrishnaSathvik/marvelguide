@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Fragment, type CSSProperties, type ReactNode } from "react";
 import { Art } from "@/components/Art";
 import { Icon } from "@/components/Icon";
-import { Lead, Row, Tag } from "@/components/ui";
+import { Lead, Row, SectionHead, Tag } from "@/components/ui";
 import {
   C,
   EARTHS,
@@ -16,6 +16,7 @@ import {
   VROWS,
   type EncRow,
 } from "@/content";
+import { MCU_GROUPS } from "@/lib/routes";
 import { ConnectionMap, SacredTimeline } from "./Diagrams";
 import { Directory } from "./Directory";
 import { FilmsGrid } from "./FilmsGrid";
@@ -312,8 +313,16 @@ function Road() {
 
 /** Chapter header (small kicker + title) and optional intro, from legacy CHT / CHL. */
 export const CHAPTER_META: Record<string, { kick: string; title: string; lede?: string }> = {
-  "e-mcu": { kick: "The foundation", title: "What is the MCU?" },
-  "e-phases": { kick: "The shape of the story", title: "Phases & sagas" },
+  "e-mcu": {
+    kick: "The foundation",
+    title: "What is the MCU?",
+    lede: "What the MCU is: one story shared by the films and the Disney+ shows, run by Marvel Studios, and why some heroes arrived years after the rest.",
+  },
+  "e-phases": {
+    kick: "The shape of the story",
+    title: "Phases & sagas",
+    lede: "The MCU's six phases, split into the Infinity Saga (2008–2019, through Endgame) and the Multiverse Saga (2021–2027, through Secret Wars).",
+  },
   "e-films": {
     kick: "On film",
     title: "Every MCU film",
@@ -324,8 +333,16 @@ export const CHAPTER_META: Record<string, { kick: string; title: string; lede?: 
     title: "The Disney+ series",
     lede: "Since 2021 the streaming shows have been part of the story, plus three one-off Special Presentations. Animated shows like What If…?, Marvel Zombies and Your Friendly Neighborhood Spider-Man take place in alternate realities.",
   },
-  "e-stones": { kick: "The six singularities", title: "The Infinity Stones" },
-  "e-infinity": { kick: "The climax", title: "Thanos, the Snap & the Blip" },
+  "e-stones": {
+    kick: "The six singularities",
+    title: "The Infinity Stones",
+    lede: "The six Infinity Stones, where each one appears, and how they power the Infinity Saga.",
+  },
+  "e-infinity": {
+    kick: "The climax",
+    title: "Thanos, the Snap & the Blip",
+    lede: "Thanos, the Snap, the five years of the Blip, and the Time Heist that ends the Infinity Saga in Endgame.",
+  },
   "e-heroes": {
     kick: "Who's who",
     title: "Character directory",
@@ -351,9 +368,21 @@ export const CHAPTER_META: Record<string, { kick: string; title: string; lede?: 
     title: "The TVA & the timelines",
     lede: "The rules of time that the Loki series set up, and that the whole Multiverse Saga runs on.",
   },
-  "e-multiverse": { kick: "A map of realities", title: "The multiverse" },
-  "e-time": { kick: "The rules of the road", title: "Time travel" },
-  "e-tech": { kick: "The building blocks", title: "Tech & artifacts" },
+  "e-multiverse": {
+    kick: "A map of realities",
+    title: "The multiverse",
+    lede: "The MCU multiverse: the known earths, what an incursion is, and how people cross from one universe to another.",
+  },
+  "e-time": {
+    kick: "The rules of the road",
+    title: "Time travel",
+    lede: "How the MCU handles time: the Quantum Realm, and the Endgame rule that you cannot change your own past.",
+  },
+  "e-tech": {
+    kick: "The building blocks",
+    title: "Tech & artifacts",
+    lede: "The gear the story keeps coming back to: arc reactors, vibranium, the shield, Mjolnir, the Mystic Arts, the Ten Rings, and TVA tech.",
+  },
   "e-map": {
     kick: "How it all connects",
     title: "Connection map",
@@ -419,17 +448,17 @@ export const CHAPTER_BODY: Record<string, () => ReactNode> = {
   "e-road": () => <Road />,
 };
 
-/** One chapter block: header, optional intro and body (legacy `.echap`). */
+function chapterIcon(id: string) {
+  return MCU_GROUPS.find((g) => g.chapters.some((c) => c.legacyId === id))?.icon ?? "library";
+}
+
+/** One chapter block: the same heading as a guide step, then the body. */
 export function Chapter({ id }: { id: string }) {
   const meta = CHAPTER_META[id];
   const Body = CHAPTER_BODY[id];
   return (
     <div className="echap" id={id}>
-      <h2 className="eh rv">
-        <small>{meta.kick}</small>
-        {meta.title}
-      </h2>
-      {meta.lede && <p className="lede rv">{meta.lede}</p>}
+      <SectionHead icon={chapterIcon(id)} kicker={meta.kick} title={meta.title} lede={meta.lede} />
       <Body />
     </div>
   );

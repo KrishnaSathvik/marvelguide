@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { absoluteUrl, jsonLd } from "@/lib/seo";
 import { Icon } from "./Icon";
 
 /* Small shared building blocks that mirror legacy markup/classes. */
@@ -59,14 +60,25 @@ export function SectionHead({
   );
 }
 
-/** Breadcrumb: parent link › current label (legacy `.crumb`). */
-export function Crumb({ href, parent, label }: { href: string; parent: string; label: string }) {
+/** Breadcrumb: parent link › current label (legacy `.crumb`). `path` is this page, used only in the matching schema. */
+export function Crumb({ href, parent, label, path }: { href: string; parent: string; label: string; path: string }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: parent, item: absoluteUrl(href) },
+      { "@type": "ListItem", position: 2, name: label, item: absoluteUrl(path) },
+    ],
+  };
   return (
-    <nav className="crumb" aria-label="Breadcrumb">
-      <Link href={href}>{parent}</Link>
-      <span aria-hidden="true">›</span>
-      <span>{label}</span>
-    </nav>
+    <>
+      <script type="application/ld+json">{jsonLd(data)}</script>
+      <nav className="crumb" aria-label="Breadcrumb">
+        <Link href={href}>{parent}</Link>
+        <span aria-hidden="true">›</span>
+        <span>{label}</span>
+      </nav>
+    </>
   );
 }
 

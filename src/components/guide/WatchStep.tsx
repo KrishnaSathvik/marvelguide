@@ -1,7 +1,7 @@
 import { SectionHead } from "@/components/ui";
 import { WatchList } from "./WatchList";
 
-export function WatchStep() {
+export function WatchStep({ list }: { list?: string }) {
   return (
     <>
       <SectionHead
@@ -11,7 +11,7 @@ export function WatchStep() {
         accent="watch list"
         lede="All official titles stream on Disney+ in the “Countdown to Avengers: Doomsday” collection. Mark titles as watched to track your progress."
       />
-      <WatchList />
+      <WatchList list={list} />
     </>
   );
 }

@@ -7,7 +7,7 @@ import { StoryStep } from "@/components/guide/StoryStep";
 import { UniversesStep } from "@/components/guide/UniversesStep";
 import { WatchStep } from "@/components/guide/WatchStep";
 import { Crumb, Pager } from "@/components/ui";
-import { findStep, GUIDE_STEPS } from "@/lib/routes";
+import { findStep, GUIDE_STEPS, MCU_HOME } from "@/lib/routes";
 import { Reveal } from "@/components/Reveal";
 
 const STEP: Record<string, { Body: ComponentType; alt?: boolean; description: string }> = {
@@ -18,7 +18,8 @@ const STEP: Record<string, { Body: ComponentType; alt?: boolean; description: st
   watch: {
     Body: WatchStep,
     alt: true,
-    description: "Three watch lists for Avengers: Doomsday, with every title linked to its Disney+ page.",
+    description:
+      "Three lists of what to watch before Avengers: Doomsday: a five-title weekend, Disney+'s official 15, and a longer deep cut.",
   },
   universes: {
     Body: UniversesStep,
@@ -27,8 +28,15 @@ const STEP: Record<string, { Body: ComponentType; alt?: boolean; description: st
   characters: {
     Body: CharactersStep,
     alt: true,
-    description: "Doctor Doom and the confirmed Avengers: Doomsday roster, plus who's set up or rumored.",
+    description:
+      "The Avengers: Doomsday cast: Doctor Doom, the confirmed roster, who is set up on screen, and who is only rumored.",
   },
+};
+
+/** Search titles. Visible headings stay the short step names. The layout template adds " · Marvel Guide". */
+const SEO_TITLE: Partial<Record<(typeof GUIDE_STEPS)[number]["slug"], string>> = {
+  watch: "Watch Lists Before Avengers: Doomsday",
+  characters: "Avengers: Doomsday Cast",
 };
 
 export function generateStaticParams() {
@@ -37,15 +45,21 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/guide/[step]">): Promise<Metadata> {
   const step = findStep((await params).step);
-  return step ? pageMeta({ title: step.title, description: STEP[step.slug].description, path: `/guide/${step.slug}` }) : {};
+  return step
+    ? pageMeta({
+        title: SEO_TITLE[step.slug] ?? step.title,
+        description: STEP[step.slug].description,
+        path: `/guide/${step.slug}`,
+      })
+    : {};
 }
 
-export default function GuideStepPage({ params }: PageProps<"/guide/[step]">) {
+export default function GuideStepPage({ params, searchParams }: PageProps<"/guide/[step]">) {
   // params are read inside <Suspense> so client navigations stay instant (Cache Components).
   return (
     <main>
       <Suspense fallback={<Fallback />}>
-        <Step params={params} />
+        <Step params={params} searchParams={searchParams} />
       </Suspense>
     </main>
   );
@@ -60,25 +74,41 @@ function Fallback() {
   );
 }
 
-async function Step({ params }: { params: PageProps<"/guide/[step]">["params"] }) {
+function one(value: string | string[] | undefined) {
+  return Array.isArray(value) ? value[0] : value;
+}
+
+async function Step({
+  params,
+  searchParams,
+}: {
+  params: PageProps<"/guide/[step]">["params"];
+  searchParams: PageProps<"/guide/[step]">["searchParams"];
+}) {
   const step = findStep((await params).step);
   if (!step) notFound();
   const i = GUIDE_STEPS.indexOf(step);
   const prev = GUIDE_STEPS[i - 1];
   const next = GUIDE_STEPS[i + 1];
   const { Body, alt } = STEP[step.slug];
+  const list = step.slug === "watch" ? one((await searchParams).list) : undefined;
   return (
     <section id={step.legacyId} className={alt ? "alt" : undefined}>
       <div className="wrap">
         <Reveal />
-        <Crumb href="/guide" parent="Doomsday Guide" label={`Step ${i + 1} of ${GUIDE_STEPS.length}`} />
-        <Body />
+        <Crumb
+          href="/guide/story"
+          parent="Doomsday Guide"
+          label={`Step ${i + 1} of ${GUIDE_STEPS.length}`}
+          path={`/guide/${step.slug}`}
+        />
+        {step.slug === "watch" ? <WatchStep list={list} /> : <Body />}
         <Pager
           prev={prev ? { href: `/guide/${prev.slug}`, title: prev.title } : null}
           next={
             next
               ? { href: `/guide/${next.slug}`, title: next.title }
-              : { href: "/mcu", top: "Done? Go deeper →", title: "MCU Explained" }
+              : { href: MCU_HOME, top: "Done? Go deeper →", title: "MCU Explained" }
           }
         />
       </div>

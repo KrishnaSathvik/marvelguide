@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { Chapter, CHAPTER_META } from "@/components/mcu/chapters";
 import { Crumb, Pager } from "@/components/ui";
-import { findGroup, MCU_GROUPS } from "@/lib/routes";
+import { findGroup, MCU_GROUPS, mcuGroupHref } from "@/lib/routes";
 import { Reveal } from "@/components/Reveal";
 
 /** Every chapter in reading order, for the Back/Next pager. */
@@ -64,7 +64,12 @@ async function ChapterPage({ params }: { params: PageProps<"/mcu/[group]/[chapte
     <section className="part egrp">
       <div className="wrap">
         <Reveal />
-        <Crumb href={`/mcu/${r.group.slug}`} parent={`MCU Explained · ${r.group.title}`} label={r.chapter.title} />
+        <Crumb
+          href={mcuGroupHref(r.group)}
+          parent={`MCU Explained · ${r.group.title}`}
+          label={r.chapter.title}
+          path={`/mcu/${r.group.slug}/${r.chapter.slug}`}
+        />
         <Chapter id={r.chapter.legacyId} />
         <Pager
           prev={prev ? { href: href(prev), title: prev.chapter.title } : null}

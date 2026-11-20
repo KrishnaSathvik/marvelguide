@@ -3,8 +3,9 @@ import GROUPS from "@data/site/GROUPS.json";
 /** Header tabs. `short` is used on tablets/phones so the header never wraps. */
 export const TABS = [
   { href: "/", label: "Home", homeOnly: true },
-  { href: "/guide", label: "Doomsday Guide", short: "Guide" },
-  { href: "/mcu", label: "MCU Explained", short: "MCU" },
+  { href: "/guide/story", match: "/guide", label: "Doomsday Guide", short: "Guide" },
+  { href: "/mcu/basics/what-is-the-mcu", match: "/mcu", label: "MCU Explained", short: "MCU" },
+  { href: "/posters", label: "Posters" },
   { href: "/news", label: "News" },
   { href: "/faq", label: "FAQ" },
   { href: "/links", label: "Links" },
@@ -75,6 +76,14 @@ export const MCU_GROUPS: McuGroup[] = GROUPS.map((g) => ({
 export const findGroup = (slug: string) => MCU_GROUPS.find((g) => g.slug === slug);
 export const findStep = (slug: string) => GUIDE_STEPS.find((s) => s.slug === slug);
 
+/** A section opens on its first chapter. The group URL is only a redirect. */
+export function mcuGroupHref(group: McuGroup) {
+  const chapter = group.chapters[0];
+  return `/mcu/${group.slug}/${chapter.slug}`;
+}
+
+export const MCU_HOME = mcuGroupHref(MCU_GROUPS[0]);
+
 /**
  * Old single-page hash links (#watch, #g-basics, #e-films …) → new URLs.
  * Hashes never reach the server, so <HashRedirect/> applies this on the client.
@@ -86,9 +95,9 @@ export function legacyHashTarget(hash: string): string | null | undefined {
   const fixed: Record<string, string | null> = {
     home: "/",
     hero: "/",
-    guide: "/guide",
-    "guide-top": "/guide",
-    encyclopedia: "/mcu",
+    guide: "/guide/story",
+    "guide-top": "/guide/story",
+    encyclopedia: "/mcu/basics/what-is-the-mcu",
     news: "/news",
     faq: "/faq",
     links: "/links",
@@ -99,7 +108,7 @@ export function legacyHashTarget(hash: string): string | null | undefined {
   const step = GUIDE_STEPS.find((s) => s.legacyId === id);
   if (step) return `/guide/${step.slug}`;
   for (const g of MCU_GROUPS) {
-    if (g.legacyId === id) return `/mcu/${g.slug}`;
+    if (g.legacyId === id) return mcuGroupHref(g);
     const ch = g.chapters.find((c) => c.legacyId === id);
     if (ch) return `/mcu/${g.slug}/${ch.slug}`;
   }

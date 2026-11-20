@@ -3,12 +3,16 @@ import { pageMeta } from "@/lib/seo";
 import { AskPageChat } from "@/components/chat/AskPageChat";
 import { chatAvailability } from "@/lib/chat/config";
 
-export const metadata: Metadata = pageMeta({
-  title: "Ask the Watcher",
-  description:
-    "Ask anything about the MCU and Avengers: Doomsday. An unofficial fan guide that labels rumors.",
-  path: "/ask",
-});
+export const metadata: Metadata = {
+  ...pageMeta({
+    title: "Ask the Watcher",
+    description:
+      "Ask anything about the MCU and Avengers: Doomsday. An unofficial fan guide that labels rumors.",
+    path: "/ask",
+  }),
+  // Reachable from the chat button, and kept out of the sitemap. Don't let it compete in search.
+  robots: { index: false, follow: true },
+};
 
 /** Full-screen chat app under the site header. */
 export default function AskPage() {

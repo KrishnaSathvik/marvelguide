@@ -24,3 +24,13 @@ export function pageMeta({ title, description, path }: { title?: string; descrip
     twitter: { card: "summary_large_image", title: ogTitle, description, images: [OG_IMAGE.url] },
   };
 }
+
+/** Absolute www URL for a site path. The layout title template adds " · Marvel Guide"; callers must not. */
+export function absoluteUrl(path: string): string {
+  return `${SITE.url}${path === "/" ? "" : path}`;
+}
+
+/** JSON-LD for a script tag. Escapes `<` so the payload cannot close the script. */
+export function jsonLd(data: object): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}

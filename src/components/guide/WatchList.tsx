@@ -50,7 +50,12 @@ const fmt = (m: number) => {
   return h ? `${h}h ${String(mm).padStart(2, "0")}m` : `${mm}m`;
 };
 
-export function WatchList() {
+function isTrack(value: string | undefined): value is TrackKey {
+  return value === "weekend" || value === "official" || value === "deep";
+}
+
+export function WatchList({ list }: { list?: string }) {
+  const requested = isTrack(list) ? list : null;
   const rawDone = useStored(KEY);
   const rawTrack = useStored(TRACK_KEY);
   const done = useMemo<Record<string, 1>>(() => {
@@ -60,17 +65,28 @@ export function WatchList() {
       return {};
     }
   }, [rawDone]);
-  const track: TrackKey = rawTrack && rawTrack in TRACKS ? (rawTrack as TrackKey) : "weekend";
+  const stored: TrackKey = rawTrack && rawTrack in TRACKS ? (rawTrack as TrackKey) : "weekend";
+  const [chosen, setChosen] = useState<TrackKey | null>(requested);
+  const track: TrackKey = chosen ?? stored;
   const ids = TRACKS[track].ids;
   // Search result in another list: switch to the first list that contains it.
   useSearchReveal("watch-", (target) => {
     const id = target.slice("watch-".length);
     const tr = (Object.keys(TRACKS) as TrackKey[]).find((k) => TRACKS[k].ids.includes(id));
-    if (tr && tr !== track) write(TRACK_KEY, tr);
+    if (tr && tr !== track) {
+      setChosen(tr);
+      write(TRACK_KEY, tr);
+    }
   });
 
   // Staggered card entrance, re-run when the track changes (legacy: 70ms per card).
   const [shown, setShown] = useState<{ track: TrackKey; n: number }>({ track, n: 0 });
+  useEffect(() => {
+    if (!requested) return;
+    setChosen(requested);
+    write(TRACK_KEY, requested);
+  }, [requested]);
+
   useEffect(() => {
     const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
     const timers = ids.map((_, i) => setTimeout(() => setShown({ track, n: i + 1 }), reduce ? 0 : 70 * i));
@@ -105,7 +121,10 @@ export function WatchList() {
             role="tab"
             aria-selected={track === t.k}
             className={track === t.k ? "tab on" : "tab"}
-            onClick={() => write(TRACK_KEY, t.k)}
+            onClick={() => {
+              setChosen(t.k);
+              write(TRACK_KEY, t.k);
+            }}
           >
             <b>{t.b}</b>
             <small>{t.s}</small>
@@ -143,7 +162,7 @@ export function WatchList() {
           Reset
         </button>
       </div>
-      <div className="wgrid">
+      <div className="wgrid" data-n={ids.length}>
         {ids.map((id, i) => {
           const x = byId[id];
           const c = C[x.lane];

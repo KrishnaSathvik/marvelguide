@@ -6,11 +6,20 @@ import { Countdown } from "@/components/Countdown";
 import { HeroSearch } from "@/components/HeroSearch";
 import { Icon } from "@/components/Icon";
 
-export const metadata: Metadata = pageMeta({
+const HOME_TITLE = "What to Watch Before Avengers: Doomsday · Marvel Guide";
+const home = pageMeta({
   description:
-    "Fan-made Avengers: Doomsday watch guide and MCU encyclopedia. Unofficial fan project, not affiliated with Marvel or Disney.",
+    "What to watch before Avengers: Doomsday, plus the MCU timeline, the cast, and how the multiverse fits together.",
   path: "/",
 });
+
+// The root page shares the layout's segment, so the "%s · Marvel Guide" template does not apply here.
+export const metadata: Metadata = {
+  ...home,
+  title: { absolute: HOME_TITLE },
+  openGraph: { ...home.openGraph, title: HOME_TITLE },
+  twitter: { ...home.twitter, title: HOME_TITLE },
+};
 
 export default function HomePage() {
   return (
@@ -42,7 +51,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="ctas">
-              <Link className="btn red" href="/guide">
+              <Link className="btn red" href="/guide/story">
                 <Icon name="flame" />
                 Start the guide
               </Link>

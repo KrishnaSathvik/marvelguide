@@ -1,5 +1,35 @@
 [
  {
+  "id": "news-posters",
+  "section": "latest",
+  "source": "Marvel Studios",
+  "tag": "Official",
+  "big": true,
+  "title": "Eleven posters, one fight",
+  "body": [
+   "Marvel posted 11 posters as one set, captioned “In ONE MONTH, Doomsday arrives.” Doom stands alone. Everyone else comes in a pair.",
+   "The pairs: Reed Richards with Professor X, Bucky Barnes with Shang-Chi, M'Baku with Nightcrawler, Thor with Steve Rogers, Magneto with Shuri, Sam Wilson with Cyclops, Sue Storm with Namor, Gambit with Yelena Belova, Red Guardian with Ant-Man, and Loki with Mystique.",
+   "Nightcrawler has white hair and a sword. Steve is in a black T-shirt with Mjolnir, and that lightning is blue. Thor's lightning, off Stormbreaker, is yellow. Sam carries the shield. Red Guardian has his. Gambit's staff is charged pink, and blue energy runs along Yelena's arms.",
+   "A giant armored figure stands behind several of the pairs: green eyes, a glowing palm, and a round light in the chest.",
+   "Fans are reading the pairs as team-ups. Sue and Namor on the same side after Wakanda Forever. Loki beside Mystique, two shapeshifters. Magneto next to Shuri, metal next to vibranium. Sam out front with Cyclops. And that yellow lightning on Thor is the Odinforce, the power Odin used.",
+   "The chest light is drawn like an arc reactor, and Doom's armor is the same green. IGN is calling the figures Sentinels and Doombots. It looks narrower than that: Doom built them on Stark tech, not a straight copy of the Fox Sentinels. The posters don't say so. This set is pairings, not the whole cast. Johnny, Ben, the Hulk, and Wanda are not on these 11, and that is not a cut."
+  ],
+  "links": [
+   {
+    "name": "IGN",
+    "url": "https://ign.com/articles/new-avengers-doomsday-posters-reveal-key-characters-and-tease-thors-odinforce"
+   },
+   {
+    "name": "Geek Culture",
+    "url": "https://geekculture.co/avengers-doomsday-assembles-multiverse-of-heroes-including-nightcrawler-odinforce-thor-in-interconnected-posters/"
+   },
+   {
+    "name": "r/marvelstudios",
+    "url": "https://www.reddit.com/r/marvelstudios/comments/1xzm1cl/new_posters_for_avengers_doomsday/"
+   }
+  ]
+ },
+ {
   "id": "news-hulk",
   "section": "latest",
   "source": "The Hollywood Reporter",
@@ -117,11 +147,7 @@
   "spoiler": [
    "The scene replays Wanda bringing Mount Wundagore down on herself at the end of Multiverse of Madness, then keeps going. Robert Downey Jr.'s Doctor Doom lifts the rubble off her and says, roughly, “Scarlet Witch, awaken. Your power will be mine.” Wanda gasps and opens her eyes.",
    "Some outlets describe her eyes glowing Doom-green, which would suggest she's under his control. The press weren't shown the scene ahead of time.",
-   {
-    "label": "What it means:",
-    "text": "Elizabeth Olsen's Wanda is effectively confirmed for Doomsday, and possibly under Doom's control. In the comics, Wiccan and Speed have to rescue Wanda from Doom (Avengers: The Children's Crusade). Fans think the masked Latverian witches in Doomsday's marketing could be connected.",
-    "tag": "theory"
-   }
+   "Elizabeth Olsen's Wanda is effectively confirmed for Doomsday, and possibly under Doom's control. In the comics, Wiccan and Speed have to rescue Wanda from Doom (Avengers: The Children's Crusade). Fans think the masked Latverian witches in Doomsday's marketing could be connected."
   ],
   "links": [
    {
@@ -170,9 +196,13 @@
   "tag": "Rumor",
   "title": "Thor's yellow lightning",
   "body": [
-   "A Doomsday billboard spotted in Shanghai shows Thor with yellow lightning instead of blue, while Steve Rogers holds Mjolnir. Fans read it as the Odinforce. Marvel hasn't confirmed anything."
+   "The Shanghai billboard and the new posters show the same thing: Thor with yellow lightning, Steve Rogers holding Mjolnir with blue lightning, out of the suit. Fans still read the yellow as the Odinforce. The art shows the color. It doesn't name the power."
   ],
   "links": [
+   {
+    "name": "IGN",
+    "url": "https://ign.com/articles/new-avengers-doomsday-posters-reveal-key-characters-and-tease-thors-odinforce"
+   },
    {
     "name": "ComicBookMovie",
     "url": "https://comicbookmovie.com/avengers/avengers-doomsday/avengers-doomsday-billboard-confirms-thor-will-be-given-a-major-power-upgrade---spoilers-a230912"

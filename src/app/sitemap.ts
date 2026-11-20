@@ -1,19 +1,23 @@
 import type { MetadataRoute } from "next";
+import { getArtMap } from "@/lib/art";
+import { doomPosterShots, posterPageCount, posterPageHref, posterShots } from "@/lib/posters";
 import { GUIDE_STEPS, MCU_GROUPS } from "@/lib/routes";
 import { SITE } from "@/lib/seo";
 
-/** Every public page, including the chapter pages that are only linked from search and the chatbot. */
-export default function sitemap(): MetadataRoute.Sitemap {
+/**
+ * Every indexable page. Redirects (/guide, /mcu, /mcu/[group]) are omitted.
+ * /ask stays reachable from the chat button and is left out on purpose.
+ */
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const posters = doomPosterShots(await getArtMap()).length + posterShots().length;
   const paths = [
     "/",
-    "/guide",
     ...GUIDE_STEPS.map((s) => `/guide/${s.slug}`),
-    "/mcu",
-    ...MCU_GROUPS.flatMap((g) => [`/mcu/${g.slug}`, ...g.chapters.map((c) => `/mcu/${g.slug}/${c.slug}`)]),
+    ...MCU_GROUPS.flatMap((g) => g.chapters.map((c) => `/mcu/${g.slug}/${c.slug}`)),
+    ...Array.from({ length: posterPageCount(posters) }, (_, i) => posterPageHref(i + 1)),
     "/news",
     "/faq",
     "/links",
-    "/ask",
   ];
   return paths.map((p) => ({ url: `${SITE.url}${p === "/" ? "" : p}` }));
 }

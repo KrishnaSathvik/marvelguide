@@ -70,7 +70,7 @@
     scroll-padding-top: calc(var(--topbar-h) + var(--subnav-h) + 18px);
   }
   body {
-    background: var(--paper);
+    background: var(--white);
     color: var(--ink);
     font-family: var(--body);
     line-height: 1.55;

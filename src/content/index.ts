@@ -14,6 +14,7 @@ import STORY_ from "@data/site/STORY.json";
 import TEAMS_ from "@data/site/TEAMS.json";
 import TRACKS_ from "@data/site/TRACKS.json";
 import UNIS_ from "@data/site/UNIS.json";
+import POSTERS_ from "@data/site/POSTERS.json";
 import WATCH_ from "@data/site/WATCH.json";
 
 export type ColorKey = keyof typeof C_;
@@ -120,6 +121,10 @@ export const VROWS = VROWS_ as unknown as EncRow[];
 
 export type Film = { id: string; n: string; y: number; ph: number; star: boolean; up: boolean };
 export const FILMS = FILMS_ as Film[];
+
+export type FilmPoster = { path: string; w: number; h: number; textless: boolean };
+export type PosterFilm = { id: string; title: string; year: number; posters: FilmPoster[] };
+export const POSTERS = POSTERS_ as PosterFilm[];
 /** Film descriptions. FINFO's first field is a dead legacy rating and is never exposed. */
 export const FILM_DESC: Record<string, string> = Object.fromEntries(
   Object.entries(FINFO_ as Record<string, string[]>).map(([k, v]) => [k, v[1]]),

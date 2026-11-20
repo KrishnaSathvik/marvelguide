@@ -26,7 +26,7 @@ function Para({ p }: { p: NewsPara }) {
   if (typeof p === "string") return <p>{p}</p>;
   return (
     <p>
-      <b style={{ color: "var(--yellow)" }}>{p.label}</b> {p.text} {p.tag && <Tag t={p.tag} />}
+      <b>{p.label}</b> {p.text} {p.tag && <Tag t={p.tag} />}
     </p>
   );
 }
@@ -93,10 +93,10 @@ export default function NewsPage() {
             Breaking: <span className="r">the final countdown</span>
           </h1>
           <p className="lede rv">
-            Thirty days out, the last trailer is due, the runtime has leaked, and Endgame: Encore is on Disney+. Below
-            that, the VisionQuest finale, whose post-credits scene leads straight into Doomsday.
+            Eleven new posters are out, a month from the US opening. The runtime is still a leak, and Endgame: Encore is
+            on Disney+. Below that, the VisionQuest finale, whose post-credits scene leads straight into Doomsday.
           </p>
-          <div className="news">
+          <div className="news desk">
             {section("latest").map((n) => (
               <Card key={n.id} n={n} />
             ))}

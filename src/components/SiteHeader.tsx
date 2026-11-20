@@ -4,12 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
-import { GUIDE_STEPS, MCU_GROUPS, TABS } from "@/lib/routes";
+import { GUIDE_STEPS, MCU_GROUPS, mcuGroupHref, TABS } from "@/lib/routes";
 import { openSearch } from "@/lib/search-events";
 import { Icon } from "./Icon";
 
-const isActiveTab = (pathname: string, href: string) =>
-  href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
+const isActiveTab = (pathname: string, href: string, match?: string) => {
+  const base = match ?? href;
+  return base === "/" ? pathname === "/" : pathname === base || pathname.startsWith(base + "/");
+};
 
 type SubItem = { href: string; label: string; active: boolean };
 
@@ -28,7 +30,7 @@ function subnavFor(pathname: string): { items: SubItem[] } | null {
   if (section === "mcu" && first) {
     return {
       items: MCU_GROUPS.map((g, i) => ({
-        href: `/mcu/${g.slug}`,
+        href: mcuGroupHref(g),
         label: `${i + 1} ${g.title}`,
         active: g.slug === first,
       })),
@@ -60,7 +62,7 @@ export function SiteHeader() {
                 key={t.href}
                 href={t.href}
                 className={"homeOnly" in t ? "hm" : undefined}
-                aria-current={isActiveTab(pathname, t.href) ? "page" : undefined}
+                aria-current={isActiveTab(pathname, t.href, "match" in t ? t.match : undefined) ? "page" : undefined}
               >
                 {"short" in t ? (
                   <>

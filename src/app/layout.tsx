@@ -24,11 +24,11 @@ const bangers = Bangers({ weight: "400", subsets: ["latin"], variable: "--font-b
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Marvel Guide · Avengers: Doomsday watch guide & MCU explained",
+    default: "What to Watch Before Avengers: Doomsday · Marvel Guide",
     template: "%s · Marvel Guide",
   },
   description:
-    "Fan-made Avengers: Doomsday watch guide and MCU encyclopedia. Unofficial fan project, not affiliated with Marvel or Disney.",
+    "What to watch before Avengers: Doomsday, plus the MCU timeline, the cast, and how the multiverse fits together.",
 };
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {

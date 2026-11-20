@@ -14,6 +14,7 @@ import {
   FILMS,
   LINKS,
   ORDERS,
+  POSTERS,
   SERIES,
   slug,
   STORY,
@@ -25,7 +26,9 @@ import {
   VROWS,
   WATCH,
 } from "@/content";
-import { MCU_GROUPS } from "./routes";
+import { faqPlain } from "./faq";
+import { DOOM_POSTERS, POSTER_PAGE_SIZE, posterPageHref, postersNewestFirst } from "./poster-pages";
+import { MCU_GROUPS, mcuGroupHref } from "./routes";
 
 export type SearchItem = {
   type: string;
@@ -38,11 +41,11 @@ export type SearchItem = {
   icon: string;
 };
 
-/** MCU chapter id → group page that contains it. */
-const GROUP_OF: Record<string, string> = Object.fromEntries(
-  MCU_GROUPS.flatMap((g) => g.chapters.map((c) => [c.legacyId, `/mcu/${g.slug}`])),
+/** MCU chapter id → that chapter's own URL. */
+const CHAPTER_PATH: Record<string, string> = Object.fromEntries(
+  MCU_GROUPS.flatMap((g) => g.chapters.map((c) => [c.legacyId, `/mcu/${g.slug}/${c.slug}`])),
 );
-const mcu = (chapter: string) => GROUP_OF[chapter];
+const mcu = (chapter: string) => CHAPTER_PATH[chapter];
 
 const ETYPE: Record<string, [string, string, string]> = {
   // ENC key: [type, icon, chapter]
@@ -84,7 +87,7 @@ function build(): SearchItem[] {
   add("Section", "Confirmed roster", "Every confirmed Doomsday cast member", "/guide/characters", undefined, "users");
 
   /* FAQ & links */
-  FAQ.forEach((q, i) => add("FAQ", q.q, q.sp ? "Spoiler answer — open to reveal" : q.a, "/faq", `faq-${i + 1}`, "circle-help"));
+  FAQ.forEach((q, i) => add("FAQ", q.q, q.sp ? "Spoiler answer — open to reveal" : faqPlain(q.a), "/faq", `faq-${i + 1}`, "circle-help"));
   LINKS.forEach((l, i) => add("Official link", l.b, `${l.k} — ${l.s}`, "/links", `link-${i}`, "external-link"));
 
   /* MCU Explained */
@@ -96,7 +99,21 @@ function build(): SearchItem[] {
   });
   VROWS.forEach((r) => add("Villain", r.title, `${r.sub} — ${r.blocks.map((b) => b[1]).join(" ")}`, mcu("e-villains"), r.id, "skull"));
   DIR.forEach((c) => add("Character", c.n, `${c.r} · ${c.a} · ${DIRT[c.t]} — ${c.d}`, mcu("e-heroes"), `dir-${slug(c.n)}`, "users"));
-  MCU_GROUPS.forEach((g) => add("Encyclopedia part", `MCU Explained: ${g.title}`, g.description, `/mcu/${g.slug}`, undefined, g.icon));
+  MCU_GROUPS.forEach((g) => add("Encyclopedia part", `MCU Explained: ${g.title}`, g.description, mcuGroupHref(g), undefined, g.icon));
+  add(
+    "Poster",
+    "Eleven Doomsday posters",
+    "Doctor Doom, Reed and Xavier, Bucky and Shang-Chi, M'Baku and Nightcrawler, Thor and Steve, Magneto and Shuri, Sam and Cyclops, Sue and Namor, Gambit and Yelena, Red Guardian and Ant-Man, Loki and Mystique",
+    "/posters",
+    DOOM_POSTERS[0].id,
+    "film",
+  );
+  let posterAt = DOOM_POSTERS.length;
+  postersNewestFirst(POSTERS).forEach((p) => {
+    const page = Math.floor(posterAt / POSTER_PAGE_SIZE) + 1;
+    posterAt += p.posters.length;
+    add("Poster", `${p.title} posters`, `${p.year} · ${p.posters.length} posters`, posterPageHref(page), p.id, "film");
+  });
   FILMS.forEach((f) =>
     add(
       "Film",
@@ -129,6 +146,7 @@ function build(): SearchItem[] {
   /* News (hand-written keywords, as in legacy) */
   const news = (title: string, text: string, target: string, icon: string, type = "Latest") =>
     add(type, title, text, "/news", target, icon);
+  news("Eleven Doomsday posters, one fight", "Marvel Studios poster set, Nightcrawler, Sentinels, Doombots, Thor yellow lightning, Steve Mjolnir, team-up pairs", "news-posters", "zap");
   news("Runtime: about 2½ hours (149 min reported)", "Omelete report, Infinity Vision edition extra scene, how long is Doomsday", "news-runtime", "clock");
   news("Release: Dec 16 internationally, Dec 18 US", "international release date, world tour, LA premiere, previews", "news-release", "calendar");
   news("Feige: the Avengers are back together", "Empire interview, Sam Wilson leads the team, Captain America", "news-feige", "users");
@@ -142,7 +160,7 @@ function build(): SearchItem[] {
     "zap",
   );
   news("How VisionQuest ended (recap)", "Ultron, Jocasta, The Client, Tommy, Billy, Vision revived, Ultron post-credits", "news-finale", "tv");
-  news("Thor yellow lightning / Odinforce billboard", "Shanghai Doomsday billboard; Steve holds Mjolnir", "rumor-thor", "zap", "Rumor");
+  news("Thor yellow lightning / Odinforce", "Shanghai billboard and the new posters; Steve holds Mjolnir", "rumor-thor", "zap", "Rumor");
   news("Anthony Mackie name-drops Paul Bettany", "Vision in Doomsday?", "rumor-vision", "zap", "Rumor");
   news("Stitch Cosbi toys: Scarlet Witch, Thanos, Ghost Rider", "Hot Toys Doomsday collectibles", "rumor-stitch", "zap", "Rumor");
 
@@ -154,7 +172,7 @@ export const SEARCH_INDEX = build();
 /** Filter chips → item types (legacy GROUPS_S). */
 export const SEARCH_GROUPS: Record<string, string[] | null> = {
   All: null,
-  "Films & shows": ["Film", "Series", "Watch list", "Watch order", "Phase"],
+  "Films & shows": ["Film", "Series", "Poster", "Watch list", "Watch order", "Phase"],
   People: ["Character", "Hero", "Villain", "Team"],
   Lore: ["Term", "Universe", "Infinity Stone", "Tech", "Power tier", "Event", "Topic", "Time-travel rule", "Story", "Diagram", "Encyclopedia part"],
   News: ["Latest", "Rumor"],
